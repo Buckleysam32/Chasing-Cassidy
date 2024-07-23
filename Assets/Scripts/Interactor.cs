@@ -2,29 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-interface IInteractable
-{
-    public void Interact();
-}
-
-public class Interactor : MonoBehaviour
+public class PlayerInteractor : MonoBehaviour
 {
     public Transform interactSource;
     public float interactRange;
+    public LayerMask interactableLayer;
+    public GameObject crosshair;
+    public GameObject interactUI;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        RaycastHit hit;
+        Vector3 rayOrigin = interactSource.position;
+        Vector3 rayDirection = interactSource.forward;
+
+        if(Physics.Raycast(rayOrigin, rayDirection, out hit, interactRange, interactableLayer))
         {
-            Ray cast = new Ray(interactSource.position, interactSource.forward);
-            if(Physics.Raycast(cast, out RaycastHit hitInfo, interactRange))
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            crosshair.SetActive(false);
+            interactUI.SetActive(true);
+            if(interactable != null)
             {
-                if(hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
+                if(hit.collider.name == "Door" && Input.GetKeyDown(KeyCode.E))
                 {
-                    interactObj.Interact();
+                    Debug.Log("Interact Door");
+                    interactable.UpdateDoor();
                 }
             }
+        }
+        else
+        {
+            crosshair.SetActive(true);
+            interactUI.SetActive(false);
         }
     }
 }
