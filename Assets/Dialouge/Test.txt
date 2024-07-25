@@ -1,0 +1,5 @@
+NPC:Hello, how can I help you?[1]I need some information[2]Just saying hi
+Player:I need some information
+NPC:Well too bad buster
+Player:Just saying hi
+NPC:Goodbye!
