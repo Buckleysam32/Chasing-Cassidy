@@ -17,7 +17,8 @@ public class DisplayText : MonoBehaviour
     public float shakeSpeed = 50f;
     private Vector3 originalPosition;
     public GameObject dialogueBox;
-    public MouseLook playerMovement;
+    public PlayerMovement playerMovement;
+    public MouseLook mouseScript;
     public GameObject talkButton;
     public GameObject crossHair;
 
@@ -126,6 +127,11 @@ public class DisplayText : MonoBehaviour
 
             gameObject.SetActive(true);
             index = 0;
+
+            // Disable player movement
+            playerMovement.enabled = false;
+            mouseScript.enabled = false;
+
             StartCoroutine(TypeLine());
         }
     }
@@ -171,9 +177,12 @@ public class DisplayText : MonoBehaviour
             npc.transform.position = npc.startPosition;
         }
 
+        // Enable player movement
+        playerMovement.enabled = true;
+        mouseScript.enabled = true;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        playerMovement.enabled = true;
     }
 
     private void UpdateSpeakerName()
@@ -199,6 +208,7 @@ public class DisplayText : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         playerMovement.enabled = false;
+        mouseScript.enabled = false;
     }
 
     public void SelectChoice(int choiceIndex)
@@ -227,6 +237,7 @@ public class DisplayText : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         playerMovement.enabled = true;
+        mouseScript.enabled = true;
     }
 
     private class ChoiceData

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,35 +7,38 @@ public class NPCInteraction : MonoBehaviour
     public DisplayText textScript; // Reference to the DisplayText script on the canvas object
     public string npcName;
     public TextMeshProUGUI nameText; // Reference to character's name
-    public TextAsset assignedTextFile; // Text file to be assigned in the Inspector
+    public List<TextAsset> dialogueFiles; // List of text files for dialogues
     public bool dialogueInProgress = false; // Flag to track dialogue progress
+    private Town1Quests town1Quests;
 
     public GameObject talkButton;
     public GameObject crossHair;
 
-    //public Animator npcAnim;
-
-    //public AudioClip[] textSounds = new AudioClip[0];
-
     public Vector3 startPosition;
 
     private bool inRange = false;
+    public int currentDialogueIndex = 0; // Index to track the current dialogue
+
     void Start()
     {
+        town1Quests = FindObjectOfType<Town1Quests>();
         talkButton.SetActive(false);
-        // Store the initial position of the object
         startPosition = transform.position;
-        //npcAnim = this.GetComponent<Animator>();
+
+        // Initialize dialogue if there are files
+        if (dialogueFiles.Count > 0)
+        {
+            textScript.textAsset = dialogueFiles[0];
+        }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("in range");
             inRange = true;
             crossHair.SetActive(false);
             talkButton.SetActive(true);
-            textScript.textAsset = assignedTextFile;
         }
     }
 
@@ -45,29 +47,42 @@ public class NPCInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inRange = false;
-            Debug.Log("not in range");
             crossHair.SetActive(true);
             talkButton.SetActive(false);
-            textScript.textAsset = null; // Clear the assigned text file when leaving the NPC
         }
     }
 
     private void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E) && dialogueInProgress == false)
+        if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress)
         {
-            Debug.Log("Start talking");
-            if (assignedTextFile != null && !dialogueInProgress)
+            if (currentDialogueIndex < dialogueFiles.Count)
             {
                 nameText.text = npcName;
                 talkButton.SetActive(false);
                 crossHair.SetActive(false);
-                textScript.StartDialogue(this); // Pass the current NPCInteraction instance
+                textScript.textAsset = dialogueFiles[currentDialogueIndex]; // Ensure correct text asset is used
+                textScript.StartDialogue(this);
+                town1Quests.SpeakToNPC(npcName, this); // Ensure the NPC's status is updated
             }
             else
             {
-                Debug.LogWarning("Text file not assigned in the Inspector or dialogue is already in progress.");
+                Debug.LogWarning("No more dialogues available for this NPC.");
             }
+        }
+    }
+
+
+    public void SetNextDialogue()
+    {
+        currentDialogueIndex++;
+        if (currentDialogueIndex < dialogueFiles.Count)
+        {
+            textScript.textAsset = dialogueFiles[currentDialogueIndex];
+        }
+        else
+        {
+            Debug.LogWarning("No more dialogues available for this NPC.");
         }
     }
 }
