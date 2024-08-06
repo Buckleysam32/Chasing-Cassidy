@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	471389562	Play_Dry_Wind_SFX			\Default Work Unit\Play_Dry_Wind_SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	992888512	Dry Wind SFX	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Dry Wind SFX_11A93380.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dry Wind SFX		4032096
+

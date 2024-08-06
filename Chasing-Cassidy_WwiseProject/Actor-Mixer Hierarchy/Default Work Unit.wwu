@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9A41D860-CEFD-437C-9FB0-AB814F3CC3BA}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{9A41D860-CEFD-437C-9FB0-AB814F3CC3BA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9A41D860-CEFD-437C-9FB0-AB814F3CC3BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Dry Wind SFX" ID="{3DE10817-75CC-42DA-90AF-0C1597D3E090}" ShortID="132598671">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dry Wind SFX" ID="{693C61CA-7201-4273-AA82-8501ABEBB062}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Dry Wind SFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="992888512"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Dry Wind SFX" ID="{693C61CA-7201-4273-AA82-8501ABEBB062}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

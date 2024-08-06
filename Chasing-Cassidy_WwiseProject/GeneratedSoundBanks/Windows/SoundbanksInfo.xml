@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="909382117" Type="User" Language="SFX" Hash="{0E6CD76A-DD2E-DCB1-015C-5B25587D0D88}">
+			<ShortName>Dry_Wind</ShortName>
+			<Path>Dry_Wind.bnk</Path>
+			<Media>
+				<File Id="992888512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dry Wind SFX.wav</ShortName>
+					<CachePath>SFX/Dry Wind SFX_11A93380.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="471389562" Name="Play_Dry_Wind_SFX" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="992888512"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C3590A72-F44D-2095-7653-2D349C417997}</FileHash>
+</SoundBanksInfo>

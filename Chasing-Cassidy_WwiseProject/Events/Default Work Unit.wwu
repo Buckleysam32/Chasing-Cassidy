@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{72DDF692-FA8B-410F-85E7-AFD40DAF7323}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{72DDF692-FA8B-410F-85E7-AFD40DAF7323}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{72DDF692-FA8B-410F-85E7-AFD40DAF7323}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Dry_Wind_SFX" ID="{DE810FCE-9F5D-49B8-AF91-5573D9307B81}">
+					<ChildrenList>
+						<Action Name="" ID="{AF62975D-276C-4EFE-9A31-75D0F8522F01}" ShortID="646473703">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dry Wind SFX" ID="{3DE10817-75CC-42DA-90AF-0C1597D3E090}" WorkUnitID="{9A41D860-CEFD-437C-9FB0-AB814F3CC3BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

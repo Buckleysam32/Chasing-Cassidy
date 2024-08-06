@@ -12,7 +12,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise2023.1.5.8522</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../Chasing-Cassidy_WwiseProject/Chasing-Cassidy_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Chasing-Cassidy/Chasing-Cassidy_WwiseProject/Chasing-Cassidy_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5847a967bd780d41b578c3979930ba18
     GuidInternal: 
-    m_lastTime: -8584791171968814584
-    List: []
+    m_lastTime: -8584786682939781813
+    List:
+    - name: Dry_Wind
+      guid: 72d5a7f889f3f949b2116011335e307d
+      id: 909382117
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5847a967bd780d41b578c3979930ba18
+      - ElementName: Dry_Wind
+        ObjectType: 7
+        guid: 72d5a7f889f3f949b2116011335e307d
+      Path: SoundBanks\Default Work Unit\Dry_Wind
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 92f6dd728bfa0f4185e7afd40daf7323
     GuidInternal: 
-    m_lastTime: -8584791171968596014
-    List: []
+    m_lastTime: -8584786682939579048
+    List:
+    - name: Play_Dry_Wind_SFX
+      guid: ce0f81de5d9fb849af915573d9307b81
+      id: 471389562
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 92f6dd728bfa0f4185e7afd40daf7323
+      - ElementName: Play_Dry_Wind_SFX
+        ObjectType: 3
+        guid: ce0f81de5d9fb849af915573d9307b81
+      Path: Events\Default Work Unit\Play_Dry_Wind_SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -138,9 +169,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584791171968079659
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 020000000500000007000000090000000b0000000d0000000f00000011000000
-  AutoSyncSelection: 0
+  ExpandedFileSystemItemIds: 0200000003000000090000000a000000
+  ExpandedWaapiItemIds: 0200000003000000090000000a000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{67A94758-78BD-410D-B578-C3979930BA18}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{67A94758-78BD-410D-B578-C3979930BA18}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{67A94758-78BD-410D-B578-C3979930BA18}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Dry_Wind" ID="{F8A7D572-F389-49F9-B211-6011335E307D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Dry_Wind_SFX" ID="{DE810FCE-9F5D-49B8-AF91-5573D9307B81}" WorkUnitID="{72DDF692-FA8B-410F-85E7-AFD40DAF7323}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
