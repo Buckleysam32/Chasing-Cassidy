@@ -9,6 +9,17 @@
 							<ObjectRef Name="System" ID="{5830A216-11B7-4ABA-9CB8-9FC3302D9C17}" WorkUnitID="{B0D796DC-4959-43FA-AB6B-E2E99436F538}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Footsteps" ID="{1D409B33-BD1A-4A1B-ABDB-5809B0358CED}"/>
+						<Bus Name="Nature" ID="{41482735-77BF-40F2-8ED7-650514FBFB33}"/>
+						<Bus Name="Music" ID="{308FD84C-7AAE-42D1-8F35-DC9BBA4533AA}"/>
+						<Bus Name="NPC" ID="{1A4C00C9-05CA-422A-AF32-D60F4C316B9A}">
+							<ChildrenList>
+								<Bus Name="NPCAmbient" ID="{9F1A55F3-C0A5-4B00-B478-FC8D143EBF65}"/>
+								<Bus Name="NPCDialogue" ID="{C8C07CC4-EA2E-4CF7-ABD6-1FB23E82BE89}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayBirdCall" ID="{3D3C711A-2BEE-400C-A2DD-83354000F409}">
+					<ChildrenList>
+						<Action Name="" ID="{6400FC7D-F0E3-4B85-822F-91AF672400F1}" ShortID="495631310">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird Call" ID="{BEEA6700-D543-410C-822A-2DD34E0E082A}" WorkUnitID="{9A41D860-CEFD-437C-9FB0-AB814F3CC3BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

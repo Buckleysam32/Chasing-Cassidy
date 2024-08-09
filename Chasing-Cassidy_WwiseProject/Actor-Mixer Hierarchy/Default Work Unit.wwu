@@ -12,7 +12,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+							<ObjectRef Name="Nature" ID="{41482735-77BF-40F2-8ED7-650514FBFB33}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -31,6 +31,244 @@
 						<ActiveSource Name="Dry Wind SFX" ID="{693C61CA-7201-4273-AA82-8501ABEBB062}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Footstep Container" ID="{FB9F1222-A54E-4B3B-895A-2CD4A2028D47}" ShortID="785808375">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Footsteps" ID="{1D409B33-BD1A-4A1B-ABDB-5809B0358CED}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Sand" ID="{61AD6361-9BE8-4F9F-93B7-169EAA9027E2}" ShortID="128169098">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sand1" ID="{772ECA7E-0BC8-4D83-BD9B-E5BCF86ECFF4}" ShortID="139351519">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Sand2" ID="{2F0FFC13-1C8D-4D69-A9E5-7027D1DD35C3}" ShortID="110584057">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Sand3" ID="{97D0B166-8C85-4A98-8FFC-B41BC8E9B89F}" ShortID="141477977">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Sand4" ID="{C9342A1E-80DC-4782-BEEE-4F076B725678}" ShortID="137361068">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wood" ID="{5CC5EADC-B103-4A9E-96BC-9894832BAC7A}" ShortID="261096426">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood1" ID="{47E37185-31BB-451B-809F-8D8F472D7162}" ShortID="260136568">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Wood2" ID="{CB9BAF33-955E-41E3-B531-BD8C32FE5177}" ShortID="80121602">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Wood3" ID="{A08BD2D3-A7E5-4169-88A3-40ED85C9F868}" ShortID="906882065">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="Wood4" ID="{B536FEF0-75E5-4D3D-A727-C3C94C88CAD8}" ShortID="672873923">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Sand" ID="{61AD6361-9BE8-4F9F-93B7-169EAA9027E2}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Wood" ID="{5CC5EADC-B103-4A9E-96BC-9894832BAC7A}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="Bird Call" ID="{BEEA6700-D543-410C-822A-2DD34E0E082A}" ShortID="871552115">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Bird Sounds" ID="{C8411646-25AD-4939-9490-84FB07369977}" WorkUnitID="{AE16F7A4-65AF-4DF1-85E2-785D8D6B56A8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Nature" ID="{41482735-77BF-40F2-8ED7-650514FBFB33}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Vulture1" ID="{4C78A91C-C7DB-49D1-A2FE-924DC91FBBB0}" ShortID="220562437">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s" ID="{F9204535-DEB6-425F-AAEE-4EA79A2E43BA}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.240116349988271"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.174630072718743"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.218287590898428"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.98107999061695"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="596401808"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s" ID="{F9204535-DEB6-425F-AAEE-4EA79A2E43BA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Vulture2" ID="{1872382A-AC37-4A4B-958B-657989DCC4DD}" ShortID="260261781">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s" ID="{7F8EBB1F-82FB-46B6-A791-253C113D87CF}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.218287590898429"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.261945109078116"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="11.6128998357964"/>
+										<Property Name="TrimEnd" Type="Real64" Value="18.5981027445461"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="34417781"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s" ID="{7F8EBB1F-82FB-46B6-A791-253C113D87CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Vulture3" ID="{8707FCD7-A7A1-42C2-8198-B4BD4888666D}" ShortID="381457658">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B95B898A-871D-443F-8A23-E76C107CC4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F418105-9BC8-4C23-A2CC-46CF4199D224}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="XC381486 - Turkey Vulture - Cathartes aura" ID="{F1E42568-B7AD-48FA-A32E-4E7FA423A30E}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.23084137931035"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.703337931034483"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="64.882924137931"/>
+										<Property Name="TrimEnd" Type="Real64" Value="86.5105655172414"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>XC381486 - Turkey Vulture - Cathartes aura.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="63281113"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="XC381486 - Turkey Vulture - Cathartes aura" ID="{F1E42568-B7AD-48FA-A32E-4E7FA423A30E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

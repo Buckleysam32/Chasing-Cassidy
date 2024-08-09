@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2103452570	PlayBirdCall			\Default Work Unit\PlayBirdCall	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	34417781	Vulture2	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s_385FFDD5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bird Call\Vulture2		616190
+	63281113	Vulture3	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\XC381486 - Turkey Vulture - Cathartes aura_76B7C149.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bird Call\Vulture3		2076348
+	596401808	Vulture1	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s_8590724E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bird Call\Vulture1		508376
+

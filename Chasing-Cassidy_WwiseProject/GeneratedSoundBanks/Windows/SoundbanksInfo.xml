@@ -9,7 +9,34 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="909382117" Type="User" Language="SFX" Hash="{0E6CD76A-DD2E-DCB1-015C-5B25587D0D88}">
+		<SoundBank Id="357926156" Type="User" Language="SFX" Hash="{E759ED5C-DD61-F7E6-EDB1-67422F4BF721}">
+			<ShortName>BirdCall</ShortName>
+			<Path>BirdCall.bnk</Path>
+			<Media>
+				<File Id="34417781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s.wav</ShortName>
+					<CachePath>SFX/NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s_385FFDD5.wem</CachePath>
+				</File>
+				<File Id="63281113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>XC381486 - Turkey Vulture - Cathartes aura.wav</ShortName>
+					<CachePath>SFX/XC381486 - Turkey Vulture - Cathartes aura_76B7C149.wem</CachePath>
+				</File>
+				<File Id="596401808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s.wav</ShortName>
+					<CachePath>SFX/NjI1MzI5MDIzNjI1NDUz_3OAJZXLnX9s_8590724E.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2103452570" Name="PlayBirdCall" MaxAttenuation="25" DurationType="OneShot" DurationMin="5.7627926" DurationMax="21.627642">
+					<MediaRefs>
+						<MediaRef Id="34417781"/>
+						<MediaRef Id="63281113"/>
+						<MediaRef Id="596401808"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="909382117" Type="User" Language="SFX" Hash="{32453A82-1EAC-51BE-C2F8-066DBB5C5421}">
 			<ShortName>Dry_Wind</ShortName>
 			<Path>Dry_Wind.bnk</Path>
 			<Media>
@@ -26,7 +53,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8CB48A9A-64ED-4C88-9F53-CCCD6C796C47}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -36,9 +63,19 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="623496326" Name="NPCAmbient"/>
+				<Bus Id="662417162" Name="NPC"/>
+				<Bus Id="1141413220" Name="NPCDialogue"/>
+				<Bus Id="2385628198" Name="Footsteps"/>
+				<Bus Id="3501062356" Name="Nature"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 		</SoundBank>
+		<SoundBank Id="2385628198" Type="User" Language="SFX" Hash="{61A8FBAF-4433-E713-203D-84F32E02F916}">
+			<ShortName>Footsteps</ShortName>
+			<Path>Footsteps.bnk</Path>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C3590A72-F44D-2095-7653-2D349C417997}</FileHash>
+	<FileHash>{D278CEAE-9614-B725-68B2-28AC30BF278D}</FileHash>
 </SoundBanksInfo>
