@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCInteraction : MonoBehaviour
 {
     public DisplayText textScript; // Reference to the DisplayText script on the canvas object
     public string npcName;
+    public Sprite characterArt;
+    public Image artObject;
     public TextMeshProUGUI nameText; // Reference to character's name
     public List<TextAsset> dialogueFiles; // List of text files for dialogues
     public bool dialogueInProgress = false; // Flag to track dialogue progress
@@ -58,6 +61,7 @@ public class NPCInteraction : MonoBehaviour
         {
             if (currentDialogueIndex < dialogueFiles.Count)
             {
+                artObject.sprite = characterArt;
                 nameText.text = npcName;
                 talkButton.SetActive(false);
                 crossHair.SetActive(false);
