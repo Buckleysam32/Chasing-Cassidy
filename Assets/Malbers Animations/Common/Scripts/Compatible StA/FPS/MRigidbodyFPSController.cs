@@ -39,8 +39,8 @@ namespace MalbersAnimations.SA
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
 
-            Cursor.lockState = LockCursor ? CursorLockMode.Locked : CursorLockMode.None;  // Lock or unlock the cursor.
-            Cursor.visible = !LockCursor;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             RestartMouseLook();
         }
 
