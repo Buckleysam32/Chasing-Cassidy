@@ -372,6 +372,140 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: tvOS
+    m_Icons:
+    - m_Textures: []
+      m_Width: 1280
+      m_Height: 768
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 800
+      m_Height: 480
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 400
+      m_Height: 240
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 4640
+      m_Height: 1440
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 2320
+      m_Height: 720
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 3840
+      m_Height: 1440
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 1920
+      m_Height: 720
+      m_Kind: 1
+      m_SubKind: 
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Textures: []
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 60
+      m_Height: 60
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 20
+      m_Height: 20
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -742,7 +876,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2
     QNX: UNITY_POST_PROCESSING_STACK_V2
     Stadia: UNITY_POST_PROCESSING_STACK_V2
-    Standalone: UNITY_POST_PROCESSING_STACK_V2
+    Standalone: UNITY_POST_PROCESSING_STACK_V2;WWISE_ADDRESSABLES_23_1_OR_LATER
     VisionOS: UNITY_POST_PROCESSING_STACK_V2
     WebGL: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2
@@ -825,7 +959,23 @@ PlayerSettings:
   XboxOneIsContentPackage: 0
   XboxOneEnhancedXboxCompatibilityMode: 0
   XboxOneEnableGPUVariability: 1
-  XboxOneSockets: {}
+  XboxOneSockets:
+    WwiseCommandSocket:
+      m_Name: WwiseCommandSocket
+      m_Port: 24025
+      m_Protocol: 0
+      m_Usages: 00000000010000000400000007000000
+      m_TemplateName: WwiseCommand
+      m_SessionRequirment: 0
+      m_DeviceUsages: 00000000
+    WwiseDiscoverySocket:
+      m_Name: WwiseDiscoverySocket
+      m_Port: 24024
+      m_Protocol: 1
+      m_Usages: 00000000010000000400000007000000
+      m_TemplateName: WwiseDiscovery
+      m_SessionRequirment: 0
+      m_DeviceUsages: 00000000
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0

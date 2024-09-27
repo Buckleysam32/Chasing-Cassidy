@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Chasing-Cassidy_WwiseProject" GUID="{C567061E-74D3-4EFC-9956-F61FAD297434}" Generator="2023.1.7.8574"/>
+	<CacheRoot>../../../../Chasing-Cassidy_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{C51CF82A-0ED5-45AD-96C4-30D4148C0FF4}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Chasing-Cassidy_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{A2C36635-5487-475F-8F62-B545230F3FE7}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Chasing-Cassidy_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{7F20256F-1842-4BA1-B1D6-AFAC4F9DF5DA}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{46B0277F-BE54-62F1-56DB-F12C888955BF}</FileHash>
+</ProjectInfo>
