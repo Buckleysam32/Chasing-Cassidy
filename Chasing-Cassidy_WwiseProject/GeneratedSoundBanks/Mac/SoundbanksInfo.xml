@@ -21,11 +21,34 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2488754382" Name="CompactSand"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{87A14BF9-0107-DD5E-2AC7-AB17BCE1F976}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{AF2B7770-4F2E-71EB-8C08-E089BC5A1D6A}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
+			<Events>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers/>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
+					<Switches>
+						<Switch Id="803837735" Name="Sand"/>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2488754382" Name="CompactSand"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AB3DF98D-D60B-21CF-8EBD-DAE39A4BCFE8}</FileHash>
+	<FileHash>{CD4D4F42-82A8-98BE-F587-E90B0B366CE7}</FileHash>
 </SoundBanksInfo>

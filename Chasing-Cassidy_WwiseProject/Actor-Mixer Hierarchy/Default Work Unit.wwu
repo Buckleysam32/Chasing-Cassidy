@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Footsteps" ID="{37607B87-C641-40DA-A236-615CDB5C99A0}" ShortID="740454203">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Sand" ID="{7D000B7C-C744-4D20-A967-165FA44A7303}" WorkUnitID="{7B2D40EF-A903-4506-A1CB-FF00F26079A4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="FootstepsTerrain" ID="{D96EED7E-2664-4A07-914E-1AE21AA6947A}" WorkUnitID="{7B2D40EF-A903-4506-A1CB-FF00F26079A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Sand" ID="{87BE1668-E1EA-442C-86C2-58B94D5EDE9C}" ShortID="883112697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wood" ID="{972113CF-7717-4A02-8CD6-1BE27030AA0A}" ShortID="1062657010">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="CompactSand" ID="{CA7A74F5-09C4-4E1D-B4F5-3E2ED05DE6ED}" ShortID="273049138">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Sand" ID="{87BE1668-E1EA-442C-86C2-58B94D5EDE9C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Wood" ID="{972113CF-7717-4A02-8CD6-1BE27030AA0A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="CompactSand" ID="{CA7A74F5-09C4-4E1D-B4F5-3E2ED05DE6ED}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Sand" ID="{7D000B7C-C744-4D20-A967-165FA44A7303}"/>
+								<ItemList>
+									<ItemRef Name="Sand" ID="{87BE1668-E1EA-442C-86C2-58B94D5EDE9C}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Wood" ID="{2AFCA693-87C2-44A8-ACAA-B55B6046520D}"/>
+								<ItemList>
+									<ItemRef Name="Wood" ID="{972113CF-7717-4A02-8CD6-1BE27030AA0A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="CompactSand" ID="{1E29E4C7-C368-44E7-8C6D-B92123AC8B20}"/>
+								<ItemList>
+									<ItemRef Name="CompactSand" ID="{CA7A74F5-09C4-4E1D-B4F5-3E2ED05DE6ED}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

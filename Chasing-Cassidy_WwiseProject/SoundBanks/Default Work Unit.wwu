@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{3C048018-029D-4CB7-BFB1-DF6769139255}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Soundbank" ID="{3533D571-6C01-4D20-BFDC-B6D6F6C8B7FE}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Footsteps" ID="{3D7075DD-83BD-4275-A0E8-D7CD7D1D782C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
