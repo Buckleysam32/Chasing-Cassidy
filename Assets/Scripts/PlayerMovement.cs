@@ -17,25 +17,32 @@ public class PlayerMovement : MonoBehaviour
     //public Animator camAnim;
     public bool isWalking;
 
+    public bool canWalk;
+
     //public AudioSource footstepAudioSource;
     //public AudioClip footstepSound;
 
     void Start()
     {
         myCC = GetComponent<CharacterController>();
+        canWalk = true;
     }
 
     void Update()
     {
-        GetInput();
-        MovePlayer();
-        CheckTerrain();
+        if (canWalk)
+        {
+            GetInput();
+            MovePlayer();
+            CheckTerrain();
+        }
+
 
         if (isWalking)
         {
             if (timer > footstepSpeed)
             {
-                SelectAndPlayFootstep();
+                //SelectAndPlayFootstep();
                 timer = 0.0f;
             }
             timer += Time.deltaTime;
@@ -114,13 +121,13 @@ public class PlayerMovement : MonoBehaviour
 
     //Playing Correct Audio
 
-    private void PlayFootstep(int terrain)
+/*    private void PlayFootstep(int terrain)
     {
         terrainSwitch[terrain].SetValue(this.gameObject);
         AkSoundEngine.PostEvent(footstepsEvent.Id, this.gameObject);
     }
-
-    public void SelectAndPlayFootstep()
+*/
+/*    public void SelectAndPlayFootstep()
     {
         switch (currentTerrain)
         {
@@ -141,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
-
+*/
     //Establishing Float Timer
 
     private Rigidbody rb;

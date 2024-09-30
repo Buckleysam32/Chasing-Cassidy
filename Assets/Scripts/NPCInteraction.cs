@@ -59,7 +59,8 @@ public class NPCInteraction : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress)
         {
-            if (currentDialogueIndex < dialogueFiles.Count)
+            this.GetComponent<Actor>().SpeakTo();
+/*            if (currentDialogueIndex < dialogueFiles.Count)
             {
                 artObject.sprite = characterArt;
                 nameText.text = npcName;
@@ -72,7 +73,7 @@ public class NPCInteraction : MonoBehaviour
             else
             {
                 Debug.LogWarning("No more dialogues available for this NPC.");
-            }
+            }*/
         }
     }
 

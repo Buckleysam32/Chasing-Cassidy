@@ -23,12 +23,12 @@ public class Town1Quests : MonoBehaviour
     }
 
 
-    public void SpeakToNPC(string npcName, NPCInteraction npcInteraction)
+    public void SpeakToNPC(string npcName)
     {
-
+        Debug.Log("testing");
         switch (npcName)
         {
-            case "Carson":
+            case "Carson Smith":
                 if (!hasSpokeToCarson)
                 {
                     hasSpokeToCarson = true;
@@ -36,7 +36,7 @@ public class Town1Quests : MonoBehaviour
                     AddObjective("- Speak to Annie");
                     AddObjective("- Speak to Jed");
                     AddObjective("- Speak to Morris");
-                    npcInteraction.SetNextDialogue();
+                    //npcInteraction.SetNextDialogue();
                 }
                 break;
             case "Annie":
@@ -44,7 +44,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToAnnie = true;
                     RemoveObjective("- Speak to Annie");
-                    npcInteraction.SetNextDialogue();
+                    //npcInteraction.SetNextDialogue();
                 }
                 if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
                 {
@@ -56,7 +56,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToJed = true;
                     RemoveObjective("- Speak to Jed");
-                    npcInteraction.SetNextDialogue();
+                    //npcInteraction.SetNextDialogue();
                 }
                 if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
                 {
@@ -68,7 +68,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToMorris = true;
                     RemoveObjective("- Speak to Morris");
-                    npcInteraction.SetNextDialogue();
+                    //npcInteraction.SetNextDialogue();
                 }
                 if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
                 {

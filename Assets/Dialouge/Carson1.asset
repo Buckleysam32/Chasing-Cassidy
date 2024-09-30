@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Carson1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Good day sir, my name is David, I heard you possibly have some information
+        on an outlaw that passed through here not too long ago
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "Well David you\u2019re in luck I have quite a few diverse acquaintances
+        that fall into that category. "
+      speaker: ???
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: My name is Carson Smith and I suppose you're looking for one Cassidy
+        Miller otherwise known around here as Cold Cassidy
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: Um.. ok how exactly did you know that sir?
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "News travels quickly around these regions, especially when you\u2019re
+        a level above the commoners around here."
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: Of course you understand being a fellow academic, the people around here
+        are nothing but lowly savages.
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: "I can\u2019t comment to much on that sir considering I have just arrived."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: Nevertheless, how about we make a deal boy?
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: You see an associate of mine has fallen ill so it would be very helpful
+        if you could take his place.
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: All you would need to do is go around to a couple of businesses which
+        I have enlisted my services to and collect my service fee from them.
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: "Sounds fair enough I guess, although I don\u2019t have any weapons so
+        I won\u2019t be able to force any of them to provide funds."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "Yes, while your concern is valid considering the only language most
+        of these halfwits can speak is violence, If any of them decide to wake snakes
+        then just come back here and I\u2019ll sort it out."
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: "Now here's the list of places utilising my service and meet me here
+        once you\u2019re done and then I\u2019ll provide you with some info related
+        to that allusive outlaw you seek."
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    responses:
+    - responseText: I'll get to work.
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

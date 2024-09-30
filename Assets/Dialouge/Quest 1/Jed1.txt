@@ -1,6 +1,21 @@
 David:Hello sir, how are you doing?
 Jed Harris:As fine as one can these days, also no need to call me sir kid, I ain’t exactly an old man yet. Names Jed. Anyhow, what are you looking for, you don’t exactly look like the kind of person who would make use of my wares no offence of course
 David:You’d be right to assume that, no I’m here on the behalf of a Mr Smith, I believe you have a deal with him and I’m here to collect
-Jed Harris:And here I was thinking you came here for my company. I’m kidding of course, I'm aware of the deal and I do have the money right here. 
-Jed Harris:However, you better make sure to let him know that if he increases the price again I’ll report him to the sheriff office, I won’t be made a fool by anyone, especially someone as high and mighty as Carson Smith
-David:Understood sir, have a good day
+Jed Harris:And here I was thinking you came here for my company. I’m kidding of course, I'm aware of the deal and I do have the money right here. However, I don’t believe we’ve met before
+David:Oh my apologies, my name is David Williams
+Jed Harris:Good to meet you kid, although if I’m not mistaken you’ve never come to collect for Carson before. It’s usually some big fool who's only good at smashing rocks
+David:You're not mistaken sir, I’m filling in for him today as he has fallen ill
+Jed Harris:I see and what is your connection to Carson, if you don’t mind me asking, just most of his workers aren’t exactly bright
+// Choice: "That's understandable, Carson is a new but considerate ally… I think" -> 10, "He’s more of a means to an end more than a proper associate at least for now" -> 17
+Jed Harris:Ha You really know how to pick em
+David:What do you mean by that?
+Jed Harris:Nothing much, just keep an eye on the kind of company you keep, kid. Carson’s not exactly known as a friend by many. He might keep a fairly educated and formal appearance but he’s as much a savage as the rest of us
+David:Hm ok I’ll keep that in mind, you have a good day
+Jed Harris:Good luck kid
+
+# If player chooses the second option
+Jed Harris:Ah I see, should be careful kid, there's a good chance he’s using you, not the other way around.
+David:I haven’t seen anything to signal that as of yet
+Jed Harris:Just take it from me, Carson Smith never makes an unsafe investment. He’ll find one way or another to make a profit and I don’t just mean a financial profit
+David:Hm ok I’ll keep that in mind, you have a good day
+Jed Harris:Good luck kid
