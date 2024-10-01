@@ -59,21 +59,7 @@ public class NPCInteraction : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress)
         {
-            this.GetComponent<Actor>().SpeakTo();
-/*            if (currentDialogueIndex < dialogueFiles.Count)
-            {
-                artObject.sprite = characterArt;
-                nameText.text = npcName;
-                talkButton.SetActive(false);
-                crossHair.SetActive(false);
-                textScript.textAsset = dialogueFiles[currentDialogueIndex]; // Ensure correct text asset is used
-                textScript.StartDialogue(this);
-                town1Quests.SpeakToNPC(npcName, this); // Ensure the NPC's status is updated
-            }
-            else
-            {
-                Debug.LogWarning("No more dialogues available for this NPC.");
-            }*/
+            this.GetComponent<Actor>().SpeakTo(this.GetComponent<Actor>());
         }
     }
 

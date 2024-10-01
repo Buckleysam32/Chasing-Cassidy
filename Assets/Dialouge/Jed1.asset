@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Jed1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Hello sir, how are you doing?
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "As fine as one can these days, also no need to call me sir kid, I ain\u2019t
+        exactly an old man yet."
+      speaker: ???
+      image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+    - text: "Names Jed. Anyhow, what are you looking for, you don\u2019t exactly
+        look like the kind of person who would make use of my wares no offence of
+        course."
+      speaker: Jed Harris
+      image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+    - text: "You\u2019d be right to assume that, no I\u2019m here on the behalf of
+        a Mr Smith, I believe you have a deal with him and I\u2019m here to collect."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "And here I was thinking you came here for my company. I\u2019m kidding
+        of course, I'm aware of the deal and I do have the money right here. However,
+        I don\u2019t believe we\u2019ve met before."
+      speaker: Jed Harris
+      image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+    - text: Oh my apologies, my name is David Williams.
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "Good to meet you kid, although if I\u2019m not mistaken you\u2019ve
+        never come to collect for Carson before. It\u2019s usually some big fool
+        who's only good at smashing rocks."
+      speaker: Jed Harris
+      image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+    - text: "You're not mistaken sir, I\u2019m filling in for him today as he has
+        fallen ill."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "I see and what is your connection to Carson, if you don\u2019t mind
+        me asking, just most of his workers aren\u2019t exactly bright."
+      speaker: Jed Harris
+      image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+    responses:
+    - responseText: "Carson is a new but considerate ally\u2026 I think."
+      nextNode:
+        dialogueLines:
+        - text: Ha You really know how to pick em
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: What do you mean by that?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Nothing much, just keep an eye on the kind of company you keep, kid.
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: " Carson\u2019s not exactly known as a friend by many."
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: "He might keep a fairly educated and formal appearance but he\u2019s
+            as much a savage as the rest of us"
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: "Hm ok I\u2019ll keep that in mind, you have a good day."
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Good luck kid
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        responses:
+        - responseText: Thanks.
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 1
+      isBadResponse: 0
+    - responseText: "He\u2019s more of a means to an end right now."
+      nextNode:
+        dialogueLines:
+        - text: "Ah I see, should be careful kid, there's a good chance he\u2019s
+            using you, not the other way around."
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: "I haven\u2019t seen anything to signal that as of yet."
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Just take it from me, Carson Smith never makes an unsafe investment.
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: "He\u2019ll find one way or another to make a profit and I don\u2019t
+            just mean in a financial sense."
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        - text: "Hm ok I\u2019ll keep that in mind, you have a good day."
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Good luck kid.
+          speaker: Jed Harris
+          image: {fileID: 21300000, guid: 6088a5c30a68f9a408ce1dbf218da7f9, type: 3}
+        responses:
+        - responseText: Thanks.
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 1

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Morris1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Excuse me sir? Is your name Morris Hill?
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "Afraid so but unfortunately we\u2019re closed at the moment mister so
+        you\u2019ll have to come back tomorrow for any of our services."
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: "Well I\u2019m actually not here to purchase any goods sir, I\u2019m
+        actually here on behalf of Mr Carson Smith"
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "Now mister, I don\u2019t want any trouble. Please just leave, tell him
+        that I\u2019ll pay later, we\u2019re under hard times at the moment, can\u2019t
+        afford no bullshit service fee and he knows that."
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: "I\u2019m not here to cause any harm sir, I\u2019m simply here to collect
+        so if you could even provide a fraction of the fee, I\u2019m sure Carson
+        would be somewhat satisfied."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: "You don\u2019t understand!"
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: "We don\u2019t have anything left, I can\u2019t even afford the basic
+        medicine to save my boy let alone pay a ridiculous fee to that thief."
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: Please just find a way to convince him to give us more time.
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: "I\u2019m begging you, just do something. I know you don\u2019t owe me
+        anything but I just need this one thing ok."
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    - text: "Ok, um.. I\u2019ll see what I can do sir."
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    - text: Thank you.
+      speaker: Morris Hill
+      image: {fileID: 21300000, guid: 1a125f2f5a28a4340a30880d938e85b2, type: 3}
+    responses:
+    - responseText: Leave
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

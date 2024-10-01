@@ -43,9 +43,9 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Starts the dialogue with given title and dialogue node
-    public void StartDialogue(string title, DialogueNode node)
+    public void StartDialogue(string title, DialogueNode node, Actor actor)
     {
-        quests.SpeakToNPC(title);
+        quests.SpeakToNPC(title, actor);
         Debug.Log(title);
 
         // Display the dialogue UI
@@ -64,73 +64,99 @@ public class DialogueManager : MonoBehaviour
         ClearResponseButtons();
 
         // Start typing the new lines from the dialogue node
-        typingCoroutine = StartCoroutine(TypeLines(node));
+        typingCoroutine = StartCoroutine(TypeLines(node, actor));
     }
 
 
 
     // Typing effect for multiple dialogue lines and displaying responses after all lines
-    IEnumerator TypeLines(DialogueNode node)
+    IEnumerator TypeLines(DialogueNode node, Actor actor)
     {
-        // Loop through each line of dialogue
         for (int i = 0; i < node.dialogueLines.Count; i++)
         {
-            DialogueNode.DialogueLine line = node.dialogueLines[i]; // Get the current line with speaker
+            DialogueNode.DialogueLine line = node.dialogueLines[i];
             DialogBodyText.text = ""; // Clear current text
             DialogTitleText.text = line.speaker; // Set the speaker's name
             characterImage.sprite = line.image;
-            bool skipTyping = false;
 
-            // Type each character one by one
-            foreach (char c in line.text.ToCharArray())
+            if (line.speaker != "David")
             {
-                DialogBodyText.text += c; // Add one character at a time
-                yield return new WaitForSeconds(textSpeed); // Wait between each character
-
-                // If the player presses the space key, skip typing and display the full text immediately
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    DialogBodyText.text = line.text;
-                    skipTyping = true;
-                    break;
-                }
+                actor.characterAnim.SetTrigger("talk");
+            }
+            if(line.speaker == "David")
+            {
+                actor.characterAnim.SetTrigger("stop");
             }
 
-            // Wait for the player to press E to proceed to the next line
-            if (i != node.dialogueLines.Count - 1)
-            {
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-            }
+            // Typing effect for the current line
+            yield return StartCoroutine(TypeLineText(line.text));
 
-            // If this is the last line of dialogue, check for responses
+            // If it's the last line, skip waiting for the input to show response buttons
             if (i == node.dialogueLines.Count - 1)
             {
-                // Check if there are responses for this dialogue node
+                // Show response buttons after typing the last line
                 if (node.responses != null && node.responses.Count > 0)
                 {
-                    Debug.Log("Show Buttons");
-                    ShowResponseButtons(node);
+                    ShowResponseButtons(node, actor);
                 }
                 else
                 {
-                    // No responses, so the dialogue ends or goes to the next dialogue
-                    HideDialogue(); // Or any other logic for continuing dialogue
+                    HideDialogue(); // Hide dialogue if there are no responses
                 }
+            }
+            else
+            {
+                // After pressing E, clear the body text for the next line
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+                DialogBodyText.text = ""; // Clear the text for the next line
+            }
+        }
+    }
+
+    IEnumerator TypeLineText(string text)
+    {
+        for (int charIndex = 0; charIndex < text.Length; charIndex++)
+        {
+            DialogBodyText.text += text[charIndex]; // Add each character
+
+            // Allow skipping typing if any key is pressed (e.g., space to skip)
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                DialogBodyText.text = text; // Immediately display the full text
+                yield break; // Exit the typing loop
+            }
+
+            // Wait for the textSpeed delay only if no key is pressed
+            float delay = textSpeed;
+            while (delay > 0)
+            {
+                // Check for key input each frame
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    DialogBodyText.text = text;
+                    yield break;
+                }
+                delay -= Time.deltaTime;
+                yield return null; // Yield to next frame to check input frequently
             }
         }
     }
 
     // Method to display response buttons after dialogue has been typed out
-    private void ShowResponseButtons(DialogueNode node)
+    private void ShowResponseButtons(DialogueNode node, Actor actor)
     {
-        // Create and setup response buttons based on current dialogue node
-        foreach (DialogueResponse response in node.responses)
+        for (int i = 0; i < node.responses.Count; i++)
         {
+            DialogueResponse response = node.responses[i];
+
+            // Instantiate the button prefab and add it to the container
             GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonContainer);
-            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
+
+            // Set the text with a number before the response text (e.g., "1. Response text")
+            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = $"{i + 1}. {response.responseText}";
 
             // Setup button to trigger SelectResponse when clicked
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, DialogTitleText.text));
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, DialogTitleText.text, actor));
         }
     }
 
@@ -144,7 +170,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Handles response selection and triggers next dialogue node
-    public void SelectResponse(DialogueResponse response, string title)
+    public void SelectResponse(DialogueResponse response, string title, Actor actor)
     {
 
         // Update the moral score based on the response
@@ -160,7 +186,7 @@ public class DialogueManager : MonoBehaviour
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {
-            StartDialogue(title, response.nextNode); // Start next dialogue
+            StartDialogue(title, response.nextNode, actor); // Start next dialogue
         }
         else
         {

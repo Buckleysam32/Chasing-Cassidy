@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Carson3
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "So, how\u2019d it go kid?"
+      speaker: Carson Smith
+      image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+    - text: "Fairly well, here\u2019s Miss Brown\u2019s money, Mr Harris\u2019s and
+        \u2026"
+      speaker: David
+      image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+    responses:
+    - responseText: "And here\u2019s Mr Hill\u2019s money. [Pay for him]"
+      nextNode:
+        dialogueLines:
+        - text: Well this is a surprise...
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "Honestly didn\u2019t think he\u2019d earn enough for this one but
+            I guess miracles are possible sometimes. Might even raise his price for
+            next month considering this."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: There is one last thing I need from you, now I know we agreed on
+            just those three but there is one last person that I have provided for.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: Who is it this time?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: "\u201CHis name is Red, he lives out on a property a bit outside
+            of town, sells some unique items to some unique individuals and I of
+            course take care of his security."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "And how exactly do you expect me to get out to him from here, you
+            don\u2019t expect me to walk do you?"
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Of course not, I would not dare insult your civility that way.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "No, as a reward for doing this last one, I\u2019m going to give
+            you a horse that I have recently procured."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: Are you sure? I can bring him back with the money instead if you
+            would like?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: "No need to fret, you\u2019d be doing me a favour."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "Anyhow his name is Darcy, he\u2019s a good horse, used to be a racer,
+            and well now he's retired of course, but he should manage for any travelling
+            you\u2019ll be doing."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        responses:
+        - responseText: "Well I\u2019ll be back as soon as possible, see you soon"
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 1
+      isBadResponse: 0
+    - responseText: "I\u2019m afraid that Mr Hill did not have the funds to pay the
+        fee."
+      nextNode:
+        dialogueLines:
+        - text: Most unfortunate but he knows the terms of the agreement he signed.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: I'll get my boys Simon and Adam to pay Mr Hill a visit and see if
+            they can recoup some of my money.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "They\u2019re not going to hurt him are they?"
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Depends.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: On what?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: If he lied about the money. You see, as lenient as I may come across,
+            people like Mr Hill anger me...
+          speaker: Carson Smtih
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "They always act like they have nothing to give, they beg and cry
+            out that they\u2019re hard done by."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: However the truth is there is always something to give, something
+            to lose.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "In Mr Hill\u2019s case, it\u2019s his family or his business and
+            even after that he can still give, his blood, his labour, even his life..."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: But I think that's enough about that.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: There is one last thing I need from you, now I know we agreed on
+            just those three but there is one last person that I have provided for.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: Who is it this time?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: "\u201CHis name is Red, he lives out on a property a bit outside
+            of town, sells some unique items to some unique individuals and I of
+            course take care of his security."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "And how exactly do you expect me to get out to him from here, you
+            don\u2019t expect me to walk do you?"
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: Of course not, I would not dare insult your civility that way.
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "No, as a reward for doing this last one, I\u2019m going to give
+            you a horse that I have recently procured."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: Are you sure? I can bring him back with the money instead if you
+            would like?
+          speaker: David
+          image: {fileID: 21300000, guid: 30ea094845929b244ac928876cf7e5f5, type: 3}
+        - text: "No need to fret, you\u2019d be doing me a favour."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        - text: "Anyhow his name is Darcy, he\u2019s a good horse, used to be a racer,
+            and well now he's retired of course, but he should manage for any travelling
+            you\u2019ll be doing."
+          speaker: Carson Smith
+          image: {fileID: 21300000, guid: d021eea670534e944b7a78be0bd1eba6, type: 3}
+        responses:
+        - responseText: "Well I\u2019ll be back as soon as possible, see you soon"
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 1
