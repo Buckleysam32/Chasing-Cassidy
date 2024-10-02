@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3b61c5e2a3a31c4780bd615da48fe5b6
     GuidInternal: 
-    m_lastTime: -8584740152275522267
+    m_lastTime: -8584737838367049937
     List:
+    - name: Dialogue
+      guid: 23e17d4e2a8ca14e9555d93057043584
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3b61c5e2a3a31c4780bd615da48fe5b6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialogue
+        ObjectType: 2
+        guid: 23e17d4e2a8ca14e9555d93057043584
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 87c804ea0aa64b4190754d3c55938822
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3b61c5e2a3a31c4780bd615da48fe5b6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 87c804ea0aa64b4190754d3c55938822
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 379732a85f173c4f9d9ab2dc6b600f2a
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3b61c5e2a3a31c4780bd615da48fe5b6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 379732a85f173c4f9d9ab2dc6b600f2a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584740152275482366
+    m_lastTime: -8584737922687105429
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -94,8 +145,88 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584740152301601156
+    m_lastTime: -8584737842335511569
     List:
+    - name: EnterButcher
+      guid: d52cac75458baa428f6351b981dd311a
+      id: 1465847270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: EnterButcher
+        ObjectType: 3
+        guid: d52cac75458baa428f6351b981dd311a
+      Path: Events\Default Work Unit\Town1Events\EnterButcher
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnterGrocer
+      guid: dd51a3c633674742a503a2a38cae1f68
+      id: 317562889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: EnterGrocer
+        ObjectType: 3
+        guid: dd51a3c633674742a503a2a38cae1f68
+      Path: Events\Default Work Unit\Town1Events\EnterGrocer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnterGunsmith
+      guid: c2dd90281e805a4fa994ad8058fa275f
+      id: 2551708614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: EnterGunsmith
+        ObjectType: 3
+        guid: c2dd90281e805a4fa994ad8058fa275f
+      Path: Events\Default Work Unit\Town1Events\EnterGunsmith
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnterSaloon
+      guid: 691f5c5e28ee864aaaa58ef0a307ad69
+      id: 3832320589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: EnterSaloon
+        ObjectType: 3
+        guid: 691f5c5e28ee864aaaa58ef0a307ad69
+      Path: Events\Default Work Unit\Town1Events\EnterSaloon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footsteps
       guid: dd75703dbd837542a0e8d7cd7d1d782c
       id: 2385628198
@@ -113,6 +244,60 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Outside
+      guid: a00d58ef91673345847a90f7ced74c85
+      id: 438105790
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: Outside
+        ObjectType: 3
+        guid: a00d58ef91673345847a90f7ced74c85
+      Path: Events\Default Work Unit\Town1Events\Outside
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Start_Game
+      guid: f6c5fca0ab162648abe70e80c97496a5
+      id: 1114964412
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Start_Game
+        ObjectType: 3
+        guid: f6c5fca0ab162648abe70e80c97496a5
+      Path: Events\Default Work Unit\Start_Game
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Town1Events
+      guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      id: 4159357433
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      Path: Events\Default Work Unit\Town1Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,8 +324,122 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584740152275482366
-    List: []
+    m_lastTime: -8584737842335641597
+    List:
+    - name: Town1
+      guid: 0a07eac004b63a4b94b11aea2e84ef14
+      id: 1855370026
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a1a85724c674664182695a5c75b0db6c
+      - ElementName: Town1
+        ObjectType: 9
+        guid: 0a07eac004b63a4b94b11aea2e84ef14
+      Path: States\Default Work Unit\Town1
+      values:
+      - name: Butcher
+        guid: 93f261c56c2c7846bd2f477ad3225394
+        id: 2034834082
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Butcher
+          ObjectType: 8
+          guid: 93f261c56c2c7846bd2f477ad3225394
+      - name: Grocer
+        guid: 9f26acdf001d8541b1e1ac1089130181
+        id: 2379233693
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Grocer
+          ObjectType: 8
+          guid: 9f26acdf001d8541b1e1ac1089130181
+      - name: Gunsmith
+        guid: 31bef4922e0ea347aad29e94c20b2fde
+        id: 3370924234
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Gunsmith
+          ObjectType: 8
+          guid: 31bef4922e0ea347aad29e94c20b2fde
+      - name: None
+        guid: f5425f210ebe2f42bbbc25866b1e47b8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: None
+          ObjectType: 8
+          guid: f5425f210ebe2f42bbbc25866b1e47b8
+      - name: Outside
+        guid: 52b1de099e63c34f8e84b12409aa037a
+        id: 438105790
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Outside
+          ObjectType: 8
+          guid: 52b1de099e63c34f8e84b12409aa037a
+      - name: Saloon
+        guid: ed96d12cba046749b70bc8e5f8cbb4e1
+        id: 2403500745
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Saloon
+          ObjectType: 8
+          guid: ed96d12cba046749b70bc8e5f8cbb4e1
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -236,7 +535,7 @@ MonoBehaviour:
     m_lastTime: -8584740152275472400
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000e0000000f00000010000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f00000010000000110000001200000013000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

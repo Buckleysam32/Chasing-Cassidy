@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2092967876	QuestComplete			\Default Work Unit\QuestComplete	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -8,4 +9,7 @@ Switch	ID	Name	Switch Group			Notes
 	803837735	Sand	FootstepsTerrain			
 	2058049674	Wood	FootstepsTerrain			
 	2488754382	CompactSand	FootstepsTerrain			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	506676308	QuestComplete	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Quest Complete_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Quest_Complete_Stinger\QuestComplete		544608
 

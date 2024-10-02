@@ -12,7 +12,7 @@
 							<ObjectRef Name="Sand" ID="{7D000B7C-C744-4D20-A967-165FA44A7303}" WorkUnitID="{7B2D40EF-A903-4506-A1CB-FF00F26079A4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+							<ObjectRef Name="SFX" ID="{A8329737-175F-4F3C-9D9A-B2DC6B600F2A}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="FootstepsTerrain" ID="{D96EED7E-2664-4A07-914E-1AE21AA6947A}" WorkUnitID="{7B2D40EF-A903-4506-A1CB-FF00F26079A4}"/>
@@ -84,6 +84,62 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Folder Name="Town1" ID="{48DEBC0C-3756-483C-BD20-CC103E5D2F61}" ShortID="72966673">
+					<ChildrenList>
+						<RandomSequenceContainer Name="CarsonDialogue" ID="{B57B10CB-7EB7-4CC1-9E4E-1C40EDA3727A}" ShortID="809469125">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialogue" ID="{4E7DE123-8C2A-4EA1-9555-D93057043584}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="AnnieDialogue" ID="{138B708C-F481-49F3-BD98-82D224060A1D}" ShortID="25107318">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialogue" ID="{4E7DE123-8C2A-4EA1-9555-D93057043584}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="JedDialogue" ID="{D7950DA1-2D6E-4589-A87F-018C4A8E74E1}" ShortID="622705379">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialogue" ID="{4E7DE123-8C2A-4EA1-9555-D93057043584}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="MorrisDialogue" ID="{4FAE0FCE-26FF-4993-89D5-63BFDB6E9A34}" ShortID="182199606">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialogue" ID="{4E7DE123-8C2A-4EA1-9555-D93057043584}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

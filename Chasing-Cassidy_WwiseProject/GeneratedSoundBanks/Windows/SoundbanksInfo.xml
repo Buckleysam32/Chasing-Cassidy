@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9376543B-80C8-277A-CAE8-0B364970CEF8}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,8 +19,23 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3930136735" Name="Dialogue"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="1855370026" Name="Town1">
+					<States>
+						<State Id="438105790" Name="Outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2034834082" Name="Butcher"/>
+						<State Id="2379233693" Name="Grocer"/>
+						<State Id="2403500745" Name="Saloon"/>
+						<State Id="3370924234" Name="Gunsmith"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
 					<Switches>
@@ -31,12 +46,23 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{AF2B7770-4F2E-71EB-8C08-E089BC5A1D6A}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{810869BF-2D16-9BE8-3C6E-5D6A223A9AF0}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
+			<Media>
+				<File Id="506676308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Quest Complete_01.wav</ShortName>
+					<CachePath>SFX/Quest Complete_01_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<SwitchContainers/>
+				</Event>
+				<Event Id="2092967876" Name="QuestComplete" DurationType="OneShot" DurationMin="2.836" DurationMax="2.836">
+					<MediaRefs>
+						<MediaRef Id="506676308"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 			<SwitchGroups>
@@ -50,5 +76,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E1AB8A8-81D4-CD6B-AA86-3DC9A55DB4D3}</FileHash>
+	<FileHash>{FA3A1E76-B935-3823-001D-C0ED73A5CF62}</FileHash>
 </SoundBanksInfo>

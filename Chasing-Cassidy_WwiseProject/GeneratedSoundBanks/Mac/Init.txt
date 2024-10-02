@@ -1,5 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1855370026	Town1			\Default Work Unit\Town1	
+
+State	ID	Name	State Group			Notes
+	438105790	Outside	Town1			
+	748895195	None	Town1			
+	2034834082	Butcher	Town1			
+	2379233693	Grocer	Town1			
+	2403500745	Saloon	Town1			
+	3370924234	Gunsmith	Town1			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3930136735	Dialogue			\Default Work Unit\Master Audio Bus\Dialogue	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

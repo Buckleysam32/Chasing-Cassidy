@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (timer > footstepSpeed)
             {
-                //SelectAndPlayFootstep();
+                SelectAndPlayFootstep();
                 timer = 0.0f;
             }
             timer += Time.deltaTime;
@@ -50,11 +50,6 @@ public class PlayerMovement : MonoBehaviour
 
         //camAnim.SetBool("isWalking", isWalking);
 
-        /*
-        if (!isWalking)
-        {
-            footstepAudioSource.Stop();
-        }*/
     }
 
     void GetInput()
@@ -100,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit[] hit;
 
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 1.0f);
 
         foreach (RaycastHit rayhit in hit)
         {
@@ -121,13 +116,12 @@ public class PlayerMovement : MonoBehaviour
 
     //Playing Correct Audio
 
-/*    private void PlayFootstep(int terrain)
+    private void PlayFootstep(int terrain)
     {
         terrainSwitch[terrain].SetValue(this.gameObject);
         AkSoundEngine.PostEvent(footstepsEvent.Id, this.gameObject);
     }
-*/
-/*    public void SelectAndPlayFootstep()
+    public void SelectAndPlayFootstep()
     {
         switch (currentTerrain)
         {
@@ -148,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
-*/
+
     //Establishing Float Timer
 
     private Rigidbody rb;

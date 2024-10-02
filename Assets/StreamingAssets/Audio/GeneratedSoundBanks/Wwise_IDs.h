@@ -14,7 +14,27 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID QUESTCOMPLETE = 2092967876U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace TOWN1
+        {
+            static const AkUniqueID GROUP = 1855370026U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BUTCHER = 2034834082U;
+                static const AkUniqueID GROCER = 2379233693U;
+                static const AkUniqueID GUNSMITH = 3370924234U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID SALOON = 2403500745U;
+            } // namespace STATE
+        } // namespace TOWN1
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -40,7 +60,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID DIALOGUE = 3930136735U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
