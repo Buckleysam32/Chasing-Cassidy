@@ -156,4 +156,20 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "StateTrigger")
+        {
+            AudioManager.SetAreaSaloon();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "StateTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
+    }
 }

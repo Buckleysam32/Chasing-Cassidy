@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584737922687105429
+    m_lastTime: -8584736655854662074
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584737842335511569
+    m_lastTime: -8584736655854552048
     List:
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
@@ -165,8 +165,8 @@ MonoBehaviour:
         guid: d52cac75458baa428f6351b981dd311a
       Path: Events\Default Work Unit\Town1Events\EnterButcher
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: EnterGrocer
       guid: dd51a3c633674742a503a2a38cae1f68
       id: 317562889
@@ -185,8 +185,8 @@ MonoBehaviour:
         guid: dd51a3c633674742a503a2a38cae1f68
       Path: Events\Default Work Unit\Town1Events\EnterGrocer
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: EnterGunsmith
       guid: c2dd90281e805a4fa994ad8058fa275f
       id: 2551708614
@@ -205,8 +205,8 @@ MonoBehaviour:
         guid: c2dd90281e805a4fa994ad8058fa275f
       Path: Events\Default Work Unit\Town1Events\EnterGunsmith
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: EnterSaloon
       guid: 691f5c5e28ee864aaaa58ef0a307ad69
       id: 3832320589
@@ -225,8 +225,8 @@ MonoBehaviour:
         guid: 691f5c5e28ee864aaaa58ef0a307ad69
       Path: Events\Default Work Unit\Town1Events\EnterSaloon
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Footsteps
       guid: dd75703dbd837542a0e8d7cd7d1d782c
       id: 2385628198
@@ -244,6 +244,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: ObjectiveUpdate
+      guid: 16846a250b886a46ad61016d460b1b44
+      id: 3315603873
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: ObjectiveUpdate
+        ObjectType: 3
+        guid: 16846a250b886a46ad61016d460b1b44
+      Path: Events\Default Work Unit\ObjectiveUpdate
+      maxAttenuation: 0
+      maxDuration: 1.3808541
+      minDuration: 1.3808541
     - name: Outside
       guid: a00d58ef91673345847a90f7ced74c85
       id: 438105790
@@ -262,8 +279,25 @@ MonoBehaviour:
         guid: a00d58ef91673345847a90f7ced74c85
       Path: Events\Default Work Unit\Town1Events\Outside
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
+    - name: QuestComplete
+      guid: fac023952a7c984b8451d8c8f18205f0
+      id: 2092967876
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: QuestComplete
+        ObjectType: 3
+        guid: fac023952a7c984b8451d8c8f18205f0
+      Path: Events\Default Work Unit\QuestComplete
+      maxAttenuation: 0
+      maxDuration: 2.836
+      minDuration: 2.836
     - name: Start_Game
       guid: f6c5fca0ab162648abe70e80c97496a5
       id: 1114964412
@@ -310,8 +344,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fb47dd92db96ee4c9594e109d975993d
     GuidInternal: 
-    m_lastTime: -8584740152301591020
-    List: []
+    m_lastTime: -8584736655854712087
+    List:
+    - name: Parameter
+      guid: 8cf60c11068c68449fd7207b7147ee31
+      id: 2213928842
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fb47dd92db96ee4c9594e109d975993d
+      - ElementName: Parameter
+        ObjectType: 13
+        guid: 8cf60c11068c68449fd7207b7147ee31
+      Path: Game Parameters\Default Work Unit\Parameter
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -324,7 +372,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584737842335641597
+    m_lastTime: -8584736655854602067
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14
@@ -535,7 +583,7 @@ MonoBehaviour:
     m_lastTime: -8584740152275472400
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f00000010000000110000001200000013000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f00000010000000110000001200000013000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

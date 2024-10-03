@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9376543B-80C8-277A-CAE8-0B364970CEF8}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7EA5E934-1E45-9FBE-A47F-0FB7D54672B0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -24,6 +24,9 @@
 				<Bus Id="3930136735" Name="Dialogue"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="2213928842" Name="Parameter"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1855370026" Name="Town1">
 					<States>
@@ -46,25 +49,80 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{810869BF-2D16-9BE8-3C6E-5D6A223A9AF0}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{CC4070FD-979E-223D-641D-D4CDE753FCAF}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
+				<File Id="197144084" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy_Objective Update_1.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy_Objective Update_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="497690660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dry Wind SFX.wav</ShortName>
+					<CachePath>SFX/Dry Wind SFX_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="506676308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Quest Complete_01.wav</ShortName>
-					<CachePath>SFX/Quest Complete_01_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Quest Complete_01_DE296BDE.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1465847270" Name="EnterButcher" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1855370026" Id="2034834082" Name="Butcher"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="317562889" Name="EnterGrocer" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1855370026" Id="2379233693" Name="Grocer"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2551708614" Name="EnterGunsmith" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1855370026" Id="3370924234" Name="Gunsmith"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3832320589" Name="EnterSaloon" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1855370026" Id="2403500745" Name="Saloon"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<SwitchContainers/>
+				</Event>
+				<Event Id="3315603873" Name="ObjectiveUpdate" DurationType="OneShot" DurationMin="1.3808541" DurationMax="1.3808541">
+					<MediaRefs>
+						<MediaRef Id="197144084"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="438105790" Name="Outside" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1855370026" Id="438105790" Name="Outside"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="2092967876" Name="QuestComplete" DurationType="OneShot" DurationMin="2.836" DurationMax="2.836">
 					<MediaRefs>
 						<MediaRef Id="506676308"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1114964412" Name="Start_Game" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="497690660"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="1855370026" Name="Town1">
+					<States>
+						<State Id="438105790" Name="Outside"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2034834082" Name="Butcher"/>
+						<State Id="2379233693" Name="Grocer"/>
+						<State Id="2403500745" Name="Saloon"/>
+						<State Id="3370924234" Name="Gunsmith"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
 					<Switches>
@@ -76,5 +134,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA3A1E76-B935-3823-001D-C0ED73A5CF62}</FileHash>
+	<FileHash>{A3E4F980-BE3D-0BDC-CB59-2238E582665C}</FileHash>
 </SoundBanksInfo>

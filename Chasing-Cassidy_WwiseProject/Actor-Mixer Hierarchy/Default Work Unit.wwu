@@ -140,6 +140,125 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="QuestCompleteStinger" ID="{696989C3-3C66-4E8F-8896-4F02CC090168}" ShortID="928925049">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Quest Complete_01" ID="{3EC1BD5F-1A19-4964-83A6-5A599FC8D512}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.439178137651822"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Quest Complete_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506676308"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Quest Complete_01" ID="{3EC1BD5F-1A19-4964-83A6-5A599FC8D512}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ObjectiveUpdate" ID="{07B7DB04-C7B8-4C40-95F7-FFF9476A102E}" ShortID="268568403">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Chasing Cassidy_Objective Update_1" ID="{5448B94F-3CDC-4A85-B041-C95B269A17FC}">
+							<Language>SFX</Language>
+							<AudioFile>Chasing Cassidy_Objective Update_1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="197144084"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Chasing Cassidy_Objective Update_1" ID="{5448B94F-3CDC-4A85-B041-C95B269A17FC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Dry Wind SFX" ID="{3A0D609A-F91C-468B-AD29-2B9E58AB9572}" ShortID="565931536">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dry Wind SFX" ID="{4892E71A-4C65-4371-9E32-0BCE1D8E499C}">
+							<Language>SFX</Language>
+							<AudioFile>Dry Wind SFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="497690660"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
+								<CustomState Name="" ID="{8C03F4C6-92A3-49DD-B512-0A2620B1DA22}" ShortID="6329972">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
+								<CustomState Name="" ID="{BD09FC4F-7980-4403-B279-FAB69A20C1F9}" ShortID="1036063258">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+								<CustomState Name="" ID="{901087F9-6446-4A28-8472-61ABACCAF88E}" ShortID="984245009">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
+								<CustomState Name="" ID="{66D96D8D-4D96-4E9B-BCC9-F65CA1B516F6}" ShortID="800629315">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
+								<CustomState Name="" ID="{4CB8B29C-E07F-47B1-AEA2-7B2B4DCFBB3C}" ShortID="183416295"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Dry Wind SFX" ID="{4892E71A-4C65-4371-9E32-0BCE1D8E499C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

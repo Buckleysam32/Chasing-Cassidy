@@ -23,6 +23,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{74BC3281-40EC-44C8-B32B-4637733358BD}" ShortID="846575405">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dry Wind SFX" ID="{3A0D609A-F91C-468B-AD29-2B9E58AB9572}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="Town1Events" ID="{8E8FB9C5-830D-4B20-A172-13FD6DAB3D6C}" ShortID="709408427">
@@ -104,7 +111,18 @@
 						<Action Name="" ID="{F79F02C1-E805-4A5B-87F9-545F09C1A3E8}" ShortID="153149648">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Quest_Complete_Stinger" ID="{BF29251C-D6D7-486F-AF6E-D7827D3165DE}" WorkUnitID="{D1AC0BE1-59B0-420C-A401-4B02E5CB38ED}"/>
+									<ObjectRef Name="QuestCompleteStinger" ID="{696989C3-3C66-4E8F-8896-4F02CC090168}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ObjectiveUpdate" ID="{256A8416-880B-466A-AD61-016D460B1B44}">
+					<ChildrenList>
+						<Action Name="" ID="{DF2CD490-F883-412C-90E4-0C0F245722C5}" ShortID="621100407">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ObjectiveUpdate" ID="{07B7DB04-C7B8-4C40-95F7-FFF9476A102E}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

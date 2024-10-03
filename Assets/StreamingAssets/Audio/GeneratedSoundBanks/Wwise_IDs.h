@@ -13,8 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENTERBUTCHER = 1465847270U;
+        static const AkUniqueID ENTERGROCER = 317562889U;
+        static const AkUniqueID ENTERGUNSMITH = 2551708614U;
+        static const AkUniqueID ENTERSALOON = 3832320589U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;
+        static const AkUniqueID OUTSIDE = 438105790U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
+        static const AkUniqueID START_GAME = 1114964412U;
     } // namespace EVENTS
 
     namespace STATES
@@ -51,6 +58,11 @@ namespace AK
         } // namespace FOOTSTEPSTERRAIN
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PARAMETER = 2213928842U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
