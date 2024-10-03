@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{CC4070FD-979E-223D-641D-D4CDE753FCAF}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{CF47C7FC-2597-D447-D29A-A73C36CA94D2}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -57,13 +57,53 @@
 					<ShortName>Chasing Cassidy_Objective Update_1.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy_Objective Update_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="219979162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_6A02CC05.wem</CachePath>
+				</File>
+				<File Id="336886080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_32937E01.wem</CachePath>
+				</File>
+				<File Id="410237343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_45368F1C.wem</CachePath>
+				</File>
+				<File Id="443298160" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_983842ED.wem</CachePath>
+				</File>
+				<File Id="447225469" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_5D9FA303.wem</CachePath>
+				</File>
+				<File Id="479392246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_369BA8CE.wem</CachePath>
+				</File>
 				<File Id="497690660" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dry Wind SFX.wav</ShortName>
 					<CachePath>SFX/Dry Wind SFX_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="506676308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Quest Complete_01.wav</ShortName>
-					<CachePath>SFX/Quest Complete_01_DE296BDE.wem</CachePath>
+					<CachePath>SFX/Quest Complete_01_9F3224F6.wem</CachePath>
+				</File>
+				<File Id="676491757" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_BA4A008C.wem</CachePath>
+				</File>
+				<File Id="812026303" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_8685B55C.wem</CachePath>
+				</File>
+				<File Id="903884757" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_AA1CB2B4.wem</CachePath>
+				</File>
+				<File Id="928370875" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
+					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_30471A22.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -87,8 +127,24 @@
 						<ActionSetStateEntry GroupId="1855370026" Id="2403500745" Name="Saloon"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<SwitchContainers/>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="1.7521096">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="665703777" Id="2488754382"/>
+							<MediaRefs>
+								<MediaRef Id="219979162"/>
+								<MediaRef Id="336886080"/>
+								<MediaRef Id="410237343"/>
+								<MediaRef Id="443298160"/>
+								<MediaRef Id="447225469"/>
+								<MediaRef Id="479392246"/>
+								<MediaRef Id="676491757"/>
+								<MediaRef Id="812026303"/>
+								<MediaRef Id="903884757"/>
+								<MediaRef Id="928370875"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3315603873" Name="ObjectiveUpdate" DurationType="OneShot" DurationMin="1.3808541" DurationMax="1.3808541">
 					<MediaRefs>
@@ -134,5 +190,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD8D6623-63CF-F021-BE5A-850A16E40C9E}</FileHash>
+	<FileHash>{B6E1A818-ECCA-C588-EDED-3222F4CC44A0}</FileHash>
 </SoundBanksInfo>
