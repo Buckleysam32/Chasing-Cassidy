@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using AK.Wwise;
 using System.Collections;
+using UnityEditor;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -19,13 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canWalk;
 
-    //public AudioSource footstepAudioSource;
-    //public AudioClip footstepSound;
+    private AudioManager AM;
+
 
     void Start()
     {
         myCC = GetComponent<CharacterController>();
         canWalk = true;
+        AM = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -42,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (timer > footstepSpeed)
             {
-                //SelectAndPlayFootstep();
+                SelectAndPlayFootstep();
                 timer = 0.0f;
             }
             timer += Time.deltaTime;
@@ -50,11 +52,6 @@ public class PlayerMovement : MonoBehaviour
 
         //camAnim.SetBool("isWalking", isWalking);
 
-        /*
-        if (!isWalking)
-        {
-            footstepAudioSource.Stop();
-        }*/
     }
 
     void GetInput()
@@ -98,36 +95,43 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckTerrain()
     {
-        RaycastHit[] hit;
+        RaycastHit hit;
+        Vector3 origin = transform.position;
+        Vector3 direction = Vector3.down;
+        float maxDistance = 2f;
 
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
+        Debug.DrawRay(origin, direction * maxDistance, Color.red);
 
-        foreach (RaycastHit rayhit in hit)
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity))
         {
-            if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Sand"))
+            if (hit.transform.gameObject.CompareTag("Sand"))
             {
                 currentTerrain = CURRENT_TERRAIN.SAND;
+                Debug.Log("SAND");
             }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Wood"))
+            else if (hit.transform.gameObject.CompareTag("Wood"))
             {
                 currentTerrain = CURRENT_TERRAIN.WOOD;
+                Debug.Log("WOOD");
             }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("CompactSand"))
+            else if (hit.transform.gameObject.CompareTag("CompactSand"))
             {
                 currentTerrain = CURRENT_TERRAIN.COMPACTSAND;
+                Debug.Log("COMPACTSAND");
             }
         }
     }
 
     //Playing Correct Audio
 
-/*    private void PlayFootstep(int terrain)
+    private void PlayFootstep(int terrain)
     {
         terrainSwitch[terrain].SetValue(this.gameObject);
-        AkSoundEngine.PostEvent(footstepsEvent.Id, this.gameObject);
+        AM.PlayAudioClip(footstepsEvent, this.gameObject);
     }
-*/
-/*    public void SelectAndPlayFootstep()
+
+
+    public void SelectAndPlayFootstep()
     {
         switch (currentTerrain)
         {
@@ -148,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
-*/
+
     //Establishing Float Timer
 
     private Rigidbody rb;

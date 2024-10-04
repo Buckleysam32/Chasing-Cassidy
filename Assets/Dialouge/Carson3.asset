@@ -77,8 +77,7 @@ MonoBehaviour:
           isBadResponse: 0
       isGoodResponse: 1
       isBadResponse: 0
-    - responseText: "I\u2019m afraid that Mr Hill did not have the funds to pay the
-        fee."
+    - responseText: Mr Hill did not have the funds to pay the fee.
       nextNode:
         dialogueLines:
         - text: Most unfortunate but he knows the terms of the agreement he signed.
