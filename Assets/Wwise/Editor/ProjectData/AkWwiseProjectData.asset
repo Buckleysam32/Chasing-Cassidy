@@ -242,7 +242,7 @@ MonoBehaviour:
         guid: dd75703dbd837542a0e8d7cd7d1d782c
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
-      maxDuration: 0
+      maxDuration: 1.7521096
       minDuration: 0
     - name: ObjectiveUpdate
       guid: 16846a250b886a46ad61016d460b1b44
