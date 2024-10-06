@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Carson4
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "So, how\u2019d it go kid?"
+      speaker: Carson Smith
+    - text: "Well I got the money, however I\u2019ve got some bad news..."
+      speaker: David
+    - text: What is it?
+      speaker: Carson Smith
+    - text: "Red informed me that he is done, and well he wouldn\u2019t elaborate
+        passed that so yeah he is done."
+      speaker: David
+    - text: "Yes, He doesn\u2019t have much left to do here and I\u2019m assuming
+        he\u2019s ready for his crusade so that's understandable."
+      speaker: Carson Smith
+    - text: What is his crusade?
+      speaker: David
+    - text: "Something about his parents, he doesn\u2019t talk much about it."
+      speaker: Carson Smith
+    - text: From what I could tell he was just spending some time training himself
+        as a gunslinger so he could finish some business of his.
+      speaker: Carson Smith
+    - text: Regardless, thank you for doing this and it's time for me to hold up
+        my end of the bargain.
+      speaker: Carson Smith
+    - text: Yeah, so what info do you have for me?
+      speaker: David
+    - text: See that shady little door behind the bar?
+      speaker: Carson Smith
+    - text: Yeah, What is it?
+      speaker: David
+    - text: "That my friend is where you\u2019ll meet an associate of mine named
+        Blaze Adams."
+      speaker: Carson Smith
+    - text: "He\u2019s a powerful and popular man around here who happens to be the
+        former partner to Cold Cassidy, the man you're searching for."
+      speaker: Carson Smith
+    - text: "I\u2019m sure he's going to be intrigued by your story so you should
+        introduce yourself."
+      speaker: Carson Smith
+    - text: Alright I will, thanks for the information.
+      speaker: David
+    - text: "No thank you, made me quite the profit today, even with Mr Hill\u2019s\u2026
+        issues."
+      speaker: Carson Smith
+    - text: Good luck kid.
+      speaker: Carson Smith
+    responses:
+    - responseText: Thanks
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

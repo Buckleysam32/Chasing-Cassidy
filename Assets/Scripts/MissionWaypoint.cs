@@ -17,6 +17,7 @@ public class MissionWaypoint : MonoBehaviour
     public Waypoint waypoint2;
     public Waypoint waypoint3;
     public Waypoint waypoint4;
+    public Waypoint waypoint5;
 
     public float smoothSpeed = 20f;  // Adjust this to control smoothness
 
@@ -24,6 +25,7 @@ public class MissionWaypoint : MonoBehaviour
     private Vector2 waypointPosition2;
     private Vector2 waypointPosition3;
     private Vector2 waypointPosition4;
+    private Vector2 waypointPosition5;
 
     void LateUpdate()
     {
@@ -34,6 +36,8 @@ public class MissionWaypoint : MonoBehaviour
         UpdateWaypoint(waypoint3, ref waypointPosition3);
 
         UpdateWaypoint(waypoint4, ref waypointPosition4);
+
+        UpdateWaypoint(waypoint5, ref waypointPosition5);
 
     }
 

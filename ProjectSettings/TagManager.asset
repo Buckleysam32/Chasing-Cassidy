@@ -11,6 +11,9 @@ TagManager:
   - Water
   - WallRun
   - Carson
+  - Sand
+  - Wood
+  - CompactSand
   layers:
   - Default
   - TransparentFX

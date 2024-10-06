@@ -24,6 +24,8 @@ public class DialogueManager : MonoBehaviour
     public delegate void DialogueEndHandler();
     public static event DialogueEndHandler OnDialogueEnd;
 
+    public Sprite davidArt;
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of DialogueManager
@@ -77,15 +79,16 @@ public class DialogueManager : MonoBehaviour
             DialogueNode.DialogueLine line = node.dialogueLines[i];
             DialogBodyText.text = ""; // Clear current text
             DialogTitleText.text = line.speaker; // Set the speaker's name
-            characterImage.sprite = line.image;
 
             if (line.speaker != "David")
             {
                 actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
             }
-            if(line.speaker == "David")
+            if (line.speaker == "David")
             {
                 actor.characterAnim.SetTrigger("stop");
+                characterImage.sprite = davidArt;
             }
 
             // Typing effect for the current line

@@ -15,7 +15,6 @@ public class DialogueNode
     {
         public string text;    // The dialogue text
         public string speaker; // The name of the speaker
-        public Sprite image;
     }
 
     internal bool IsLastNode()

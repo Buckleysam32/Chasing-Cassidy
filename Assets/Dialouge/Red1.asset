@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Red1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "I assume that you\u2019re Red?"
+      speaker: David
+    - text: Correct, You work for Carson?
+      speaker: Red
+    - text: For today I do, do you have the money?
+      speaker: David
+    - text: "I do, but let him know that I\u2019m done."
+      speaker: Red
+    - text: "You sure? I mean I don\u2019t know much about your business out here
+        but."
+      speaker: David
+    - text: "I\u2019m done that's all you can go now."
+      speaker: Red
+    - text: Right...
+      speaker: David
+    - text: See you around then...
+      speaker: David
+    - text: "You won\u2019t."
+      speaker: Red
+    responses:
+    - responseText: Leave
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

@@ -14,14 +14,20 @@ public class Town1Quests : MonoBehaviour
     public bool hasSpokeToJed = false;
     public bool hasSpokeToMorris = false;
     public bool isDoneQuest1 = false;
+    public bool quest1TurnedIn = false;
     public bool returnedToCarson = false;
+    public bool returnedToCarson2 = false;
+    public bool hasSpokeToRed = false;
     public NPCInteraction carsonScript;
     public GameObject carsonPoint;
     public GameObject anniePoint;
     public GameObject jedPoint;
     public GameObject morrisPoint;
+    public GameObject redPoint;
     private MissionWaypoint waypointManager;
     public Actor carsonActor;
+    public GameObject horse;
+    public Transform horsePoint;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +37,8 @@ public class Town1Quests : MonoBehaviour
         anniePoint = waypointManager.waypoint2.img.gameObject;
         jedPoint = waypointManager.waypoint3.img.gameObject;
         morrisPoint = waypointManager.waypoint4.img.gameObject;
+        redPoint = waypointManager.waypoint5.img.gameObject;
         carsonActor = GameObject.FindWithTag("Carson").GetComponent<Actor>();
-        
         AddObjective("- Find Info at the saloon");
     }
 
@@ -56,12 +62,23 @@ public class Town1Quests : MonoBehaviour
                     morrisPoint.SetActive(true);
                     actor.NextDialogue();
                 }
-                if (isDoneQuest1)
+                if (isDoneQuest1 && !quest1TurnedIn)
                 {
                     RemoveObjective("- Return to Carson");
-                    AddObjective("- Get on horse");
+                    AddObjective("- Ride Horse to Red's Property");
+                    AddObjective("- Speak to Red");
                     carsonPoint.SetActive(false);
                     carsonActor.NextDialogue();
+                    redPoint.SetActive(true);
+                    quest1TurnedIn = true;
+                }
+                if(hasSpokeToRed)
+                {
+                    returnedToCarson2 = true;
+                    RemoveObjective("- Return to Carson");
+                    AddObjective("- Meet Blaze Adams");
+                    carsonPoint.SetActive(false);
+                    actor.NextDialogue();
                 }
                 break;
             case "Annie Brown":
@@ -103,6 +120,19 @@ public class Town1Quests : MonoBehaviour
                     FinishQuestOne();
                 }
                 break;
+            case "Red":
+                if (!hasSpokeToRed)
+                {
+                    hasSpokeToRed = true;
+                    RemoveObjective("- Ride Horse to Red's Property");
+                    RemoveObjective("- Speak to Red");
+                    AddObjective("- Return to Carson");
+                    redPoint.SetActive(false);
+                    carsonPoint.SetActive(true);
+                    actor.NextDialogue();
+                    carsonActor.NextDialogue();
+                }
+                break;
             default:
                 Debug.LogWarning("Unknown NPC name: " + npcName);
                 break;
@@ -117,6 +147,7 @@ public class Town1Quests : MonoBehaviour
         AddObjective("- Return to Carson");
         carsonPoint.SetActive(true);
         carsonActor.NextDialogue();
+        horse.transform.position = horsePoint.position;
     }
 
     public void AddObjective(string newObjective)
