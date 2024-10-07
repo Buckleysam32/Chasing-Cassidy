@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a09ac75aea39b4f82083b67924623f, type: 3}
+  m_Name: 0B5E5D33-839B-43B2-8FAF-02B317FBA35C
+  m_EditorClassIdentifier: 
+  objectName: GlassShatter
+  id: 206611762
+  guid: 0B5E5D33-839B-43B2-8FAF-02B317FBA35C

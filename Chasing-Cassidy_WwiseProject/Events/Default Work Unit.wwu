@@ -104,6 +104,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="GlassShatter" ID="{0B5E5D33-839B-43B2-8FAF-02B317FBA35C}">
+							<ChildrenList>
+								<Action Name="" ID="{A19329A8-3ADB-490D-94E2-F30357DA5527}" ShortID="446862136">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GlassShatter" ID="{09351E2A-7729-40CE-BDCE-127877C4733B}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PokerGame" ID="{16380298-E1EB-4855-9F65-48D410D98013}">
+							<ChildrenList>
+								<Action Name="" ID="{69AC7E51-9AE0-45D9-917C-A97D990CA01B}" ShortID="582914241">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PokerGame" ID="{F01F12BD-7AE9-45B6-AE85-475AF90937D1}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}">

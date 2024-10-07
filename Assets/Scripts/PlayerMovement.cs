@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     private AudioManager AM;
 
+    private bool checkTag;
+
 
     void Start()
     {
@@ -49,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
             }
             timer += Time.deltaTime;
         }
+
+        
 
         //camAnim.SetBool("isWalking", isWalking);
 
@@ -165,5 +169,51 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    //Detecting Wwise States
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "SaloonStateTrigger")
+        {
+            AudioManager.SetAreaSaloon();
+        }
+        else if (other.gameObject.tag == "GrocerStateTrigger")
+        {
+            AudioManager.SetAreaGrocer();
+        }
+        else if (other.gameObject.tag == "ButcherStateTrigger")
+        {
+            AudioManager.SetAreaButcher();
+        }
+        else if (other.gameObject.tag == "GunsmithStateTrigger")
+        {
+            AudioManager.SetAreaGunsmith();
+        }
+        else
+        {
+            AudioManager.SetAreaOutside();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "SaloonStateTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
+        else if (other.gameObject.tag == "GrocerStateTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
+        else if (other.gameObject.tag == "ButcherStateTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
+        else if (other.gameObject.tag == "GunsmithStateTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
     }
 }

@@ -8,9 +8,11 @@
 						<ObjectRef Name="EnterGrocer" ID="{C6A351DD-6733-4247-A503-A2A38CAE1F68}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{3D7075DD-83BD-4275-A0E8-D7CD7D1D782C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterButcher" ID="{75AC2CD5-8B45-42AA-8F63-51B981DD311A}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GlassShatter" ID="{0B5E5D33-839B-43B2-8FAF-02B317FBA35C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Outside" ID="{EF580DA0-6791-4533-847A-90F7CED74C85}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ObjectiveUpdate" ID="{256A8416-880B-466A-AD61-016D460B1B44}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Start_Game" ID="{A0FCC5F6-16AB-4826-ABE7-0E80C97496A5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PokerGame" ID="{16380298-E1EB-4855-9F65-48D410D98013}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterSaloon" ID="{5E5C1F69-EE28-4A86-AAA5-8EF0A307AD69}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGunsmith" ID="{2890DDC2-801E-4F5A-A994-AD8058FA275F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>

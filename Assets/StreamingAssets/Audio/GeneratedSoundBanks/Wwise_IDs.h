@@ -18,8 +18,10 @@ namespace AK
         static const AkUniqueID ENTERGUNSMITH = 2551708614U;
         static const AkUniqueID ENTERSALOON = 3832320589U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID GLASSSHATTER = 206611762U;
         static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;
         static const AkUniqueID OUTSIDE = 438105790U;
+        static const AkUniqueID POKERGAME = 3836320178U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
         static const AkUniqueID START_GAME = 1114964412U;
     } // namespace EVENTS

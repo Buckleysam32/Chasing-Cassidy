@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584736655854662074
+    m_lastTime: -8584732665400205608
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584736655854552048
+    m_lastTime: -8584732665400255622
     List:
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
@@ -244,6 +244,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.7521096
       minDuration: 0
+    - name: GlassShatter
+      guid: 335d5e0b9b83b2438faf02b317fba35c
+      id: 206611762
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: GlassShatter
+        ObjectType: 3
+        guid: 335d5e0b9b83b2438faf02b317fba35c
+      Path: Events\Default Work Unit\Town1Events\GlassShatter
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ObjectiveUpdate
       guid: 16846a250b886a46ad61016d460b1b44
       id: 3315603873
@@ -281,6 +301,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: PokerGame
+      guid: 98023816ebe155489f6548d410d98013
+      id: 3836320178
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: PokerGame
+        ObjectType: 3
+        guid: 98023816ebe155489f6548d410d98013
+      Path: Events\Default Work Unit\Town1Events\PokerGame
+      maxAttenuation: 0
+      maxDuration: 62.09184
+      minDuration: 45.183464
     - name: QuestComplete
       guid: fac023952a7c984b8451d8c8f18205f0
       id: 2092967876
@@ -583,7 +623,7 @@ MonoBehaviour:
     m_lastTime: -8584740152275472400
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000e0000000f00000010000000110000001200000013000000140000001500000016000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

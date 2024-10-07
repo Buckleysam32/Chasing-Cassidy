@@ -14,6 +14,10 @@ TagManager:
   - Sand
   - Wood
   - CompactSand
+  - SaloonStateTrigger
+  - GrocerStateTrigger
+  - ButcherStateTrigger
+  - GunsmithStateTrigger
   layers:
   - Default
   - TransparentFX

@@ -55,6 +55,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -482,6 +487,921 @@
 								</Reference>
 							</ReferenceList>
 						</RandomSequenceContainer>
+						<Folder Name="Saloon" ID="{D91C150A-5756-4454-9301-B1B5A7ECAD42}" ShortID="934868400">
+							<ChildrenList>
+								<Sound Name="GlassShatter" ID="{09351E2A-7729-40CE-BDCE-127877C4733B}" ShortID="731965873">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>20.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9BA31EE0-EE6B-4E1A-B90F-36123C13DF76}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="177"/>
+															<Property Name="Min" Type="Real64" Value="-152"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{A8329737-175F-4F3C-9D9A-B2DC6B600F2A}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Glass Shatter_cm-St" ID="{51AA9AE7-5BB1-420F-A2EC-3C5FA9092913}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00550607287449392"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.151417004048583"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Glass Shatter.cm-St.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="896580619"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
+												<CustomState Name="" ID="{6BFF5AD6-4E27-4CBA-A250-A52CD47F77E8}" ShortID="954991497">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
+												<CustomState Name="" ID="{19BE8E8C-482D-4029-B149-F157E5162677}" ShortID="552815448">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+												<CustomState Name="" ID="{240CD97E-DF33-41EF-BEFC-B8129A2F1BD1}" ShortID="598219234">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
+												<CustomState Name="" ID="{2D08ADFC-F437-48B1-A7F9-8C7D95D4337E}" ShortID="569312176"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
+												<CustomState Name="" ID="{870D82FD-2EE8-4B22-ABF8-4574C5A65016}" ShortID="982186839">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Glass Shatter_cm-St" ID="{51AA9AE7-5BB1-420F-A2EC-3C5FA9092913}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="PokerGame" ID="{F01F12BD-7AE9-45B6-AE85-475AF90937D1}" ShortID="656897160">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="All_In" ID="{A8661B0F-DE55-4C39-B7AD-FE4D0B5DD881}" ShortID="322275308">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="All_In" ID="{B3C8F0E6-0F0B-45DE-AC7C-9BF35FAAD144}" ShortID="1042018902">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet All" ID="{75C74115-2501-4AD9-ACDF-C8FF33AA3D0C}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet All.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="947990060"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet All" ID="{75C74115-2501-4AD9-ACDF-C8FF33AA3D0C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="All_In1" ID="{41E6D20A-49FB-4FFE-9541-511D9A280D91}" ShortID="731445751">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet All_1" ID="{FA5F1C30-84AB-48F5-A1EC-1CDF60FBAF95}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet All_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="135228403"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet All_1" ID="{FA5F1C30-84AB-48F5-A1EC-1CDF60FBAF95}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="All_In2" ID="{E45C63C5-4C5D-427A-8687-5650688B5EC4}" ShortID="287856786">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet All_2" ID="{EDD07783-5C0C-4E36-830A-DB8E75341B70}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet All_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="155898646"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet All_2" ID="{EDD07783-5C0C-4E36-830A-DB8E75341B70}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="All_In3" ID="{DD5DEB02-E3D5-4BA5-B12F-A77C50880B82}" ShortID="658845196">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet All_3" ID="{4A993691-95A8-4216-8B0C-CE5E6701DBA6}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.379735829959514"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.13640814777328"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet All_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="314280735"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet All_3" ID="{4A993691-95A8-4216-8B0C-CE5E6701DBA6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Bet" ID="{7008C956-5332-4AD0-879C-6B2B4E531425}" ShortID="714004652">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Bet2" ID="{B5CBE7EF-282A-42BA-80C1-6661E4D7E029}" ShortID="844767053">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet Full" ID="{76DB9F86-DE25-4AD2-BC00-65382C4901D5}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet Full.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="293733891"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet Full" ID="{76DB9F86-DE25-4AD2-BC00-65382C4901D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Bet3" ID="{4DC8E19D-3F5E-4AE5-83A1-C105C67351CA}" ShortID="492656856">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet Full_1" ID="{AC2A107B-6A0C-4682-BF69-3538434827DD}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet Full_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1014660720"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet Full_1" ID="{AC2A107B-6A0C-4682-BF69-3538434827DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Bet" ID="{12E0184F-D3E1-4F77-90BD-C131E99AEA70}" ShortID="163360132">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet Empty" ID="{1AB43072-6D0E-45DF-95CD-CB76B1967E9F}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet Empty.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="944506831"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet Empty" ID="{1AB43072-6D0E-45DF-95CD-CB76B1967E9F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Bet1" ID="{69F17CF0-5FF5-42DA-9E40-0C909F152C7D}" ShortID="436504998">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_PokerChips Bet Empty_1" ID="{7AC0B818-1534-4419-99A8-FC91DE0A02E4}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_PokerChips Bet Empty_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="316420390"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_PokerChips Bet Empty_1" ID="{7AC0B818-1534-4419-99A8-FC91DE0A02E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Deal" ID="{2324F037-6D79-4062-8D6F-E64C9059CD86}" ShortID="173788632">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Deal" ID="{A916636D-E6D3-47C3-8461-37090FE67F16}" ShortID="833313758">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Deal" ID="{FFFF2E0C-8D11-40E1-8654-9E4CE97D02DE}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Deal.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="199536278"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Deal" ID="{FFFF2E0C-8D11-40E1-8654-9E4CE97D02DE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Deal1" ID="{8082C1BA-0FC6-4102-9D09-580E7D3D206E}" ShortID="774809570">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Deal_1" ID="{553D324A-C581-445E-9A38-3448FFF79C5D}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Deal_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="343644507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Deal_1" ID="{553D324A-C581-445E-9A38-3448FFF79C5D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Deal2" ID="{BA233446-62C9-461A-A186-BA5EFF265E6E}" ShortID="753913733">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Deal_2" ID="{95A04F8B-BD3D-48D3-91D9-3E8B71B10932}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Deal_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="692156950"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Deal_2" ID="{95A04F8B-BD3D-48D3-91D9-3E8B71B10932}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Deal3" ID="{264EE90B-A986-45C8-BA91-D2A6BAC05BE7}" ShortID="709415626">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Deal_3" ID="{CF01EB03-6B53-48C7-B307-C6AEED623DB7}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Deal_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="72434043"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Deal_3" ID="{CF01EB03-6B53-48C7-B307-C6AEED623DB7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Flop" ID="{32E28897-32EE-44D3-BFF0-B5E5952475C9}" ShortID="453008392">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flop" ID="{3C738216-A3DC-477C-B71D-68145A6D9DBA}" ShortID="326932400">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Flop" ID="{1BB97732-5FD8-4CF3-8FE0-E58B53123311}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Flop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="778784293"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Flop" ID="{1BB97732-5FD8-4CF3-8FE0-E58B53123311}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Flop1" ID="{0E0B16AF-B359-43D0-ACA8-6BCEDF8B53A6}" ShortID="188881834">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Flop_1" ID="{922141BE-BB95-4968-8F60-1036FF7EEBB9}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Flop_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="849672491"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Flop_1" ID="{922141BE-BB95-4968-8F60-1036FF7EEBB9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Flop2" ID="{7F2C1FD6-E8DF-496E-A3D4-991BAB7D5336}" ShortID="395153218">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Flop_2" ID="{2AE719F9-DB5E-4043-B5A7-0971CE683FE2}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Flop_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="555672327"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Flop_2" ID="{2AE719F9-DB5E-4043-B5A7-0971CE683FE2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Flop3" ID="{038926D7-E727-4DC0-AFE7-4D78664866BF}" ShortID="99862802">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Flop_3" ID="{BC027C94-AA49-41D0-894C-B07092D98999}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Flop_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="995402217"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Flop_3" ID="{BC027C94-AA49-41D0-894C-B07092D98999}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="River" ID="{096539E9-6E78-4544-AD83-BB08D7974AFE}" ShortID="491312884">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="River" ID="{236594F3-6034-4D19-BC77-2890FDE17B72}" ShortID="1053930480">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River" ID="{946709AB-8D3F-449E-B4E6-6672DFC58C18}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="24987694"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River" ID="{946709AB-8D3F-449E-B4E6-6672DFC58C18}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="River1" ID="{476939FB-F91A-4726-809A-CA84B3AD339A}" ShortID="221697267">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_1" ID="{22114DE4-7076-4F76-B22D-82C5056EB207}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="170393069"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_1" ID="{22114DE4-7076-4F76-B22D-82C5056EB207}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="River2" ID="{3B19A2DB-4417-48DF-B4AB-60160CDF1952}" ShortID="254945519">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_2" ID="{1568D6D0-436B-46F9-80D6-598AB5710691}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760397697"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_2" ID="{1568D6D0-436B-46F9-80D6-598AB5710691}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="River3" ID="{EB3B2389-45A3-4F31-B05F-7C1EAB5C4208}" ShortID="418336928">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_3" ID="{04CF8306-0B33-4626-B547-13BDE6456DF6}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="53503755"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_3" ID="{04CF8306-0B33-4626-B547-13BDE6456DF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Shuffle" ID="{6ECC50B2-B2F9-4107-85AF-76DCA5F79302}" ShortID="139811146">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Shuffle" ID="{D2FD4248-558C-4705-A365-F7DFA986230E}" ShortID="44683497">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Shuffle" ID="{D6D61395-0BBD-421E-AB4C-078FE8E0C528}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.35348853955803"/>
+																<Property Name="TrimEnd" Type="Real64" Value="16.8271548161269"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Shuffle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="752395463"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Shuffle" ID="{D6D61395-0BBD-421E-AB4C-078FE8E0C528}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Shuffle1" ID="{A68EC85D-FCB7-4BCE-A905-F0E802937D27}" ShortID="465244617">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Shuffle_1" ID="{E2C9C762-3A0F-463A-83BC-2EFB8189C195}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.45843800607287"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.4849411057692"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Shuffle_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="880966545"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Shuffle_1" ID="{E2C9C762-3A0F-463A-83BC-2EFB8189C195}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Shuffle2" ID="{0947A3DF-5961-4AED-8C93-9F8FB6F1A641}" ShortID="676472101">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Shuffle_2" ID="{82801273-2172-485A-881A-5C88DC85FFB3}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.801790448928812"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.6285849253542"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Shuffle_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="549492188"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Shuffle_2" ID="{82801273-2172-485A-881A-5C88DC85FFB3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Shuffle3" ID="{D96B4FCF-7DA6-4E4C-AE43-CA42DF87792C}" ShortID="728998511">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Shuffle_3" ID="{76E013D7-B4D5-4A5D-BF16-8BA9F0A45467}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.14015594951923"/>
+																<Property Name="TrimEnd" Type="Real64" Value="18.4425225518725"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Shuffle_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="536088368"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Shuffle_3" ID="{76E013D7-B4D5-4A5D-BF16-8BA9F0A45467}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Turn" ID="{63C368CA-72F4-46F3-977F-3F062D8D11F2}" ShortID="974208757">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Turn" ID="{45A5ABCC-D493-4E7F-BB7E-FD25533593D2}" ShortID="844569371">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_4" ID="{057200E0-C4F2-4281-9992-752434A5E1B6}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="223116959"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_4" ID="{057200E0-C4F2-4281-9992-752434A5E1B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Turn1" ID="{7487CC31-3BE2-4E0E-B770-7FBA866E2AAC}" ShortID="1030859833">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_5" ID="{96CEDBA9-DF53-41AD-B932-246AD10C3EF4}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="865218728"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_5" ID="{96CEDBA9-DF53-41AD-B932-246AD10C3EF4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Turn2" ID="{ADE39947-E806-4191-A11D-7EAB477D732A}" ShortID="17582020">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_6" ID="{97200312-3D8E-4A5D-8765-41584F27DB96}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="557283522"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_6" ID="{97200312-3D8E-4A5D-8765-41584F27DB96}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Turn3" ID="{4E78BE00-4AFE-409F-9F62-3AFEB0FDF552}" ShortID="644965312">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ChasingCassidy_Cards Turn and River_7" ID="{36EFB3FE-E779-41C3-B5BF-EE518A7F5467}">
+															<Language>SFX</Language>
+															<AudioFile>ChasingCassidy_Cards Turn and River_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="810487182"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ChasingCassidy_Cards Turn and River_7" ID="{36EFB3FE-E779-41C3-B5BF-EE518A7F5467}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
+												<CustomState Name="" ID="{CD531531-703D-4665-B1FB-F3B1465238D8}" ShortID="485946457">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
+												<CustomState Name="" ID="{AC6A36CD-457D-4BF0-AC1F-532FE2A05B5A}" ShortID="986410269">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+												<CustomState Name="" ID="{3468560D-82A0-4D71-AC90-DB70C5DC3324}" ShortID="833584357">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
+												<CustomState Name="" ID="{FCE421E1-7BB8-435B-A94D-48E57E6B0CF8}" ShortID="1021887655"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
+												<CustomState Name="" ID="{BFFE52FF-A42F-4861-9227-9BD26A910F4E}" ShortID="924787674">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="Playlist">
+											<Reference>
+												<ObjectRef Name="Shuffle" ID="{6ECC50B2-B2F9-4107-85AF-76DCA5F79302}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Deal" ID="{2324F037-6D79-4062-8D6F-E64C9059CD86}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Bet" ID="{7008C956-5332-4AD0-879C-6B2B4E531425}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Flop" ID="{32E28897-32EE-44D3-BFF0-B5E5952475C9}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Bet" ID="{7008C956-5332-4AD0-879C-6B2B4E531425}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Turn" ID="{63C368CA-72F4-46F3-977F-3F062D8D11F2}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Bet" ID="{7008C956-5332-4AD0-879C-6B2B4E531425}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="River" ID="{096539E9-6E78-4544-AD83-BB08D7974AFE}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="All_In" ID="{A8661B0F-DE55-4C39-B7AD-FE4D0B5DD881}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="QuestCompleteStinger" ID="{696989C3-3C66-4E8F-8896-4F02CC090168}" ShortID="928925049">
