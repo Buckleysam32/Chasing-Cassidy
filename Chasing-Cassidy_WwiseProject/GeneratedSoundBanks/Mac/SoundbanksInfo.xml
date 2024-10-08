@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{FA2DEACD-FF29-7C25-1E92-AD5465CBA396}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{D091690B-F938-3335-9DF1-2E37E064D3BD}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -257,6 +257,10 @@
 					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
 					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_40057BBB.wem</CachePath>
 				</File>
+				<File Id="722486283" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>134454-EFX_EXT_Flies_on_a_Corpse_07.wav</ShortName>
+					<CachePath>SFX/134454-EFX_EXT_Flies_on_a_Corpse_07_2EE22FE0.wem</CachePath>
+				</File>
 				<File Id="742476583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ragtime-115446.wav</ShortName>
 					<CachePath>SFX/ragtime-115446_818F3B66.wem</CachePath>
@@ -368,6 +372,11 @@
 				<Event Id="2678880713" Name="Fire" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="335945829"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1457611216" Name="Flies" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="722486283"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.3752483" DurationMax="1.7521096">
@@ -517,5 +526,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{82570344-6B67-F855-EF4B-D0F2BA55B1BC}</FileHash>
+	<FileHash>{97EF283F-41FF-A498-914C-B5DCEA63B8CA}</FileHash>
 </SoundBanksInfo>

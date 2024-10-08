@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID ENTERGUNSMITH = 2551708614U;
         static const AkUniqueID ENTERSALOON = 3832320589U;
         static const AkUniqueID FIRE = 2678880713U;
+        static const AkUniqueID FLIES = 1457611216U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID GLASSSHATTER = 206611762U;
         static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;

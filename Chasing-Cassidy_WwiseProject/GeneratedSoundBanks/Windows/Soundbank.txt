@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	737300443	SaloonDoorShut			\Default Work Unit\Town1Events\SaloonDoorShut	
 	1114964412	Start_Game			\Default Work Unit\Start_Game	
 	1324340420	Piano			\Default Work Unit\Town1Events\Piano	
+	1457611216	Flies			\Default Work Unit\Town1Events\Flies	
 	1465847270	EnterButcher			\Default Work Unit\Town1Events\EnterButcher	
 	2092967876	QuestComplete			\Default Work Unit\QuestComplete	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
@@ -88,6 +89,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	676491757	CompactSand5	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Chasing Cassidy Footsteps_Gravel_01.R_A8A5A388.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\CompactSand\CompactSand5		129858
 	692156950	Deal2	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Deal_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Deal\Deal2		732508
 	708991385	Wood_01	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_40057BBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Wood_01		123540
+	722486283	Flies	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\134454-EFX_EXT_Flies_on_a_Corpse_07_2EE22FE0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Flies		1711816
 	742476583	ragtime-115446	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ragtime-115446_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\Pianist\ragtime-115446		20676192
 	748161923	Wood_07	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_D224340A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Wood_07		115572
 	752395463	Shuffle	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Shuffle_CF8AAD1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Shuffle\Shuffle		1485568
