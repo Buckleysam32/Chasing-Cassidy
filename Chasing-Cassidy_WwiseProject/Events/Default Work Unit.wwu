@@ -129,6 +129,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Piano" ID="{3CAA5B49-F089-4B69-B412-129E381BF9AA}">
+							<ChildrenList>
+								<Action Name="" ID="{85B5AC13-D20A-4507-BA56-85FFA0774A10}" ShortID="390556131">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pianist" ID="{B0EC3B50-71AD-4B9A-86A7-F92F64454E1B}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}">

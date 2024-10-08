@@ -14,6 +14,7 @@
 						<ObjectRef Name="Start_Game" ID="{A0FCC5F6-16AB-4826-ABE7-0E80C97496A5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PokerGame" ID="{16380298-E1EB-4855-9F65-48D410D98013}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterSaloon" ID="{5E5C1F69-EE28-4A86-AAA5-8EF0A307AD69}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Piano" ID="{3CAA5B49-F089-4B69-B412-129E381BF9AA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fire" ID="{54DB02FC-464C-4C7B-8413-50ED500A62BA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGunsmith" ID="{2890DDC2-801E-4F5A-A994-AD8058FA275F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>

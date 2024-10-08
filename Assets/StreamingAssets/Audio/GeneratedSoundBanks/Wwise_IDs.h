@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID GLASSSHATTER = 206611762U;
         static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;
         static const AkUniqueID OUTSIDE = 438105790U;
+        static const AkUniqueID PIANO = 1324340420U;
         static const AkUniqueID POKERGAME = 3836320178U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
         static const AkUniqueID START_GAME = 1114964412U;

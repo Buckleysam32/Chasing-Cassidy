@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584732661441282317
+    m_lastTime: -8584732596201572563
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584732661450774458
+    m_lastTime: -8584732596201762275
     List:
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
@@ -227,6 +227,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Fire
+      guid: fc02db544c467b4c841350ed500a62ba
+      id: 2678880713
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Fire
+        ObjectType: 3
+        guid: fc02db544c467b4c841350ed500a62ba
+      Path: Events\Default Work Unit\Fire
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
     - name: Footsteps
       guid: dd75703dbd837542a0e8d7cd7d1d782c
       id: 2385628198
@@ -319,8 +336,8 @@ MonoBehaviour:
         guid: 98023816ebe155489f6548d410d98013
       Path: Events\Default Work Unit\Town1Events\PokerGame
       maxAttenuation: 10
-      maxDuration: 62.09184
-      minDuration: 45.183464
+      maxDuration: -1
+      minDuration: -1
     - name: QuestComplete
       guid: fac023952a7c984b8451d8c8f18205f0
       id: 2092967876
@@ -623,7 +640,7 @@ MonoBehaviour:
     m_lastTime: -8584732661958334878
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
