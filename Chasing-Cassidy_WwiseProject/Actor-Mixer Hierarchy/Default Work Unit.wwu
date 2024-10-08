@@ -20,6 +20,21 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Sand" ID="{87BE1668-E1EA-442C-86C2-58B94D5EDE9C}" ShortID="883112697">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D649101-63AF-4029-8EC5-4832388ACF0A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="152"/>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
@@ -28,8 +43,268 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sand" ID="{CE14D413-363C-46E9-9BF9-DE43AD9C6212}" ShortID="684568330">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{554B1727-FCC8-4C6C-A609-54417B63DEB8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0495222672064777"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.486218623481781"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="354827350"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{554B1727-FCC8-4C6C-A609-54417B63DEB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_01" ID="{76B34485-98AF-4C46-9DF4-001B22F36A7E}" ShortID="886634430">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{7D16DE2E-8B27-41D5-9E3A-4C41E7C2A48A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.576259109311741"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.03996761133603"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="336894856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{7D16DE2E-8B27-41D5-9E3A-4C41E7C2A48A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_02" ID="{2EB1CB24-DBA5-4034-B428-816CD84D2E16}" ShortID="422467798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{CC988E5B-E491-4F17-95AD-92409F61D6B8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.06697975708502"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.5667044534413"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="641573303"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{CC988E5B-E491-4F17-95AD-92409F61D6B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_03" ID="{A952368D-151B-44FC-B669-532B4F684FAE}" ShortID="454386550">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{669E137B-740B-478D-8DE7-63E96BFC61DE}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.58471255060729"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.10244534412956"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="367504507"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{669E137B-740B-478D-8DE7-63E96BFC61DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_04" ID="{7A38F023-C36C-415D-A254-4AF80E5B1CB3}" ShortID="256182758">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{25F3B2EF-823C-4C7A-804D-94AF85BAAD03}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.08893927125506"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.57515789473684"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="655200158"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{25F3B2EF-823C-4C7A-804D-94AF85BAAD03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_05" ID="{E5CB27B7-25DD-4269-A4C5-F5EC2B9289D9}" ShortID="969116244">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{8F4441A7-D115-45AC-AE4F-096BADACDC7F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.57515789473684"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.04787044534413"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="650522590"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{8F4441A7-D115-45AC-AE4F-096BADACDC7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_06" ID="{838FD84D-8212-4AD1-952F-BB03C705412D}" ShortID="314294719">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{4CD5B4E3-C08D-4476-9680-52DFE0A690FB}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.06137651821862"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.47106072874494"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="428584620"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{4CD5B4E3-C08D-4476-9680-52DFE0A690FB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_07" ID="{B80E86C0-EFFD-4C1A-B620-E3AE775D266B}" ShortID="223134720">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{D9ECE051-DAB5-4101-9F29-972EEA6FEFF9}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.45755465587045"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.92576518218623"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="436275689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{D9ECE051-DAB5-4101-9F29-972EEA6FEFF9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sand_08" ID="{27CBDCAA-874C-4575-B4A4-E1163F6729F5}" ShortID="769106590">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{6FAE57E2-8E8C-4DA0-8EFB-84D6E8654FC4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.91676113360324"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.38947368421053"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="202879349"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven" ID="{6FAE57E2-8E8C-4DA0-8EFB-84D6E8654FC4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Wood" ID="{972113CF-7717-4A02-8CD6-1BE27030AA0A}" ShortID="1062657010">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D33D505D-19C4-4B7F-A89A-B7856BF5C7EA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="152"/>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
@@ -38,6 +313,278 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood" ID="{52AD01F1-E47D-43BB-AE45-C40567F055F3}" ShortID="727245194">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{BE005DD4-8865-428C-9B9C-C31B98D139FD}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.632062206799049"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="213246383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{BE005DD4-8865-428C-9B9C-C31B98D139FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_01" ID="{2322782A-7014-419A-A0B8-ADCDACF6B960}" ShortID="802415052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{4614E588-80E9-4DB5-AEE3-70411C624520}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.609488556556226"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.30927171408374"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="708991385"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{4614E588-80E9-4DB5-AEE3-70411C624520}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_02" ID="{AD6900DD-568C-4DCE-829A-338CED5925A5}" ShortID="472762484">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{C2BCFF88-9F2A-43FE-B131-4653C308EFDE}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.2641244135981"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.00905487161127"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="920417470"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{C2BCFF88-9F2A-43FE-B131-4653C308EFDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_03" ID="{BF7B09CF-A70B-4879-8CFB-B9963025ACE3}" ShortID="915554693">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{BD8403FD-EC9A-4521-B77E-CC0A48F6FF40}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.98648122136844"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.70883802913879"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="10387"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{BD8403FD-EC9A-4521-B77E-CC0A48F6FF40}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_04" ID="{13D16677-0F2E-430B-8C68-B385B0BE67E1}" ShortID="41253292">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{97FF9171-9AB5-417C-A784-108E7EF68AA2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.7314116793816"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.49891578763759"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417081097"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{97FF9171-9AB5-417C-A784-108E7EF68AA2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_05" ID="{B0FF1DA4-86F3-4546-9DAF-1497314DAFAE}" ShortID="510078092">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{A6D5B452-7A28-40AC-B420-78BD1453CE88}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.43119483690912"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.15355164467947"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="42086252"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{A6D5B452-7A28-40AC-B420-78BD1453CE88}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_06" ID="{E2BCD7D0-99E3-444C-8E7B-5377E00DA7FF}" ShortID="506640136">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{6CDEC3F9-CB93-4427-ADD4-C0D5D1757878}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.10840434419381"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.89848210269264"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="107122952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{6CDEC3F9-CB93-4427-ADD4-C0D5D1757878}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_07" ID="{A90D1583-0567-46D5-99B1-43D34B4A975D}" ShortID="762377340">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{0E144C55-951D-4073-8108-4987BD73D61A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.83076115196416"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.48539700900603"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748161923"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{0E144C55-951D-4073-8108-4987BD73D61A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_08" ID="{850010BA-6ECA-4854-BE82-014F6F05149F}" ShortID="40538234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{7A7479B3-238E-4B87-AC53-7FF76A2F7A1D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.50797065924885"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.20775381677637"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="530167914"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{7A7479B3-238E-4B87-AC53-7FF76A2F7A1D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_09" ID="{1C223B27-B1B9-4ED3-A41C-F3095C2AB750}" ShortID="138556077">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{E90B708E-1767-49F1-91C5-251440A3FC99}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.18518016653355"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.90753697430389"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="388266952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop" ID="{E90B708E-1767-49F1-91C5-251440A3FC99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="CompactSand" ID="{CA7A74F5-09C4-4E1D-B4F5-3E2ED05DE6ED}" ShortID="273049138">
 							<PropertyList>
@@ -57,7 +604,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -510,8 +1057,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Standard" ID="{E811EED6-7196-42E1-A2E2-0266808C58D8}" WorkUnitID="{6B567FF5-4D71-492F-972C-6BA21D745F8D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
 										</Reference>
@@ -533,6 +1084,9 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{48F66532-2874-4344-811F-39948BE03615}"/>
+									</PositioningInfo>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -585,10 +1139,15 @@
 								<RandomSequenceContainer Name="PokerGame" ID="{F01F12BD-7AE9-45B6-AE85-475AF90937D1}" ShortID="656897160">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Standard" ID="{E811EED6-7196-42E1-A2E2-0266808C58D8}" WorkUnitID="{6B567FF5-4D71-492F-972C-6BA21D745F8D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
 										</Reference>
@@ -1323,6 +1882,9 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4FC4FF60-3FF7-4EAD-B4CF-F0DF8177E2B0}"/>
+									</PositioningInfo>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -1521,6 +2083,44 @@
 					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Dry Wind SFX" ID="{4892E71A-4C65-4371-9E32-0BCE1D8E499C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fire" ID="{D491E6C4-20D9-45D0-BDFC-3E6789AA45A4}" ShortID="724562463">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Standard" ID="{E811EED6-7196-42E1-A2E2-0266808C58D8}" WorkUnitID="{6B567FF5-4D71-492F-972C-6BA21D745F8D}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fire Loop_01" ID="{7D9EEDC3-2E17-4C3B-9B45-A47AFD853159}">
+							<Language>SFX</Language>
+							<AudioFile>Fire Loop_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="335945829"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C33E2E8C-B863-435E-8CB6-F4BFA1F62720}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Fire Loop_01" ID="{7D9EEDC3-2E17-4C3B-9B45-A47AFD853159}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

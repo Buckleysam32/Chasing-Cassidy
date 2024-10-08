@@ -243,7 +243,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
       maxDuration: 1.7521096
-      minDuration: 0
+      minDuration: 0.3752483
     - name: GlassShatter
       guid: 335d5e0b9b83b2438faf02b317fba35c
       id: 206611762
@@ -261,9 +261,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 335d5e0b9b83b2438faf02b317fba35c
       Path: Events\Default Work Unit\Town1Events\GlassShatter
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 10
+      maxDuration: 22.98987
+      minDuration: 22.81855
     - name: ObjectiveUpdate
       guid: 16846a250b886a46ad61016d460b1b44
       id: 3315603873
@@ -318,7 +318,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 98023816ebe155489f6548d410d98013
       Path: Events\Default Work Unit\Town1Events\PokerGame
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 62.09184
       minDuration: 45.183464
     - name: QuestComplete

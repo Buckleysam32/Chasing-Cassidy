@@ -49,13 +49,21 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{5658262E-85FC-2EA6-DE83-93D4BFDF6516}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{5E61C51D-EDD1-8AA6-D3E8-5EB211B35BB6}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
+				<File Id="10387" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_BC385DC3.wem</CachePath>
+				</File>
 				<File Id="24987694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Turn and River.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_818F3B66.wem</CachePath>
+				</File>
+				<File Id="42086252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_C498D429.wem</CachePath>
 				</File>
 				<File Id="53503755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Turn and River_3.wav</ShortName>
@@ -64,6 +72,10 @@
 				<File Id="72434043" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Deal_3.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Deal_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="107122952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_CCC13355.wem</CachePath>
 				</File>
 				<File Id="135228403" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet All_1.wav</ShortName>
@@ -85,6 +97,14 @@
 					<ShortName>ChasingCassidy_Cards Deal.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Deal_818F3B66.wem</CachePath>
 				</File>
+				<File Id="202879349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_84B0DAAE.wem</CachePath>
+				</File>
+				<File Id="213246383" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_99F1DBD2.wem</CachePath>
+				</File>
 				<File Id="219979162" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_856C0990.wem</CachePath>
@@ -99,23 +119,55 @@
 				</File>
 				<File Id="314280735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet All_3.wav</ShortName>
-					<CachePath>SFX/ChasingCassidy_PokerChips Bet All_3_D0856899.wem</CachePath>
+					<CachePath>SFX/ChasingCassidy_PokerChips Bet All_3_6F35D502.wem</CachePath>
 				</File>
 				<File Id="316420390" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet Empty_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_PokerChips Bet Empty_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="335945829" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fire Loop_01.wav</ShortName>
+					<CachePath>SFX/Fire Loop_01_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="336886080" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_04C0219B.wem</CachePath>
+				</File>
+				<File Id="336894856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_E07186C9.wem</CachePath>
 				</File>
 				<File Id="343644507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Deal_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Deal_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="354827350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_C3E0CCD4.wem</CachePath>
+				</File>
+				<File Id="367504507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_D700C8AA.wem</CachePath>
+				</File>
+				<File Id="388266952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_51A69569.wem</CachePath>
+				</File>
 				<File Id="410237343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_F86C1EC3.wem</CachePath>
+				</File>
+				<File Id="417081097" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_0C1D8257.wem</CachePath>
+				</File>
+				<File Id="428584620" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_22A00A1C.wem</CachePath>
+				</File>
+				<File Id="436275689" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_8AB73582.wem</CachePath>
 				</File>
 				<File Id="443298160" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
@@ -137,13 +189,17 @@
 					<ShortName>Quest Complete_01.wav</ShortName>
 					<CachePath>SFX/Quest Complete_01_9F3224F6.wem</CachePath>
 				</File>
+				<File Id="530167914" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_397F81B9.wem</CachePath>
+				</File>
 				<File Id="536088368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Shuffle_3.wav</ShortName>
-					<CachePath>SFX/ChasingCassidy_Cards Shuffle_3_4F58E4B7.wem</CachePath>
+					<CachePath>SFX/ChasingCassidy_Cards Shuffle_3_3F66F8AB.wem</CachePath>
 				</File>
 				<File Id="549492188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Shuffle_2.wav</ShortName>
-					<CachePath>SFX/ChasingCassidy_Cards Shuffle_2_701B237A.wem</CachePath>
+					<CachePath>SFX/ChasingCassidy_Cards Shuffle_2_9D93B52E.wem</CachePath>
 				</File>
 				<File Id="555672327" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Flop_2.wav</ShortName>
@@ -153,6 +209,18 @@
 					<ShortName>ChasingCassidy_Cards Turn and River_6.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_6_818F3B66.wem</CachePath>
 				</File>
+				<File Id="641573303" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_2E97CF22.wem</CachePath>
+				</File>
+				<File Id="650522590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_4C7CC394.wem</CachePath>
+				</File>
+				<File Id="655200158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
+					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_A3A6E607.wem</CachePath>
+				</File>
 				<File Id="676491757" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_A8A5A388.wem</CachePath>
@@ -161,9 +229,17 @@
 					<ShortName>ChasingCassidy_Cards Deal_2.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Deal_2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="708991385" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_AB05D677.wem</CachePath>
+				</File>
+				<File Id="748161923" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_FAC14374.wem</CachePath>
+				</File>
 				<File Id="752395463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Shuffle.wav</ShortName>
-					<CachePath>SFX/ChasingCassidy_Cards Shuffle_76727704.wem</CachePath>
+					<CachePath>SFX/ChasingCassidy_Cards Shuffle_CF8AAD1C.wem</CachePath>
 				</File>
 				<File Id="760397697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Turn and River_2.wav</ShortName>
@@ -191,15 +267,19 @@
 				</File>
 				<File Id="880966545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Shuffle_1.wav</ShortName>
-					<CachePath>SFX/ChasingCassidy_Cards Shuffle_1_B2C58AB8.wem</CachePath>
+					<CachePath>SFX/ChasingCassidy_Cards Shuffle_1_9EF30902.wem</CachePath>
 				</File>
 				<File Id="896580619" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Glass Shatter.cm-St.wav</ShortName>
-					<CachePath>SFX/SFX_Glass Shatter.cm-St_43781FEE.wem</CachePath>
+					<CachePath>SFX/SFX_Glass Shatter.cm-St_94D90260.wem</CachePath>
 				</File>
 				<File Id="903884757" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy Footsteps_Gravel_01.R_DF3BE793.wem</CachePath>
+				</File>
+				<File Id="920417470" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
+					<CachePath>SFX/158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_0B8C9F3C.wem</CachePath>
 				</File>
 				<File Id="928370875" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy Footsteps_Gravel_01.R.wav</ShortName>
@@ -243,8 +323,42 @@
 						<ActionSetStateEntry GroupId="1855370026" Id="2403500745" Name="Saloon"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="1.7521096">
+				<Event Id="2678880713" Name="Fire" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="335945829"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.3752483" DurationMax="1.7521096">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="665703777" Id="803837735" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="202879349"/>
+								<MediaRef Id="336894856"/>
+								<MediaRef Id="354827350"/>
+								<MediaRef Id="367504507"/>
+								<MediaRef Id="428584620"/>
+								<MediaRef Id="436275689"/>
+								<MediaRef Id="641573303"/>
+								<MediaRef Id="650522590"/>
+								<MediaRef Id="655200158"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="665703777" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="10387"/>
+								<MediaRef Id="42086252"/>
+								<MediaRef Id="107122952"/>
+								<MediaRef Id="213246383"/>
+								<MediaRef Id="388266952"/>
+								<MediaRef Id="417081097"/>
+								<MediaRef Id="530167914"/>
+								<MediaRef Id="708991385"/>
+								<MediaRef Id="748161923"/>
+								<MediaRef Id="920417470"/>
+							</MediaRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="665703777" Id="2488754382"/>
 							<MediaRefs>
@@ -262,7 +376,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="206611762" Name="GlassShatter" DurationType="Infinite">
+				<Event Id="206611762" Name="GlassShatter" MaxAttenuation="10" DurationType="OneShot" DurationMin="22.81855" DurationMax="22.98987">
 					<MediaRefs>
 						<MediaRef Id="896580619"/>
 					</MediaRefs>
@@ -277,7 +391,7 @@
 						<ActionSetStateEntry GroupId="1855370026" Id="438105790" Name="Outside"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3836320178" Name="PokerGame" DurationType="OneShot" DurationMin="45.183464" DurationMax="62.09184">
+				<Event Id="3836320178" Name="PokerGame" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="24987694"/>
 						<MediaRef Id="53503755"/>
@@ -343,5 +457,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60B28092-7076-3B44-0CE4-439FA06DC6D7}</FileHash>
+	<FileHash>{329C0747-798A-7446-E7F1-3AE1ED5EDDF1}</FileHash>
 </SoundBanksInfo>
