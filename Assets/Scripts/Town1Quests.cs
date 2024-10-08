@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using AK.Wwise;
 
 public class Town1Quests : MonoBehaviour
 {
     public TextMeshProUGUI objectiveText;
     public List<string> objectives = new List<string>();
+    [SerializeField]
+    private AK.Wwise.Event objectiveUpdateEvent;
+    [SerializeField]
+    private AK.Wwise.Event questCompleteEvent;
 
     // Quest 1 checks
     public bool hasSpokeToCarson = false;
@@ -40,6 +45,7 @@ public class Town1Quests : MonoBehaviour
         redPoint = waypointManager.waypoint5.img.gameObject;
         carsonActor = GameObject.FindWithTag("Carson").GetComponent<Actor>();
         AddObjective("- Find Info at the saloon");
+        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
     }
 
 
@@ -56,6 +62,7 @@ public class Town1Quests : MonoBehaviour
                     AddObjective("- Speak to Annie");
                     AddObjective("- Speak to Jed");
                     AddObjective("- Speak to Morris");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     carsonPoint.SetActive(false);
                     anniePoint.SetActive(true);
                     jedPoint.SetActive(true);
@@ -65,6 +72,7 @@ public class Town1Quests : MonoBehaviour
                 if (isDoneQuest1 && !quest1TurnedIn)
                 {
                     RemoveObjective("- Return to Carson");
+                    AkSoundEngine.PostEvent("QuestComplete", gameObject);
                     AddObjective("- Ride Horse to Red's Property");
                     AddObjective("- Speak to Red");
                     carsonPoint.SetActive(false);
@@ -86,6 +94,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToAnnie = true;
                     RemoveObjective("- Speak to Annie");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     anniePoint.SetActive(false);
                     actor.NextDialogue();
                 }
@@ -99,6 +108,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToJed = true;
                     RemoveObjective("- Speak to Jed");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     jedPoint.SetActive(false);
                     actor.NextDialogue();
                 }
@@ -112,6 +122,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     hasSpokeToMorris = true;
                     RemoveObjective("- Speak to Morris");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     morrisPoint.SetActive(false);
                     actor.NextDialogue();
                 }
@@ -127,6 +138,7 @@ public class Town1Quests : MonoBehaviour
                     RemoveObjective("- Ride Horse to Red's Property");
                     RemoveObjective("- Speak to Red");
                     AddObjective("- Return to Carson");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     redPoint.SetActive(false);
                     carsonPoint.SetActive(true);
                     actor.NextDialogue();
@@ -145,6 +157,7 @@ public class Town1Quests : MonoBehaviour
     {
         isDoneQuest1 = true;
         AddObjective("- Return to Carson");
+        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
         carsonPoint.SetActive(true);
         carsonActor.NextDialogue();
         horse.transform.position = horsePoint.position;

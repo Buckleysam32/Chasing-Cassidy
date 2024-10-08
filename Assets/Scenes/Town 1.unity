@@ -12751,6 +12751,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectiveText: {fileID: 342160268}
   objectives: []
+  objectiveUpdateEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  questCompleteEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   hasSpokeToCarson: 0
   hasSpokeToAnnie: 0
   hasSpokeToJed: 0
@@ -43035,6 +43043,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectiveText: {fileID: 342160268}
   objectives: []
+  objectiveUpdateEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7050f29f08c550c4999bf180ea80a961, type: 2}
+  questCompleteEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6c1987095e5ce2f43aa81de17819b246, type: 2}
   hasSpokeToCarson: 0
   hasSpokeToAnnie: 0
   hasSpokeToJed: 0

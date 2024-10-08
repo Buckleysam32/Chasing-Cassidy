@@ -6,6 +6,7 @@ using AK.Wwise;
 public class AudioManager : MonoBehaviour
 {
     private GameObject player;
+    static public AK.Wwise.Event objectiveUpdate;
 
     private void Awake()
     {
@@ -22,6 +23,8 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent(eventID.Id, source);
     }
+
+    //States
 
     static public void SetAreaSaloon()
     {
@@ -47,4 +50,6 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.SetState("Town1", "Outside");
     }
+
+    
 }
