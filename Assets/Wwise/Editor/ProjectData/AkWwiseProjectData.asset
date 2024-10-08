@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584732596201572563
+    m_lastTime: -8584732519597189170
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584732596201762275
+    m_lastTime: -8584732519612032518
     List:
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
@@ -318,6 +318,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Piano
+      guid: 495baa3c89f0694bb412129e381bf9aa
+      id: 1324340420
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: Piano
+        ObjectType: 3
+        guid: 495baa3c89f0694bb412129e381bf9aa
+      Path: Events\Default Work Unit\Town1Events\Piano
+      maxAttenuation: 20
+      maxDuration: 117.211426
+      minDuration: 92.42123
     - name: PokerGame
       guid: 98023816ebe155489f6548d410d98013
       id: 3836320178

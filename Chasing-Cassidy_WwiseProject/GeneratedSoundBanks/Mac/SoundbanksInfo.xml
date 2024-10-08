@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{370B5930-EB37-8980-C5D2-7B49D1B1DCBB}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{FA2DEACD-FF29-7C25-1E92-AD5465CBA396}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -72,6 +72,10 @@
 				<File Id="72434043" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Deal_3.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Deal_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="97768054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChasingCassidy_Door Bell.wav</ShortName>
+					<CachePath>SFX/ChasingCassidy_Door Bell_818F3B66.wem</CachePath>
 				</File>
 				<File Id="107122952" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop.wav</ShortName>
@@ -112,6 +116,14 @@
 				<File Id="223116959" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Turn and River_4.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="230018626" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>499318-Old_Western_Swinging_Saloon_Door_Open_-Hinge_Opening_Squeak_-05_016464_.wav</ShortName>
+					<CachePath>SFX/499318-Old_Western_Swinging_Saloon_Door_Open_-Hinge_Opening_Squeak_-05_016464__818F3B66.wem</CachePath>
+				</File>
+				<File Id="233214098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChasingCassidy_Door Bell_1.wav</ShortName>
+					<CachePath>SFX/ChasingCassidy_Door Bell_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="293733891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet Full.wav</ShortName>
@@ -217,6 +229,10 @@
 					<ShortName>ChasingCassidy_Cards Turn and River_6.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_6_818F3B66.wem</CachePath>
 				</File>
+				<File Id="626871132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>499322-Old_Western_Swinging_Saloon_Door_-Releasing_Hinge_Closing_Squeak_-02_016458_.wav</ShortName>
+					<CachePath>SFX/499322-Old_Western_Swinging_Saloon_Door_-Releasing_Hinge_Closing_Squeak_-02_016458__818F3B66.wem</CachePath>
+				</File>
 				<File Id="641573303" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven.wav</ShortName>
 					<CachePath>SFX/253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_880E2A79.wem</CachePath>
@@ -319,6 +335,16 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2676658430" Name="DoorBellClose" DurationType="OneShot" DurationMin="3.3108802" DurationMax="3.3108802">
+					<MediaRefs>
+						<MediaRef Id="233214098"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2845554458" Name="DoorBellOpen" DurationType="OneShot" DurationMin="2.7333333" DurationMax="2.7333333">
+					<MediaRefs>
+						<MediaRef Id="97768054"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1465847270" Name="EnterButcher" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="1855370026" Id="2034834082" Name="Butcher"/>
@@ -452,6 +478,16 @@
 						<MediaRef Id="506676308"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3123159437" Name="SaloonDoorOpen" DurationType="OneShot" DurationMin="0.59012485" DurationMax="0.7240153">
+					<MediaRefs>
+						<MediaRef Id="230018626"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="737300443" Name="SaloonDoorShut" DurationType="OneShot" DurationMin="1.5804937" DurationMax="1.883882">
+					<MediaRefs>
+						<MediaRef Id="626871132"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1114964412" Name="Start_Game" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="497690660"/>
@@ -481,5 +517,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3A355F89-84F7-8696-EAC3-EA316701CAE6}</FileHash>
+	<FileHash>{82570344-6B67-F855-EF4B-D0F2BA55B1BC}</FileHash>
 </SoundBanksInfo>

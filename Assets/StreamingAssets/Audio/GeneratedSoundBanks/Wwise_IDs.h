@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DOORBELLCLOSE = 2676658430U;
+        static const AkUniqueID DOORBELLOPEN = 2845554458U;
         static const AkUniqueID ENTERBUTCHER = 1465847270U;
         static const AkUniqueID ENTERGROCER = 317562889U;
         static const AkUniqueID ENTERGUNSMITH = 2551708614U;
@@ -25,6 +27,8 @@ namespace AK
         static const AkUniqueID PIANO = 1324340420U;
         static const AkUniqueID POKERGAME = 3836320178U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
+        static const AkUniqueID SALOONDOOROPEN = 3123159437U;
+        static const AkUniqueID SALOONDOORSHUT = 737300443U;
         static const AkUniqueID START_GAME = 1114964412U;
     } // namespace EVENTS
 

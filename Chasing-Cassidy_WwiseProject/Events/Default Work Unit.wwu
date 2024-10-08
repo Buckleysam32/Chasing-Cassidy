@@ -140,6 +140,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SaloonDoorOpen" ID="{C9A3061E-B46A-4E86-9159-CC77171F23BF}">
+							<ChildrenList>
+								<Action Name="" ID="{F4EC78A8-3CDC-49E6-B06F-40FDBCE13AA8}" ShortID="569340991">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SaloonDoorOpen" ID="{9021F890-B701-4C17-B783-8BA5DDDF6EE2}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SaloonDoorShut" ID="{BFD2A54B-DDA5-4664-BC79-FFD8E77B0E78}">
+							<ChildrenList>
+								<Action Name="" ID="{93AAA640-5DF0-42D9-A6DD-C62E35FE94B6}" ShortID="838871868">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SaloonDoorShut" ID="{31EFBCD2-FFA3-432F-B924-204EFA914B15}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}">
@@ -170,6 +192,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Fire" ID="{D491E6C4-20D9-45D0-BDFC-3E6789AA45A4}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DoorBellOpen" ID="{9EA255CF-B107-421D-A1CA-84557FD6966A}">
+					<ChildrenList>
+						<Action Name="" ID="{9FDD08F8-7D65-4D8C-B374-6C2DAA487565}" ShortID="264835072">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorOpenBell" ID="{14AC6076-A1E0-47F7-A744-69B1956A9F43}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DoorBellClose" ID="{1B790B7C-ECC7-4331-8667-C09900AF9185}">
+					<ChildrenList>
+						<Action Name="" ID="{E7B2C47C-1891-4B98-8BC3-A499E690666A}" ShortID="1009026926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorCloseBell" ID="{36655BB4-2AB1-4576-A030-6AAD53392E5F}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

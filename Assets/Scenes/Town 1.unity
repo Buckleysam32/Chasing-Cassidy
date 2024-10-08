@@ -2275,8 +2275,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.980406, y: 5.9567165, z: 7.743949}
-  m_Center: {x: 3.1108909, y: 2.4783578, z: 1.5908334}
+  m_Size: {x: 9.980406, y: 5.9567165, z: 9.927549}
+  m_Center: {x: 3.1108909, y: 2.4783578, z: 0.49903217}
 --- !u!23 &59398952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6238,6 +6238,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1512619881540018, guid: 13785c27c2ab78d45bc9ac99a12ea6af, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     - target: {fileID: 1541438236358488, guid: 13785c27c2ab78d45bc9ac99a12ea6af, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -8501,8 +8505,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13.483574, y: 5.9567165, z: 9.518187}
-  m_Center: {x: 1.3593072, y: 2.4783578, z: -3.0500376}
+  m_Size: {x: 13.483574, y: 5.9567165, z: 9.584603}
+  m_Center: {x: 1.3593072, y: 2.4783578, z: -3.016829}
 --- !u!23 &261187885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13991,8 +13995,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.6410513, y: 5.9567165, z: 4.9091063}
-  m_Center: {x: 1.8017219, y: 2.4783578, z: -0.011034249}
+  m_Size: {x: 8.423108, y: 5.9567165, z: 4.9091063}
+  m_Center: {x: 3.6927333, y: 2.4783578, z: -0.011033756}
 --- !u!23 &424295934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14279,6 +14283,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d32ac41da16707428f33c77fbe89e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b9bee69fb9c0d8f4193790a5f1cf9e5f, type: 2}
+  doorOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 07227715e798d4f44b41f8a9acd3747e, type: 2}
 --- !u!1001 &437931675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28999,7 +29011,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861590774}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30825,6 +30837,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d32ac41da16707428f33c77fbe89e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b9bee69fb9c0d8f4193790a5f1cf9e5f, type: 2}
+  doorOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 07227715e798d4f44b41f8a9acd3747e, type: 2}
 --- !u!95 &934311003
 Animator:
   serializedVersion: 5
@@ -52371,6 +52391,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d32ac41da16707428f33c77fbe89e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  doorOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &1669320385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65007,6 +65035,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d32ac41da16707428f33c77fbe89e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f20ffd6c3d357544c93c420db2b72f2e, type: 2}
+  doorOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8def511d81fb2ad44821c606664e8480, type: 2}
 --- !u!95 &2058783087
 Animator:
   serializedVersion: 5
@@ -65762,6 +65798,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d32ac41da16707428f33c77fbe89e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  doorOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &2103108865
 PrefabInstance:
   m_ObjectHideFlags: 0
