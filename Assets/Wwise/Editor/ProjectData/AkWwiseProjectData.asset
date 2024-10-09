@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584732519597189170
+    m_lastTime: -8584731770142441493
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,8 +145,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584732519612032518
+    m_lastTime: -8584731770142501514
     List:
+    - name: DoorBellClose
+      guid: 7c0b791bc7ec31438667c09900af9185
+      id: 2676658430
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: DoorBellClose
+        ObjectType: 3
+        guid: 7c0b791bc7ec31438667c09900af9185
+      Path: Events\Default Work Unit\DoorBellClose
+      maxAttenuation: 0
+      maxDuration: 3.3108802
+      minDuration: 3.3108802
+    - name: DoorBellOpen
+      guid: cf55a29e07b11d42a1ca84557fd6966a
+      id: 2845554458
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: DoorBellOpen
+        ObjectType: 3
+        guid: cf55a29e07b11d42a1ca84557fd6966a
+      Path: Events\Default Work Unit\DoorBellOpen
+      maxAttenuation: 0
+      maxDuration: 2.7333333
+      minDuration: 2.7333333
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
       id: 1465847270
@@ -242,6 +276,26 @@ MonoBehaviour:
         guid: fc02db544c467b4c841350ed500a62ba
       Path: Events\Default Work Unit\Fire
       maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: Flies
+      guid: 0f57e4db23648f4c9283f348c7ebe511
+      id: 1457611216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: Flies
+        ObjectType: 3
+        guid: 0f57e4db23648f4c9283f348c7ebe511
+      Path: Events\Default Work Unit\Town1Events\Flies
+      maxAttenuation: 5
       maxDuration: -1
       minDuration: -1
     - name: Footsteps
@@ -375,6 +429,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.836
       minDuration: 2.836
+    - name: SaloonDoorOpen
+      guid: 1e06a3c96ab4864e9159cc77171f23bf
+      id: 3123159437
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: SaloonDoorOpen
+        ObjectType: 3
+        guid: 1e06a3c96ab4864e9159cc77171f23bf
+      Path: Events\Default Work Unit\Town1Events\SaloonDoorOpen
+      maxAttenuation: 0
+      maxDuration: 0.7240153
+      minDuration: 0.59012485
+    - name: SaloonDoorShut
+      guid: 4ba5d2bfa5dd6446bc79ffd8e77b0e78
+      id: 737300443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: SaloonDoorShut
+        ObjectType: 3
+        guid: 4ba5d2bfa5dd6446bc79ffd8e77b0e78
+      Path: Events\Default Work Unit\Town1Events\SaloonDoorShut
+      maxAttenuation: 0
+      maxDuration: 1.883882
+      minDuration: 1.5804937
     - name: Start_Game
       guid: f6c5fca0ab162648abe70e80c97496a5
       id: 1114964412

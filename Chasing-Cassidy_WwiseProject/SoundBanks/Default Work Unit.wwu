@@ -20,6 +20,7 @@
 						<ObjectRef Name="Piano" ID="{3CAA5B49-F089-4B69-B412-129E381BF9AA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fire" ID="{54DB02FC-464C-4C7B-8413-50ED500A62BA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Flies" ID="{DBE4570F-6423-4C8F-9283-F348C7EBE511}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SaloonDoorOpen" ID="{C9A3061E-B46A-4E86-9159-CC77171F23BF}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGunsmith" ID="{2890DDC2-801E-4F5A-A994-AD8058FA275F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

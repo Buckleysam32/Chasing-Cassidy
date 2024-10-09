@@ -2292,6 +2292,140 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Sound Name="Flies" ID="{55FABD2C-04D1-4390-966D-E36D3252B62D}" ShortID="513673789">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CBF1F237-B341-4778-98D5-49F50F10132B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{FDDAE39A-4558-4B92-AB6A-44FFCDE2C9D4}" ShortID="242207756">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="5"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{725C1C82-2298-4ED3-B6F4-CE24C6BCCA56}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>5</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="134454-EFX_EXT_Flies_on_a_Corpse_07" ID="{8423852D-534D-4E84-BBEB-788ED4AEF330}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.5003959991554"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.2040053430279"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>134454-EFX_EXT_Flies_on_a_Corpse_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="722486283"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4D245D38-50DC-463F-9BB6-A991C93E0AA6}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="134454-EFX_EXT_Flies_on_a_Corpse_07" ID="{8423852D-534D-4E84-BBEB-788ED4AEF330}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="QuestCompleteStinger" ID="{696989C3-3C66-4E8F-8896-4F02CC090168}" ShortID="928925049">
@@ -2447,6 +2581,51 @@
 					<PositioningInfo>
 						<Panner Name="" ID="{C33E2E8C-B863-435E-8CB6-F4BFA1F62720}"/>
 					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
+								<CustomState Name="" ID="{777CC991-B3DC-415F-9D8B-9E470EFE6644}" ShortID="556438986">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
+								<CustomState Name="" ID="{D0B103C5-D745-41CB-935B-E9B192421623}" ShortID="885832666">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+								<CustomState Name="" ID="{279DC90C-26D9-4A2F-B7D6-D72D4E77A84F}" ShortID="238371137">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
+								<CustomState Name="" ID="{1D8A75A2-CB99-461C-9B8C-19319DF9BF4B}" ShortID="9515655">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
+								<CustomState Name="" ID="{0690919B-FE15-4A16-86DD-1FDD49BA5EAD}" ShortID="759181742"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Fire Loop_01" ID="{7D9EEDC3-2E17-4C3B-9B45-A47AFD853159}" Platform="Linked"/>
 					</ActiveSourceList>
