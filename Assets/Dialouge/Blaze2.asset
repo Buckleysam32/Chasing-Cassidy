@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Blaze2
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "David huh, well colour me intrigued, it\u2019s been a hella long time
+        since I heard that name. What exactly you want with him?"
+      speaker: Blaze
+    - text: "I\u2019m writing a book about him and the west."
+      speaker: David
+    - text: Shit kid, I could save you the time and you could write your book about
+        me instead.
+      speaker: Blaze
+    - text: "Sadly I\u2019ve already committed too much to give up now sir, I just
+        need some info on what he was like and where he might have ended up."
+      speaker: David
+    - text: Hopefully rotting in hell, that piece of scum left me for dead after
+        a job went wrong so I pray that fuckers dead.
+      speaker: Blaze
+    - text: "Weren\u2019t the two of you partners? I mean isn\u2019t there more to
+        your relationship than that one moment?"
+      speaker: David
+    - text: Sure, I mean for a time we were friends, brothers even but after that,
+        how could you expect me to say kind things about him. Say if someone stabbed
+        you in the back would you speak kindly of them?
+      speaker: Blaze
+    - text: Not exactly, I just expected more, you know, I heard stories of outlaws
+        who, while ruthless, acted as almost unlawful heroes of the west.
+      speaker: David
+    - text: "Jesus, come on kid this isn\u2019t a fairytale, there are no happy endings
+        out here and your outlaw definitely ain\u2019t no hero."
+      speaker: Blaze
+    - text: "He was one ruthless son of bitch, me and him did so much damage to this
+        town, it wouldn\u2019t have bounced back if I hadn\u2019t stayed."
+      speaker: Blaze
+    - text: What do you mean by that exactly?
+      speaker: David
+    - text: "Well me and Cass were scoping this place out and \u2026 wait a second."
+      speaker: Blaze
+    - text: "God damn boy you almost had me there but I\u2019m sure you\u2019d noticed
+        by now that nothin around here is free."
+      speaker: Blaze
+    - text: '''Sigh'', what''s your price?'
+      speaker: David
+    - text: "I don\u2019t want your money, got plenty of my own. No we\u2019re gonna
+        play a game, winner takes all, loser leaves in a coffin."
+      speaker: Blaze
+    responses:
+    - responseText: Oh boy
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

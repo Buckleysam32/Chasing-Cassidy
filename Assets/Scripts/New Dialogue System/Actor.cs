@@ -12,6 +12,7 @@ public class Actor : MonoBehaviour
     public Rigidbody playerBody;
     private UIManager uIManager;
     public Animator characterAnim;
+    public Actor blazeActor;
 
     private void Awake()
     {
@@ -48,11 +49,27 @@ public class Actor : MonoBehaviour
             // Disable player controls
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            camScript.enabled = false;
+            camScript.canMove = false;
             playerBody.constraints = RigidbodyConstraints.FreezeAll;
             movement.canWalk = false;
             uIManager.playerHud.SetActive(false);
 
+        }
+    }
+
+    public void SpeakToBlaze()
+    {
+        if (currentDialogue != null)
+        {
+            DialogueManager.Instance.StartDialogue(Name, currentDialogue.RootNode, blazeActor);
+            this.GetComponent<NPCInteraction>().dialogueInProgress = true;
+            // Disable player controls
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
         }
     }
 
@@ -82,8 +99,11 @@ public class Actor : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked; // Lock the cursor
         Cursor.visible = false; // Hide the cursor
-        camScript.enabled = true; // Enable camera control
-        playerBody.constraints = RigidbodyConstraints.None;
+        camScript.canMove = true; // Enable camera control
+        if (!FindObjectOfType<Town1Quests>().hasBlaze1)
+        {
+            playerBody.constraints = RigidbodyConstraints.None;
+        }
         movement.canWalk = true;
         uIManager.playerHud.SetActive(true);
         characterAnim.SetTrigger("stop");

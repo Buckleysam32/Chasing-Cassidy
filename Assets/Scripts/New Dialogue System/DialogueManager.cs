@@ -41,7 +41,9 @@ public class DialogueManager : MonoBehaviour
         quests = FindObjectOfType<Town1Quests>();
 
         // Initially hide the dialogue UI
-        HideDialogue();
+        DialogueParent.SetActive(false);
+        characterImage.gameObject.SetActive(false);
+        OnDialogueEnd?.Invoke();
     }
 
     // Starts the dialogue with given title and dialogue node
@@ -104,7 +106,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
-                    HideDialogue(); // Hide dialogue if there are no responses
+                    HideDialogue(actor); // Hide dialogue if there are no responses
                 }
             }
             else
@@ -194,15 +196,69 @@ public class DialogueManager : MonoBehaviour
         else
         {
             // If no follow-up node, end the dialogue
-            HideDialogue();
+            HideDialogue(actor);
         }
     }
 
     // Hide the dialogue UI
-    public void HideDialogue()
+    public void HideDialogue(Actor actor)
     {
         DialogueParent.SetActive(false);
         characterImage.gameObject.SetActive(false);
+        if(actor.name == "Blaze")
+        {
+
+            if (!quests.hasBlaze2 && quests.hasBlaze1)
+            {
+                actor.characterAnim.SetTrigger("B1");
+            }
+            else if (!quests.hasBlaze3 && quests.hasBlaze2)
+            {
+                actor.characterAnim.SetTrigger("B2");
+            }
+            else if (!quests.hasBlaze4 && quests.hasBlaze3)
+            {
+                actor.characterAnim.SetTrigger("B3");
+            }
+            else if (!quests.hasBlaze5 && quests.hasBlaze4)
+            {
+                actor.characterAnim.SetTrigger("B4");
+                Debug.Log("Bruh 4");
+            }
+            else if (!quests.hasBlaze6 && quests.hasBlaze5)
+            {
+                actor.characterAnim.SetTrigger("B5");
+                Debug.Log("Bruh 5");
+            }
+            else if (!quests.hasBlaze7 && quests.hasBlaze6)
+            {
+                actor.characterAnim.SetTrigger("B6");
+            }
+            else if (!quests.hasBlaze8 && quests.hasBlaze7)
+            {
+                actor.characterAnim.SetTrigger("B7");
+            }
+            else if (!quests.hasBlaze9 && quests.hasBlaze8)
+            {
+                actor.characterAnim.SetTrigger("B8");
+            }
+            else if (!quests.hasBlaze10 && quests.hasBlaze9)
+            {
+                actor.characterAnim.SetTrigger("B9");
+            }
+            else if (!quests.hasBlaze11 && quests.hasBlaze10)
+            {
+                actor.characterAnim.SetTrigger("B10");
+            }
+            else if (!quests.hasBlaze12 && quests.hasBlaze11)
+            {
+                actor.characterAnim.SetTrigger("B11");
+            }
+            else if (quests.hasBlaze12)
+            {
+                actor.characterAnim.SetTrigger("B12");
+            }
+        }
         OnDialogueEnd?.Invoke();
     }
 

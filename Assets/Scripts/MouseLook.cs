@@ -11,6 +11,11 @@ public class MouseLook : MonoBehaviour
     private Vector2 smoothMouseInput;
     private Vector2 currentLookingPos;
 
+    public bool canMove = true;
+
+    public Transform blazePoint;
+    public bool lookAtBlaze;
+
     void Start()
     {
        Cursor.lockState = CursorLockMode.Locked;
@@ -19,9 +24,30 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        GetInput();
-        ModifyInput();
-        MovePlayer();
+        if (!lookAtBlaze)
+        {
+            if (canMove)
+            {
+                GetInput();
+                ModifyInput();
+                MovePlayer();
+            }
+        }
+        else
+        {
+            LookAtBlazeTarget();
+        }
+    }
+    private void LookAtBlazeTarget()
+    {
+        // Get direction from the camera to the blazePoint
+        Vector3 directionToBlaze = blazePoint.position - Camera.main.transform.position;
+
+        // Calculate the rotation needed to look at the blazePoint
+        Quaternion targetRotation = Quaternion.LookRotation(directionToBlaze);
+
+        // Apply the rotation to the camera smoothly
+        Camera.main.transform.rotation = Quaternion.Slerp(Camera.main.transform.rotation, targetRotation, Time.deltaTime * sensitivity);
     }
 
     public void GetInput()

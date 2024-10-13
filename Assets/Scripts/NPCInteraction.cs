@@ -63,6 +63,10 @@ public class NPCInteraction : MonoBehaviour
         }
     }
 
+    public void StartDialogue()
+    {
+        this.GetComponent<Actor>().SpeakTo(this.GetComponent<Actor>());
+    }
 
     public void SetNextDialogue()
     {

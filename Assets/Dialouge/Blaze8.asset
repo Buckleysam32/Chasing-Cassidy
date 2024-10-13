@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Blaze8
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: There were rumours of some conflict with a gang from a nearby settlement.
+        Heard some shootout occurred outside of town and well lets just say some
+        people got caught in the crossfire
+      speaker: Blaze
+    - text: What people?
+      speaker: David
+    - text: Mothers, fathers, children, whole damn families. Then he disappeared.
+        Rewarded himself with some retirement, probably thinks he earned it.
+      speaker: Blaze
+    responses:
+    - responseText: I see
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

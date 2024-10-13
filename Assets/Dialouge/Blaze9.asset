@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Blaze9
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Oh god...
+      speaker: David
+    - text: There's one left kid.
+      speaker: Blaze
+    - text: Do you think I'll be remembered?
+      speaker: David
+    - text: "Was I? Was Carson? I\u2019m sorry but we\u2019re only a footnote on
+        his story, a piece of shit under his shoe."
+      speaker: Blaze
+    responses:
+    - responseText: '[Pull Trigger]'
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0
