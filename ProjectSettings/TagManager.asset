@@ -18,6 +18,7 @@ TagManager:
   - GrocerStateTrigger
   - ButcherStateTrigger
   - GunsmithStateTrigger
+  - Guard
   layers:
   - Default
   - TransparentFX

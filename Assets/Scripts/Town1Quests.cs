@@ -23,6 +23,20 @@ public class Town1Quests : MonoBehaviour
     public bool returnedToCarson = false;
     public bool returnedToCarson2 = false;
     public bool hasSpokeToRed = false;
+
+    public bool hasBlaze1 = false;
+    public bool hasBlaze2 = false;
+    public bool hasBlaze3 = false;
+    public bool hasBlaze4 = false;
+    public bool hasBlaze5 = false;
+    public bool hasBlaze6 = false;
+    public bool hasBlaze7 = false;
+    public bool hasBlaze8 = false;
+    public bool hasBlaze9 = false;
+    public bool hasBlaze10 = false;
+    public bool hasBlaze11 = false;
+    public bool hasBlaze12 = false;
+
     public NPCInteraction carsonScript;
     public GameObject carsonPoint;
     public GameObject anniePoint;
@@ -31,8 +45,13 @@ public class Town1Quests : MonoBehaviour
     public GameObject redPoint;
     private MissionWaypoint waypointManager;
     public Actor carsonActor;
+    public Actor blazeActor;
     public GameObject horse;
     public Transform horsePoint;
+
+    public GameObject backDoor;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -87,6 +106,7 @@ public class Town1Quests : MonoBehaviour
                     AddObjective("- Meet Blaze Adams");
                     carsonPoint.SetActive(false);
                     actor.NextDialogue();
+                    backDoor.GetComponent<Interactable>().enabled = true;
                 }
                 break;
             case "Annie Brown":
@@ -143,6 +163,68 @@ public class Town1Quests : MonoBehaviour
                     carsonPoint.SetActive(true);
                     actor.NextDialogue();
                     carsonActor.NextDialogue();
+                }
+                break;
+            case "Blaze":
+                if (!hasBlaze1)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze1 = true;
+                }
+                else if (!hasBlaze2 && hasBlaze1)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze2 = true;
+                }
+                else if (!hasBlaze3 && hasBlaze2)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze3 = true;
+                }
+                else if (!hasBlaze4 && hasBlaze3)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze4 = true;
+                }
+                else if (!hasBlaze5 && hasBlaze4)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze5 = true;
+                }
+                else if (!hasBlaze6 && hasBlaze5)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze6 = true;
+                }
+                else if (!hasBlaze7 && hasBlaze6)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze7 = true;
+                }
+                else if (!hasBlaze8 && hasBlaze7)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze8 = true;
+                }
+                else if (!hasBlaze9 && hasBlaze8)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze9 = true;
+                }
+                else if (!hasBlaze10 && hasBlaze9)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze10 = true;
+                }
+                else if (!hasBlaze11 && hasBlaze10)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze11 = true;
+                }
+                else if (!hasBlaze12 && hasBlaze11)
+                {
+                    blazeActor.NextDialogue();
+                    hasBlaze12 = true;
                 }
                 break;
             default:

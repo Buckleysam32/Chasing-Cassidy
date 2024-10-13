@@ -8,12 +8,15 @@ public class Interactable : MonoBehaviour
     private Animator myAnim;
     private bool open;
     private AudioManager AM;
+    public GameObject player;
+    public Transform chairPos;
 
     private void Start()
     {
         myAnim = GetComponent<Animator>();
         open = false;
         AM = FindObjectOfType<AudioManager>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void UpdateDoor()
@@ -32,6 +35,17 @@ public class Interactable : MonoBehaviour
             AM.PlayAudioClip(doorOpenEvent, this.gameObject);
             Debug.Log("open");
         }
+    }
+
+
+    public void SitPlayer()
+    {
+        Debug.Log("Sit Player");
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.transform.position = chairPos.position;
+        FindObjectOfType<MouseLook>().lookAtBlaze = true;
+        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        //Start Dialogue
     }
 
     //Assigning Wwise Events
