@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584727418000381982
+    m_lastTime: -8584726507976551415
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584727418000441994
+    m_lastTime: -8584726507976611426
     List:
     - name: Blaze
       guid: 189a1a0fef06e34d98c74e3e3880b8d8
@@ -201,6 +201,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.7333333
       minDuration: 2.7333333
+    - name: DoorClose
+      guid: 7363c1daa43d2740995a85879e782e67
+      id: 3638457343
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: DoorClose
+        ObjectType: 3
+        guid: 7363c1daa43d2740995a85879e782e67
+      Path: Events\Default Work Unit\DoorClose
+      maxAttenuation: 0
+      maxDuration: 0.76364017
+      minDuration: 0.76364017
+    - name: DoorOpen
+      guid: 0effd32fcb1a9a48b695c152e8e8d4d5
+      id: 1404805401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: DoorOpen
+        ObjectType: 3
+        guid: 0effd32fcb1a9a48b695c152e8e8d4d5
+      Path: Events\Default Work Unit\DoorOpen
+      maxAttenuation: 0
+      maxDuration: 1.0930536
+      minDuration: 1.0930536
     - name: EnterButcher
       guid: d52cac75458baa428f6351b981dd311a
       id: 1465847270
@@ -797,7 +831,7 @@ MonoBehaviour:
     m_lastTime: -8584732661958334878
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f0000001000000011000000120000001300000014000000150000001600000020000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f00000010000000110000001200000013000000140000001500000016000000200000002200000023000000d4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -6,6 +6,7 @@
 				<SoundBank Name="Soundbank" ID="{3533D571-6C01-4D20-BFDC-B6D6F6C8B7FE}">
 					<ObjectInclusionList>
 						<ObjectRef Name="DoorClose" ID="{DAC16373-3DA4-4027-995A-85879E782E67}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GunSlide" ID="{0A980C8D-23F4-41C3-A029-7D10BF641975}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorBellOpen" ID="{9EA255CF-B107-421D-A1CA-84557FD6966A}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGrocer" ID="{C6A351DD-6733-4247-A503-A2A38CAE1F68}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{3D7075DD-83BD-4275-A0E8-D7CD7D1D782C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
@@ -13,8 +14,10 @@
 						<ObjectRef Name="DoorBellClose" ID="{1B790B7C-ECC7-4331-8667-C09900AF9185}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GlassShatter" ID="{0B5E5D33-839B-43B2-8FAF-02B317FBA35C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Outside" ID="{EF580DA0-6791-4533-847A-90F7CED74C85}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BodyFall" ID="{D6E442DB-BAE8-4567-A884-98EEBE7A938D}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SaloonDoorShut" ID="{BFD2A54B-DDA5-4664-BC79-FFD8E77B0E78}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ObjectiveUpdate" ID="{256A8416-880B-466A-AD61-016D460B1B44}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BarrellRotate" ID="{CCFCDBED-33EF-47E0-80B2-33098E99C2DE}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Start_Game" ID="{A0FCC5F6-16AB-4826-ABE7-0E80C97496A5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PokerGame" ID="{16380298-E1EB-4855-9F65-48D410D98013}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorOpen" ID="{2FD3FF0E-1ACB-489A-B695-C152E8E8D4D5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
@@ -22,9 +25,12 @@
 						<ObjectRef Name="EnterSaloon" ID="{5E5C1F69-EE28-4A86-AAA5-8EF0A307AD69}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Piano" ID="{3CAA5B49-F089-4B69-B412-129E381BF9AA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GunPlaced" ID="{E33B7D0F-7473-4BC1-86D0-D7DE678B6071}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fire" ID="{54DB02FC-464C-4C7B-8413-50ED500A62BA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Flies" ID="{DBE4570F-6423-4C8F-9283-F348C7EBE511}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Handling" ID="{4C3495FE-D80E-4D3E-8664-298615DA8CC6}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SaloonDoorOpen" ID="{C9A3061E-B46A-4E86-9159-CC77171F23BF}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DryFire" ID="{2FF3FDEB-7C07-4EB2-B388-895F31E259D1}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGunsmith" ID="{2890DDC2-801E-4F5A-A994-AD8058FA275F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

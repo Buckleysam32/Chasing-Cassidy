@@ -13240,11 +13240,11 @@ MonoBehaviour:
   objectiveUpdateEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7050f29f08c550c4999bf180ea80a961, type: 2}
   questCompleteEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6c1987095e5ce2f43aa81de17819b246, type: 2}
   hasSpokeToCarson: 0
   hasSpokeToAnnie: 0
   hasSpokeToJed: 0
@@ -72827,6 +72827,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.105
       objectReference: {fileID: 0}
+    - target: {fileID: 7429355111809728280, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: placeEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 41641ccee7e40cb4483543ad79e666c9, type: 2}
+    - target: {fileID: 7429355111809728280, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: dryfireEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ad8b3f1a95a58545b2eb07fbdc57eff, type: 2}
+    - target: {fileID: 7429355111809728280, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: handlingEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2834d9859af56e14cb2a3c629dd71588, type: 2}
     - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
       propertyPath: movement
       value: 

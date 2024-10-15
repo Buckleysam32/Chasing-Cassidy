@@ -3123,6 +3123,41 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 1.1333333
+    functionName: DryfireSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.4
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.9333333
+    functionName: PlaceSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.0333333
+    functionName: SlideSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.6333334
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 2.9333334
     functionName: SpeakToBlaze
     data: 

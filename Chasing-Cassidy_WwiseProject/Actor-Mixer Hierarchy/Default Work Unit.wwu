@@ -2323,6 +2323,24 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="86231-Chest_drawer_close_wood-BLASTWAVEFX-23442" ID="{AA4F5CB2-8E2A-4124-BAAA-C9A91FD9B22E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.227951380282207"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.225601366052494"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.23375747059958"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>86231-Chest_drawer_close_wood-BLASTWAVEFX-23442.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182490615"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="86231-Chest_drawer_close_wood-BLASTWAVEFX-23442" ID="{AA4F5CB2-8E2A-4124-BAAA-C9A91FD9B22E}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="GunEmpty" ID="{A5325BB4-90B6-4983-B3FA-669250AB4954}" ShortID="153101139">
 											<ReferenceList>
@@ -2333,6 +2351,23 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="431496-Smith-_-Wesson-M29-" ID="{C166DC99-9B4B-4D6C-8A2B-652D6FFCA1F4}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.02341700404858"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.52731983805668"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>431496-Smith-_-Wesson-M29-.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1073115463"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="431496-Smith-_-Wesson-M29-" ID="{C166DC99-9B4B-4D6C-8A2B-652D6FFCA1F4}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="BodyFall" ID="{3E9985A0-2770-4F1E-9D8E-ACA21630BE06}" ShortID="519484230">
 											<ReferenceList>
@@ -2343,6 +2378,18 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="403629-Object_or_Body_Fall_Foley_-Drop_on_Ground_Noise_-02_004122_" ID="{21F3E561-B3E3-43B2-8C70-3AFF2761F76E}">
+													<Language>SFX</Language>
+													<AudioFile>403629-Object_or_Body_Fall_Foley_-Drop_on_Ground_Noise_-02_004122_.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="957938172"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="403629-Object_or_Body_Fall_Foley_-Drop_on_Ground_Noise_-02_004122_" ID="{21F3E561-B3E3-43B2-8C70-3AFF2761F76E}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="BarrellRotate" ID="{7745B537-C9A6-455A-B31A-E39A66CA52A7}" ShortID="981094777">
 											<ReferenceList>
@@ -2353,6 +2400,18 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="131846-Revolver-SmithWesson-RollChamber-Fienup-005" ID="{4F41ABBD-16A0-4F19-A752-68FDDBC62271}">
+													<Language>SFX</Language>
+													<AudioFile>131846-Revolver-SmithWesson-RollChamber-Fienup-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="622556435"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="131846-Revolver-SmithWesson-RollChamber-Fienup-005" ID="{4F41ABBD-16A0-4F19-A752-68FDDBC62271}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="GunPlaced" ID="{00EE4625-C412-43F6-B481-931118E888DA}" ShortID="1026731063">
 											<ReferenceList>
@@ -2363,6 +2422,22 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="157475-MB-Pepper-Bash-05" ID="{A1B9EF5D-481A-4D21-891B-C6A01FB1449D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0153866809881847"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>157475-MB-Pepper-Bash-05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1028689823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="157475-MB-Pepper-Bash-05" ID="{A1B9EF5D-481A-4D21-891B-C6A01FB1449D}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="GunJostled" ID="{450BBC0E-D88E-4B90-A755-09DFFACE225E}" ShortID="631380463">
 											<ReferenceList>
@@ -2373,6 +2448,23 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="313029-EFX_INT_Revolver_Gun_Metal_Handle_01" ID="{77A6EE18-80AB-4B40-976D-D55E5530ACDA}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.7507991734143"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.74694353070176"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>313029-EFX_INT_Revolver_Gun_Metal_Handle_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1060172450"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="313029-EFX_INT_Revolver_Gun_Metal_Handle_01" ID="{77A6EE18-80AB-4B40-976D-D55E5530ACDA}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</Folder>

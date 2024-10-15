@@ -91,9 +91,9 @@ public class Town1Quests : MonoBehaviour
                 if (isDoneQuest1 && !quest1TurnedIn)
                 {
                     RemoveObjective("- Return to Carson");
-                    AkSoundEngine.PostEvent("QuestComplete", gameObject);
                     AddObjective("- Ride Horse to Red's Property");
                     AddObjective("- Speak to Red");
+                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
                     carsonPoint.SetActive(false);
                     carsonActor.NextDialogue();
                     redPoint.SetActive(true);
@@ -103,6 +103,7 @@ public class Town1Quests : MonoBehaviour
                 {
                     returnedToCarson2 = true;
                     RemoveObjective("- Return to Carson");
+                    AkSoundEngine.PostEvent("QuestComplete", gameObject);
                     AddObjective("- Meet Blaze Adams");
                     carsonPoint.SetActive(false);
                     actor.NextDialogue();

@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{AF6DE900-C915-3AFE-2E87-CA0AF9CE0800}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{1DBF3666-AE9C-1C1A-11CC-D7BC34A4FC6D}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -93,6 +93,10 @@
 					<ShortName>ChasingCassidy_Cards Turn and River_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="182490615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>86231-Chest_drawer_close_wood-BLASTWAVEFX-23442.wav</ShortName>
+					<CachePath>SFX/86231-Chest_drawer_close_wood-BLASTWAVEFX-23442_5B8AD4FA.wem</CachePath>
+				</File>
 				<File Id="195674598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Gunshot_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Gunshot_1_818F3B66.wem</CachePath>
@@ -131,7 +135,7 @@
 				</File>
 				<File Id="284681571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</ShortName>
-					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_44144087.wem</CachePath>
+					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_80202A45.wem</CachePath>
 				</File>
 				<File Id="293733891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet Full.wav</ShortName>
@@ -147,7 +151,7 @@
 				</File>
 				<File Id="329471324" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</ShortName>
-					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_5CA641FE.wem</CachePath>
+					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_59D6ABD2.wem</CachePath>
 				</File>
 				<File Id="335945829" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Loop_01.wav</ShortName>
@@ -240,6 +244,10 @@
 				<File Id="557283522" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Turn and River_6.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="622556435" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>131846-Revolver-SmithWesson-RollChamber-Fienup-005.wav</ShortName>
+					<CachePath>SFX/131846-Revolver-SmithWesson-RollChamber-Fienup-005_818F3B66.wem</CachePath>
 				</File>
 				<File Id="626871132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>499322-Old_Western_Swinging_Saloon_Door_-Releasing_Hinge_Closing_Squeak_-02_016458_.wav</ShortName>
@@ -337,6 +345,10 @@
 					<ShortName>ChasingCassidy_PokerChips Bet All.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_PokerChips Bet All_818F3B66.wem</CachePath>
 				</File>
+				<File Id="957938172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>403629-Object_or_Body_Fall_Foley_-Drop_on_Ground_Noise_-02_004122_.wav</ShortName>
+					<CachePath>SFX/403629-Object_or_Body_Fall_Foley_-Drop_on_Ground_Noise_-02_004122__818F3B66.wem</CachePath>
+				</File>
 				<File Id="995402217" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Cards Flop_3.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Flop_3_818F3B66.wem</CachePath>
@@ -345,12 +357,34 @@
 					<ShortName>ChasingCassidy_PokerChips Bet Full_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_PokerChips Bet Full_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1028689823" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>157475-MB-Pepper-Bash-05.wav</ShortName>
+					<CachePath>SFX/157475-MB-Pepper-Bash-05_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1047242508" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>in-the-saloon-116225.wav</ShortName>
 					<CachePath>SFX/in-the-saloon-116225_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1060172450" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>313029-EFX_INT_Revolver_Gun_Metal_Handle_01.wav</ShortName>
+					<CachePath>SFX/313029-EFX_INT_Revolver_Gun_Metal_Handle_01_56A7295A.wem</CachePath>
+				</File>
+				<File Id="1073115463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>431496-Smith-_-Wesson-M29-.wav</ShortName>
+					<CachePath>SFX/431496-Smith-_-Wesson-M29-_9F9933A0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="4190209930" Name="BarrellRotate" DurationType="OneShot" DurationMin="1.8058276" DurationMax="1.8058276">
+					<MediaRefs>
+						<MediaRef Id="622556435"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2587856914" Name="BodyFall" DurationType="OneShot" DurationMin="0.74791664" DurationMax="0.74791664">
+					<MediaRefs>
+						<MediaRef Id="957938172"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2676658430" Name="DoorBellClose" DurationType="OneShot" DurationMin="3.3108802" DurationMax="3.3108802">
 					<MediaRefs>
 						<MediaRef Id="233214098"/>
@@ -369,6 +403,11 @@
 				<Event Id="1404805401" Name="DoorOpen" DurationType="OneShot" DurationMin="1.0930536" DurationMax="1.0930536">
 					<MediaRefs>
 						<MediaRef Id="329471324"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1136938172" Name="DryFire" DurationType="OneShot" DurationMin="0.50390285" DurationMax="0.50390285">
+					<MediaRefs>
+						<MediaRef Id="1073115463"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1465847270" Name="EnterButcher" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -454,9 +493,24 @@
 						<MediaRef Id="896580619"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1087808326" Name="GunPlaced" DurationType="OneShot" DurationMin="0.28151926" DurationMax="0.28151926">
+					<MediaRefs>
+						<MediaRef Id="1028689823"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1287408361" Name="Gunshot" DurationType="OneShot" DurationMin="1.7518021" DurationMax="1.7518021">
 					<MediaRefs>
 						<MediaRef Id="195674598"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2114683588" Name="GunSlide" DurationType="OneShot" DurationMin="1.2337575" DurationMax="1.2337575">
+					<MediaRefs>
+						<MediaRef Id="182490615"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="780428406" Name="Handling" DurationType="OneShot" DurationMin="0.99614435" DurationMax="0.99614435">
+					<MediaRefs>
+						<MediaRef Id="1060172450"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3315603873" Name="ObjectiveUpdate" DurationType="OneShot" DurationMin="1.3808541" DurationMax="1.3808541">
@@ -553,5 +607,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{93DA797E-626E-7631-EFA0-80D2707566D9}</FileHash>
+	<FileHash>{8E5CFAA0-8319-E6F5-922A-2E5E8338D978}</FileHash>
 </SoundBanksInfo>

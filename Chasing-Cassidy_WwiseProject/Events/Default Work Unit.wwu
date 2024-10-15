@@ -186,6 +186,72 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="DryFire" ID="{2FF3FDEB-7C07-4EB2-B388-895F31E259D1}">
+									<ChildrenList>
+										<Action Name="" ID="{4853AD49-D148-4C02-ACB1-B83E5506BF33}" ShortID="600078121">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GunEmpty" ID="{A5325BB4-90B6-4983-B3FA-669250AB4954}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Handling" ID="{4C3495FE-D80E-4D3E-8664-298615DA8CC6}">
+									<ChildrenList>
+										<Action Name="" ID="{3879FB4E-71CB-406D-B37F-A815132E47C4}" ShortID="43107643">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GunJostled" ID="{450BBC0E-D88E-4B90-A755-09DFFACE225E}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="GunPlaced" ID="{E33B7D0F-7473-4BC1-86D0-D7DE678B6071}">
+									<ChildrenList>
+										<Action Name="" ID="{D6F02374-E042-4B5B-BB32-F634396B8A4E}" ShortID="668218261">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GunPlaced" ID="{00EE4625-C412-43F6-B481-931118E888DA}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BarrellRotate" ID="{CCFCDBED-33EF-47E0-80B2-33098E99C2DE}">
+									<ChildrenList>
+										<Action Name="" ID="{E1A9404C-3080-49D8-8A77-1B088F4DD4DD}" ShortID="105505332">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BarrellRotate" ID="{7745B537-C9A6-455A-B31A-E39A66CA52A7}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="GunSlide" ID="{0A980C8D-23F4-41C3-A029-7D10BF641975}">
+									<ChildrenList>
+										<Action Name="" ID="{94DBFC06-0262-4249-939A-D099727E52DB}" ShortID="952059479">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GunSlide" ID="{0F772A73-9437-486C-9525-95A7A5D43178}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BodyFall" ID="{D6E442DB-BAE8-4567-A884-98EEBE7A938D}">
+									<ChildrenList>
+										<Action Name="" ID="{60AE28DB-75B4-4B78-B0BE-A3E84B3C06F5}" ShortID="511301291">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BodyFall" ID="{3E9985A0-2770-4F1E-9D8E-ACA21630BE06}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

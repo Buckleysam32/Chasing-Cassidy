@@ -670,6 +670,30 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2c4679f34d3bff64fac569c7c756b9e4, type: 2}
+  dryfireEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ad8b3f1a95a58545b2eb07fbdc57eff, type: 2}
+  handlingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2834d9859af56e14cb2a3c629dd71588, type: 2}
+  placeEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 41641ccee7e40cb4483543ad79e666c9, type: 2}
+  barrellrotateEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 43f9a3d95445faf4bb3292419b88384b, type: 2}
+  gunSlideEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bc92d8949dd0f25499f0c6cebb5f2561, type: 2}
+  bodyThudEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 590af5ed1568eca4baa6074063907fd4, type: 2}
 --- !u!4 &6414975119071795107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: af4ddd03be5479a4ea5afc308d23091d, type: 3}

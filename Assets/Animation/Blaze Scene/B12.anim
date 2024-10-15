@@ -3991,8 +3991,43 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.43333334
+    functionName: PlaceSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.53333336
+    functionName: SlideSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0166667
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 3.2333333
     functionName: GunshotSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.5
+    functionName: BodythudSound
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
     floatParameter: 0
