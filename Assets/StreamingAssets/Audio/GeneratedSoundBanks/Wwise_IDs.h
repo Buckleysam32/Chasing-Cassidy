@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID DOORBELLCLOSE = 2676658430U;
         static const AkUniqueID DOORBELLOPEN = 2845554458U;
+        static const AkUniqueID DOORCLOSE = 3638457343U;
+        static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID ENTERBUTCHER = 1465847270U;
         static const AkUniqueID ENTERGROCER = 317562889U;
         static const AkUniqueID ENTERGUNSMITH = 2551708614U;
@@ -23,6 +25,7 @@ namespace AK
         static const AkUniqueID FLIES = 1457611216U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID GLASSSHATTER = 206611762U;
+        static const AkUniqueID GUNSHOT = 1287408361U;
         static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;
         static const AkUniqueID OUTSIDE = 438105790U;
         static const AkUniqueID PIANO = 1324340420U;

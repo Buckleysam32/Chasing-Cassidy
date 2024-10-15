@@ -15585,11 +15585,11 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2deb6d87d16619a4e98e37240a243e39, type: 2}
   doorOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 404063d9dd63ff5469a4ff73322cfdb4, type: 2}
 --- !u!4 &458581187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4381033527427378, guid: 08ee8a2ffea05764ca8eba670d1a7d18, type: 3}
@@ -56806,11 +56806,11 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2deb6d87d16619a4e98e37240a243e39, type: 2}
   doorOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 404063d9dd63ff5469a4ff73322cfdb4, type: 2}
 --- !u!1001 &1667922050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71195,11 +71195,11 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2deb6d87d16619a4e98e37240a243e39, type: 2}
   doorOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 404063d9dd63ff5469a4ff73322cfdb4, type: 2}
 --- !u!1001 &2103108865
 PrefabInstance:
   m_ObjectHideFlags: 0

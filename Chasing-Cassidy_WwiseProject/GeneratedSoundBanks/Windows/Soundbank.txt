@@ -4,7 +4,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	438105790	Outside			\Default Work Unit\Town1Events\Outside	
 	737300443	SaloonDoorShut			\Default Work Unit\Town1Events\SaloonDoorShut	
 	1114964412	Start_Game			\Default Work Unit\Start_Game	
+	1287408361	Gunshot			\Default Work Unit\Town1Events\Blaze\Gunshot	
 	1324340420	Piano			\Default Work Unit\Town1Events\Piano	
+	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	1457611216	Flies			\Default Work Unit\Town1Events\Flies	
 	1465847270	EnterButcher			\Default Work Unit\Town1Events\EnterButcher	
 	2092967876	QuestComplete			\Default Work Unit\QuestComplete	
@@ -15,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2845554458	DoorBellOpen			\Default Work Unit\DoorBellOpen	
 	3123159437	SaloonDoorOpen			\Default Work Unit\Town1Events\SaloonDoorOpen	
 	3315603873	ObjectiveUpdate			\Default Work Unit\ObjectiveUpdate	
+	3638457343	DoorClose			\Default Work Unit\DoorClose	
 	3832320589	EnterSaloon			\Default Work Unit\Town1Events\EnterSaloon	
 	3836320178	PokerGame			\Default Work Unit\Town1Events\PokerGame	
 
@@ -48,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	135228403	All_In1	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_PokerChips Bet All_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\All_In\All_In1		467378
 	155898646	All_In2	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_PokerChips Bet All_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\All_In\All_In2		375846
 	170393069	River1	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Turn and River_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\River\River1		373070
+	195674598	Gunshot	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Gunshot_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\Blaze\Gunshot		168268
 	197144084	ObjectiveUpdate	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Chasing Cassidy_Objective Update_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectiveUpdate		132658
 	199536278	Deal	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Deal_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Deal\Deal		573536
 	202879349	Sand_08	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_CFAD62B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand\Sand_08		90856
@@ -56,9 +60,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	223116959	Turn	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Turn and River_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Turn\Turn		326272
 	230018626	SaloonDoorOpen	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\499318-Old_Western_Swinging_Saloon_Door_Open_-Hinge_Opening_Squeak_-05_016464__818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\SaloonDoorOpen		115400
 	233214098	DoorCloseBell	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Door Bell_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorCloseBell		317940
+	284681571	DoorClose	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_44144087.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorClose		146712
 	293733891	Bet2	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_PokerChips Bet Full_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Bet\Bet2		498924
 	314280735	All_In3	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_PokerChips Bet All_3_6F35D502.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\All_In\All_In3		360736
 	316420390	Bet1	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_PokerChips Bet Empty_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Bet\Bet1		307694
+	329471324	DoorOpen	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_5CA641FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen		209960
 	335945829	Fire	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Fire Loop_01_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire		1612028
 	336886080	CompactSand1	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Chasing Cassidy Footsteps_Gravel_01.R_04C0219B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\CompactSand\CompactSand1		77952
 	336894856	Sand_01	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\253955-Feet-Footsteps-Sand-Dry-Barefoot-Walk-Uneven_A7A39E8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Sand\Sand_01		89128
@@ -89,7 +95,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	676491757	CompactSand5	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Chasing Cassidy Footsteps_Gravel_01.R_A8A5A388.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\CompactSand\CompactSand5		129858
 	692156950	Deal2	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Deal_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Deal\Deal2		732508
 	708991385	Wood_01	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_40057BBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Wood_01		123540
-	722486283	Flies	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\134454-EFX_EXT_Flies_on_a_Corpse_07_2EE22FE0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Flies		1711816
+	722486283	Flies	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\134454-EFX_EXT_Flies_on_a_Corpse_07_44AB0CB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Flies		1711816
 	742476583	ragtime-115446	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ragtime-115446_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\Pianist\ragtime-115446		20676192
 	748161923	Wood_07	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\158537-Feet-Footsteps-Wood-Parquet-Boots-Rubber_Sole-Blundstones-Walk-Stop_D224340A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Wood_07		115572
 	752395463	Shuffle	C:\Users\aaron\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidy_Cards Shuffle_CF8AAD1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\PokerGame\Shuffle\Shuffle		1485568

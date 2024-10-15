@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{D091690B-F938-3335-9DF1-2E37E064D3BD}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{AF6DE900-C915-3AFE-2E87-CA0AF9CE0800}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -93,6 +93,10 @@
 					<ShortName>ChasingCassidy_Cards Turn and River_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Cards Turn and River_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="195674598" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChasingCassidy_Gunshot_1.wav</ShortName>
+					<CachePath>SFX/ChasingCassidy_Gunshot_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="197144084" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chasing Cassidy_Objective Update_1.wav</ShortName>
 					<CachePath>SFX/Chasing Cassidy_Objective Update_1_818F3B66.wem</CachePath>
@@ -125,6 +129,10 @@
 					<ShortName>ChasingCassidy_Door Bell_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_Door Bell_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="284681571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</ShortName>
+					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_44144087.wem</CachePath>
+				</File>
 				<File Id="293733891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet Full.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_PokerChips Bet Full_818F3B66.wem</CachePath>
@@ -136,6 +144,10 @@
 				<File Id="316420390" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_PokerChips Bet Empty_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidy_PokerChips Bet Empty_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="329471324" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</ShortName>
+					<CachePath>SFX/179501-EFX_EXT_Back_Door_O-C_Close_Hard_02_5CA641FE.wem</CachePath>
 				</File>
 				<File Id="335945829" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Loop_01.wav</ShortName>
@@ -259,7 +271,7 @@
 				</File>
 				<File Id="722486283" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>134454-EFX_EXT_Flies_on_a_Corpse_07.wav</ShortName>
-					<CachePath>SFX/134454-EFX_EXT_Flies_on_a_Corpse_07_2EE22FE0.wem</CachePath>
+					<CachePath>SFX/134454-EFX_EXT_Flies_on_a_Corpse_07_44AB0CB1.wem</CachePath>
 				</File>
 				<File Id="742476583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ragtime-115446.wav</ShortName>
@@ -349,6 +361,16 @@
 						<MediaRef Id="97768054"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3638457343" Name="DoorClose" DurationType="OneShot" DurationMin="0.76364017" DurationMax="0.76364017">
+					<MediaRefs>
+						<MediaRef Id="284681571"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1404805401" Name="DoorOpen" DurationType="OneShot" DurationMin="1.0930536" DurationMax="1.0930536">
+					<MediaRefs>
+						<MediaRef Id="329471324"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1465847270" Name="EnterButcher" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="1855370026" Id="2034834082" Name="Butcher"/>
@@ -430,6 +452,11 @@
 				<Event Id="206611762" Name="GlassShatter" MaxAttenuation="10" DurationType="OneShot" DurationMin="22.81855" DurationMax="22.98987">
 					<MediaRefs>
 						<MediaRef Id="896580619"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1287408361" Name="Gunshot" DurationType="OneShot" DurationMin="1.7518021" DurationMax="1.7518021">
+					<MediaRefs>
+						<MediaRef Id="195674598"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3315603873" Name="ObjectiveUpdate" DurationType="OneShot" DurationMin="1.3808541" DurationMax="1.3808541">
@@ -526,5 +553,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{97EF283F-41FF-A498-914C-B5DCEA63B8CA}</FileHash>
+	<FileHash>{5DAE401A-04EC-DDB9-FD3F-F37DDD999A55}</FileHash>
 </SoundBanksInfo>

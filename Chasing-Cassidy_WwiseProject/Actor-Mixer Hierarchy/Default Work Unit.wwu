@@ -2290,6 +2290,92 @@
 										<ActiveSource Name="499322-Old_Western_Swinging_Saloon_Door_-Releasing_Hinge_Closing_Squeak_-02_016458_" ID="{FA2A352F-1993-47E5-B535-8CFABC845F32}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Folder Name="Blaze" ID="{2D1BD681-F7C4-4F2F-949F-78ABA6296C06}" ShortID="1035871776">
+									<ChildrenList>
+										<Sound Name="Gunshot" ID="{FE7D9EBA-9483-4425-9C1B-68A96B40D53A}" ShortID="1021420106">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ChasingCassidy_Gunshot_1" ID="{C06A3FBB-C62E-4D89-84DC-6247245DE133}">
+													<Language>SFX</Language>
+													<AudioFile>ChasingCassidy_Gunshot_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195674598"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ChasingCassidy_Gunshot_1" ID="{C06A3FBB-C62E-4D89-84DC-6247245DE133}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GunSlide" ID="{0F772A73-9437-486C-9525-95A7A5D43178}" ShortID="1011507034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+										<Sound Name="GunEmpty" ID="{A5325BB4-90B6-4983-B3FA-669250AB4954}" ShortID="153101139">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+										<Sound Name="BodyFall" ID="{3E9985A0-2770-4F1E-9D8E-ACA21630BE06}" ShortID="519484230">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+										<Sound Name="BarrellRotate" ID="{7745B537-C9A6-455A-B31A-E39A66CA52A7}" ShortID="981094777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+										<Sound Name="GunPlaced" ID="{00EE4625-C412-43F6-B481-931118E888DA}" ShortID="1026731063">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+										<Sound Name="GunJostled" ID="{450BBC0E-D88E-4B90-A755-09DFFACE225E}" ShortID="631380463">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Sound Name="Flies" ID="{55FABD2C-04D1-4390-966D-E36D3252B62D}" ShortID="513673789">
@@ -2630,7 +2716,7 @@
 						<ActiveSource Name="Fire Loop_01" ID="{7D9EEDC3-2E17-4C3B-9B45-A47AFD853159}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="DoorOpenSqueak" ID="{F37EB881-917C-47C4-8CC4-2B0BA8257F97}" ShortID="1050232484">
+				<Sound Name="DoorOpen" ID="{F37EB881-917C-47C4-8CC4-2B0BA8257F97}" ShortID="1050232484">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
@@ -2639,8 +2725,25 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="179501-EFX_EXT_Back_Door_O-C_Close_Hard_02" ID="{92676A3A-BD55-4A0F-9E0B-5D53E520C6CF}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="2.78504054908907"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.8780940979251"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="329471324"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="179501-EFX_EXT_Back_Door_O-C_Close_Hard_02" ID="{92676A3A-BD55-4A0F-9E0B-5D53E520C6CF}" Platform="Linked"/>
+					</ActiveSourceList>
 				</Sound>
-				<Sound Name="DoorCloseSqueak" ID="{0D70B05A-8172-48DB-9654-A1FAD09C3C3D}" ShortID="752362336">
+				<Sound Name="DoorClose" ID="{0D70B05A-8172-48DB-9654-A1FAD09C3C3D}" ShortID="752362336">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
@@ -2649,6 +2752,23 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="179501-EFX_EXT_Back_Door_O-C_Close_Hard_02" ID="{434D3B50-8933-4A1F-99E5-33760BDDCA8B}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="4.61178757591094"/>
+								<Property Name="TrimEnd" Type="Real64" Value="5.37542772646761"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>179501-EFX_EXT_Back_Door_O-C_Close_Hard_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="284681571"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="179501-EFX_EXT_Back_Door_O-C_Close_Hard_02" ID="{434D3B50-8933-4A1F-99E5-33760BDDCA8B}" Platform="Linked"/>
+					</ActiveSourceList>
 				</Sound>
 				<Sound Name="DoorOpenBell" ID="{14AC6076-A1E0-47F7-A744-69B1956A9F43}" ShortID="11406151">
 					<ReferenceList>

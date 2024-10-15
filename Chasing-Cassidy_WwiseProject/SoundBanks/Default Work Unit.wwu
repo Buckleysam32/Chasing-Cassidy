@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Soundbank" ID="{3533D571-6C01-4D20-BFDC-B6D6F6C8B7FE}">
 					<ObjectInclusionList>
+						<ObjectRef Name="DoorClose" ID="{DAC16373-3DA4-4027-995A-85879E782E67}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorBellOpen" ID="{9EA255CF-B107-421D-A1CA-84557FD6966A}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterGrocer" ID="{C6A351DD-6733-4247-A503-A2A38CAE1F68}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{3D7075DD-83BD-4275-A0E8-D7CD7D1D782C}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
@@ -16,6 +17,8 @@
 						<ObjectRef Name="ObjectiveUpdate" ID="{256A8416-880B-466A-AD61-016D460B1B44}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Start_Game" ID="{A0FCC5F6-16AB-4826-ABE7-0E80C97496A5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PokerGame" ID="{16380298-E1EB-4855-9F65-48D410D98013}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DoorOpen" ID="{2FD3FF0E-1ACB-489A-B695-C152E8E8D4D5}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Gunshot" ID="{65D0D62F-4C9F-49C1-90A8-373514F53876}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnterSaloon" ID="{5E5C1F69-EE28-4A86-AAA5-8EF0A307AD69}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Piano" ID="{3CAA5B49-F089-4B69-B412-129E381BF9AA}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="QuestComplete" ID="{9523C0FA-7C2A-4B98-8451-D8C8F18205F0}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>

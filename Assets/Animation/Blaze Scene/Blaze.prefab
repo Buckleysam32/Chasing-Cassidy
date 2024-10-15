@@ -571,6 +571,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4ddd03be5479a4ea5afc308d23091d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 274128972319824094}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4ddd03be5479a4ea5afc308d23091d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7429355111809728280}
   m_SourcePrefab: {fileID: 100100000, guid: af4ddd03be5479a4ea5afc308d23091d, type: 3}
 --- !u!1 &5930468084988906777 stripped
 GameObject:
@@ -606,6 +609,7 @@ MonoBehaviour:
   movement: {fileID: 0}
   playerBody: {fileID: 0}
   characterAnim: {fileID: 6572279933185887216}
+  blazeActor: {fileID: 0}
 --- !u!95 &6572279933185887216
 Animator:
   serializedVersion: 5
@@ -650,6 +654,22 @@ MonoBehaviour:
   crossHair: {fileID: 0}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+--- !u!114 &7429355111809728280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5930468084988906777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunshotEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2c4679f34d3bff64fac569c7c756b9e4, type: 2}
 --- !u!4 &6414975119071795107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: af4ddd03be5479a4ea5afc308d23091d, type: 3}

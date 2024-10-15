@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584730910389241277
+    m_lastTime: -8584727418000381982
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -145,8 +145,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584730910389251279
+    m_lastTime: -8584727418000441994
     List:
+    - name: Blaze
+      guid: 189a1a0fef06e34d98c74e3e3880b8d8
+      id: 3579874907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: Blaze
+        ObjectType: 4
+        guid: 189a1a0fef06e34d98c74e3e3880b8d8
+      Path: Events\Default Work Unit\Town1Events\Blaze
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: DoorBellClose
       guid: 7c0b791bc7ec31438667c09900af9185
       id: 2676658430
@@ -335,6 +355,29 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 22.98987
       minDuration: 22.81855
+    - name: Gunshot
+      guid: 2fd6d0659f4cc14990a8373514f53876
+      id: 1287408361
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Town1Events
+        ObjectType: 4
+        guid: c5b98f8e0d83204ba17213fd6dab3d6c
+      - ElementName: Blaze
+        ObjectType: 4
+        guid: 189a1a0fef06e34d98c74e3e3880b8d8
+      - ElementName: Gunshot
+        ObjectType: 3
+        guid: 2fd6d0659f4cc14990a8373514f53876
+      Path: Events\Default Work Unit\Town1Events\Blaze\Gunshot
+      maxAttenuation: 0
+      maxDuration: 1.7518021
+      minDuration: 1.7518021
     - name: ObjectiveUpdate
       guid: 16846a250b886a46ad61016d460b1b44
       id: 3315603873
@@ -754,7 +797,7 @@ MonoBehaviour:
     m_lastTime: -8584732661958334878
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f0000001000000011000000120000001300000014000000150000001600000020000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
