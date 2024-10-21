@@ -29,7 +29,7 @@ public class PlayerInteractor : MonoBehaviour
                     Debug.Log("Interact Door");
                     interactable.UpdateDoor();
                 }
-                if (hit.collider.name == "Back Door" && Input.GetKeyDown(KeyCode.E) && !FindAnyObjectByType<Town1Quests>().hasBlaze1)
+                if (hit.collider.name == "Back Door" && Input.GetKeyDown(KeyCode.E) && !FindAnyObjectByType<Town1Quests>().hasBlaze1 && FindAnyObjectByType<Town1Quests>().hasSpokeToRed)
                 {
                     Debug.Log("Interact Door");
                     blazeInteract.StartDialogue();
