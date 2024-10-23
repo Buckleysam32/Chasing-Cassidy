@@ -9054,6 +9054,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4086297362500094, guid: 155cb2392aa96084ba9b307e4d0f95e2, type: 3}
   m_PrefabInstance: {fileID: 1445624549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &253387842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1308432063542622, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+  m_PrefabInstance: {fileID: 721613297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &253387846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253387842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffe017a789bf9841afa7550939cb348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.7
 --- !u!1001 &253510860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27367,6 +27385,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Windmill_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4010307655491074, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.790048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010307655491074, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010307655491074, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6130451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010307655491074, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -75.62
+      objectReference: {fileID: 0}
     - target: {fileID: 4930613211711304, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.234074
@@ -27410,7 +27444,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1248118887984246, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1963711794}
+    - targetCorrespondingSourceObject: {fileID: 1308432063542622, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 253387846}
   m_SourcePrefab: {fileID: 100100000, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
 --- !u!4 &721613298 stripped
 Transform:
@@ -46876,6 +46916,7 @@ MonoBehaviour:
   crosshair: {fileID: 1394257309}
   interactUI: {fileID: 2542215}
   blazeInteract: {fileID: 0}
+  questManager: {fileID: 0}
 --- !u!114 &1320052618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54772,6 +54813,7 @@ MonoBehaviour:
   crosshair: {fileID: 1394257309}
   interactUI: {fileID: 2542215}
   blazeInteract: {fileID: 1865125279}
+  questManager: {fileID: 0}
 --- !u!114 &1506361731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71061,6 +71103,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05a0c8e6b527de943bd4968427568c0b, type: 3}
+--- !u!1 &1963711788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1248118887984246, guid: 76edf5e1f55092243bf3fdb2fc680986, type: 3}
+  m_PrefabInstance: {fileID: 721613297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1963711794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963711788}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.8527987, y: 8.961648, z: 3.0622106}
+  m_Center: {x: 0.035366062, y: 4.3723254, z: 0.07044984}
 --- !u!4 &1967496726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4272146701519060, guid: a6dab281240c0aa469f73471d565fec1, type: 3}
