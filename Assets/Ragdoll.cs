@@ -16,7 +16,7 @@ public class Ragdoll : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
     private void FixedUpdate()
-    {
+    {   
         if (!hit && !idle)
         {
             transform.Translate(Vector3.forward * 2 * Time.deltaTime);
@@ -36,7 +36,7 @@ public class Ragdoll : MonoBehaviour
                 rig.useGravity = true;
             }
 
-            transform.GetComponent<Rigidbody>().AddForce(other.transform.root.transform.position - transform.position * 5, ForceMode.Impulse);
+            transform.GetComponent<Rigidbody>().AddForce(other.transform.root.transform.position - transform.position, ForceMode.Impulse);
 
             transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;  
             hit = true;
