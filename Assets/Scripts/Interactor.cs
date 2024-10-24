@@ -10,6 +10,7 @@ public class PlayerInteractor : MonoBehaviour
     public GameObject crosshair;
     public GameObject interactUI;
     public NPCInteraction blazeInteract;
+    public Town1Quests questManager;
 
     void Update()
     {
@@ -29,7 +30,7 @@ public class PlayerInteractor : MonoBehaviour
                     Debug.Log("Interact Door");
                     interactable.UpdateDoor();
                 }
-                if (hit.collider.name == "Back Door" && Input.GetKeyDown(KeyCode.E) && !FindAnyObjectByType<Town1Quests>().hasBlaze1 && FindAnyObjectByType<Town1Quests>().hasSpokeToRed)
+                if (hit.collider.name == "Back Door" && Input.GetKeyDown(KeyCode.E) && !questManager.hasBlaze1 && questManager.hasSpokeToRed)
                 {
                     Debug.Log("Interact Door");
                     blazeInteract.StartDialogue();

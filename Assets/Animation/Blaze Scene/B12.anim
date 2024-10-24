@@ -1040,7 +1040,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3.5
+    m_StopTime: 4.483333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -4030,6 +4030,13 @@ AnimationClip:
     functionName: BodythudSound
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 4.483333
+    functionName: StartTrans
+    data: 
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
