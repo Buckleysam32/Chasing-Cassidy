@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI reputation;
 
+    public GameObject transition;
+
     private bool isPaused = false;
 
     private void Update()
