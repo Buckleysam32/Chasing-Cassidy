@@ -19,6 +19,11 @@ public class Transition : MonoBehaviour
         SceneManager.LoadScene("Town2");
     }
 
+    public void StartTrans()
+    {
+        trans.SetActive(true);
+    }
+
     // Update is called once per frame
     void Update()
     {
