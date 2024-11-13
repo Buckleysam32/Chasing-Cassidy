@@ -39,6 +39,7 @@ public class NPCInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("In Range");
             inRange = true;
             crossHair.SetActive(false);
             talkButton.SetActive(true);

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     private UIManager uiManager;
 
+    public bool isTown1 = false;
+
     private void Awake()
     {
         if (Instance == null)

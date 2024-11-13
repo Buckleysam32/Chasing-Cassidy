@@ -51,7 +51,6 @@ public class DialogueManager : MonoBehaviour
     {
         quests.SpeakToNPC(title, actor);
         Debug.Log(title);
-
         // Display the dialogue UI
         ShowDialogue();
 
@@ -265,6 +264,7 @@ public class DialogueManager : MonoBehaviour
     // Show the dialogue UI
     private void ShowDialogue()
     {
+        Debug.Log("Show Dialogue");
         DialogueParent.SetActive(true);
         characterImage.gameObject.SetActive(true);
     }

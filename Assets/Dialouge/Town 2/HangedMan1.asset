@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: HangedMan1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Hey you, let me down, come on before they come back
+      speaker: Hanging Man
+    - text: I need information then I might let you go, do you know anything about
+        Cassidy Miller?
+      speaker: David
+    - text: Cassidy Miller? The old outlaw, haha actually I do funny enough but you
+        need to let me go
+      speaker: Hanging Man
+    - text: Your not exactly in the position to make demands so tell me or I might
+        just kick that stool out from under you
+      speaker: David
+    - text: "Arghhhhhh Fuck fine, me and the boys have been camping in this dig site
+        or something a rather. The bitch running the place used to be his wife or
+        something supposably and well we\u2019ve had her captive for entertainment
+        so she might know something"
+      speaker: 'Hanging Man '
+    - text: Thanks I'll look into it
+      speaker: David
+    - text: Hey wait, what about me?!
+      speaker: Hanging Man
+    - text: Oh yeah hmmm...
+      speaker: David
+    responses:
+    - responseText: Pull Lever
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 1
+    - responseText: Leave him for the Sherrif
+      nextNode:
+        dialogueLines:
+        - text: I appreciate your cooperation but I cannot in good conscience let
+            you free
+          speaker: David
+        - text: What! You lying motherfucker, my boys will tear you to shreds like
+            the rest of this piece of shit town just you wait!
+          speaker: 'Hanging Man '
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 1

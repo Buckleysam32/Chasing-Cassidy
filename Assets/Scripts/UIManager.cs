@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
 
     private bool isPaused = false;
 
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
@@ -60,6 +61,7 @@ public class UIManager : MonoBehaviour
 
     public void CloseMenu()
     {
+        Debug.Log("Close Menu");
         isPaused = false;
         MouseLook mouseLook = FindObjectOfType<MouseLook>();
         mouseLook.canMove = true;
@@ -88,5 +90,6 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         playerHud.SetActive(true);
+        dialouge.SetActive(false);
     }
 }
