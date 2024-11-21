@@ -19,6 +19,7 @@ TagManager:
   - ButcherStateTrigger
   - GunsmithStateTrigger
   - Guard
+  - CanPickUp
   layers:
   - Default
   - TransparentFX
@@ -51,8 +52,11 @@ TagManager:
   - 
   - 
   - Item
-  - 
+  - HoldLayer
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PickUpSortingLayer
+    uniqueID: 136061937
     locked: 0

@@ -10,17 +10,9 @@ public class Ragdoll : MonoBehaviour
 {
     Rigidbody rb;
     bool hit;
-    public bool idle;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-    }
-    private void FixedUpdate()
-    {   
-        if (!hit && !idle)
-        {
-            transform.Translate(Vector3.forward * 2 * Time.deltaTime);
-        }
     }
     void OnTriggerEnter(Collider other)
     {
@@ -35,10 +27,11 @@ public class Ragdoll : MonoBehaviour
                 rig.isKinematic = false;
                 rig.useGravity = true;
             }
+            transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
 
-            transform.GetComponent<Rigidbody>().AddForce(other.transform.root.transform.position - transform.position, ForceMode.Impulse);
+            //transform.GetComponent<Rigidbody>().AddForce((transform.root.transform.position - other.transform.position) * 500, ForceMode.Impulse);
+            transform.GetComponent<Rigidbody>().AddExplosionForce(500, transform.position, 25, 50, ForceMode.Impulse);
 
-            transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;  
             hit = true;
         }
     }
