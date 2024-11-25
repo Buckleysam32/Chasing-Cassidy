@@ -19,11 +19,12 @@ TagManager:
   - ButcherStateTrigger
   - GunsmithStateTrigger
   - Guard
+  - HorseWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HorseWall
   - Water
   - UI
   - Interactable
