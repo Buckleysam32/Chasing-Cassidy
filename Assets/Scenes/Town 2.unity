@@ -3248,6 +3248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moralScore: 0
   isTown1: 0
+  town: 2
 --- !u!4 &76608778
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class Actor : MonoBehaviour
     private UIManager uIManager;
     public Animator characterAnim;
     public Actor blazeActor;
+    public AudioClip[] textSounds = new AudioClip[0];
 
     private void Awake()
     {

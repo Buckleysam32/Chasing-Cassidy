@@ -11,15 +11,22 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject cam;
     [SerializeField] private Quaternion mainRotation;
     [SerializeField] private Quaternion settingsRotation;
+    [SerializeField] private GameManager gameManager;
+
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
 
     public void NewGame()
     {
+        gameManager.ClearData();
         SceneManager.LoadScene(1);
     }
 
     public void LoadGame()
     {
-
+        SceneManager.LoadScene(gameManager.town);
     }
 
     public void OpenSettings()

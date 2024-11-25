@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 183461232}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2006,6 +2005,7 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds: []
 --- !u!114 &45793081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2026,6 +2026,7 @@ MonoBehaviour:
   playerBody: {fileID: 1301518207}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds: []
 --- !u!4 &46435946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4689442123040608, guid: e2504e573c8c3ca4087cc20025bdcd03, type: 3}
@@ -4869,6 +4870,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4687834798837052, guid: eebdb6adb5dbe6749b8434a5f2d2c23a, type: 3}
   m_PrefabInstance: {fileID: 120867256}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &121942852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121942854}
+  - component: {fileID: 121942853}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &121942853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121942852}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &121942854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121942852}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 66.32, y: 0, z: -10.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &122439906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10795,7 +10924,7 @@ MonoBehaviour:
   waypoint5:
     img: {fileID: 1258338153}
     target: {fileID: 166584117}
-  smoothSpeed: 20
+  smoothSpeed: 40
 --- !u!4 &298557000
 Transform:
   m_ObjectHideFlags: 0
@@ -11714,6 +11843,7 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds: []
 --- !u!114 &322615655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11736,6 +11866,7 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds: []
 --- !u!4 &323042759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4917692024321908, guid: 6e48720e2686baf4b9170b824aaedf0e, type: 3}
@@ -14266,11 +14397,14 @@ MonoBehaviour:
   jedPoint: {fileID: 0}
   morrisPoint: {fileID: 0}
   redPoint: {fileID: 0}
+  hangPoint: {fileID: 0}
+  digSitePoint: {fileID: 0}
   carsonActor: {fileID: 1327542390}
   blazeActor: {fileID: 1865125281}
   horse: {fileID: 691970790}
   horsePoint: {fileID: 1808590418}
   backDoor: {fileID: 456816667}
+  jailDoor: {fileID: 0}
 --- !u!4 &411244376
 Transform:
   m_ObjectHideFlags: 0
@@ -19585,6 +19719,8 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
 --- !u!136 &523066468
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19656,6 +19792,10 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!1001 &526545783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22840,6 +22980,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1095476222015968, guid: 426818b3a5de99c4a8a5b78d022ffeab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1301518212}
+    - targetCorrespondingSourceObject: {fileID: 1095476222015968, guid: 426818b3a5de99c4a8a5b78d022ffeab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301518219}
     - targetCorrespondingSourceObject: {fileID: 1832136450815452, guid: 426818b3a5de99c4a8a5b78d022ffeab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1506361726}
@@ -30638,6 +30781,10 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!114 &787491623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30660,6 +30807,8 @@ MonoBehaviour:
   playerBody: {fileID: 1301518207}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
 --- !u!1001 &794335525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36812,6 +36961,8 @@ MonoBehaviour:
   quests: {fileID: 0}
   textSpeed: 0.05
   davidArt: {fileID: 21300000, guid: ee1891ad1d0459241bc79fd097d34b51, type: 3}
+  textSounds: []
+  AS: {fileID: 121942853}
 --- !u!224 &996182539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39595,6 +39746,8 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
 --- !u!136 &1066579344
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -39666,6 +39819,10 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!4 &1068492365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4365054245417938, guid: 827cdc91ce656b54e907953e440024d0, type: 3}
@@ -46559,6 +46716,14 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!81 &1301518219
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301518201}
+  m_Enabled: 1
 --- !u!4 &1302094079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4988686954721616, guid: 6a789fbc8e00f5c4f8b86941aa0a165e, type: 3}
@@ -47837,6 +48002,10 @@ MonoBehaviour:
   playerBody: {fileID: 1301518207}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!136 &1327542391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47886,6 +48055,10 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!1001 &1328564524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49741,6 +49914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moralScore: 0
   isTown1: 1
+  town: 0
 --- !u!4 &1369493642
 Transform:
   m_ObjectHideFlags: 0
@@ -49805,11 +49979,14 @@ MonoBehaviour:
   jedPoint: {fileID: 0}
   morrisPoint: {fileID: 0}
   redPoint: {fileID: 0}
+  hangPoint: {fileID: 0}
+  digSitePoint: {fileID: 0}
   carsonActor: {fileID: 0}
   blazeActor: {fileID: 0}
   horse: {fileID: 0}
   horsePoint: {fileID: 0}
   backDoor: {fileID: 0}
+  jailDoor: {fileID: 0}
 --- !u!114 &1369493644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61769,6 +61946,7 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds: []
 --- !u!114 &1691688315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61791,6 +61969,7 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds: []
 --- !u!4 &1691907279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4946188713926860, guid: ae6716148b78d9d4fbc289d950210aca, type: 3}
@@ -65541,6 +65720,8 @@ MonoBehaviour:
   crossHair: {fileID: 1394257309}
   startPosition: {x: 0, y: 0, z: 0}
   currentDialogueIndex: 0
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
 --- !u!114 &1793458392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65563,6 +65744,10 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   characterAnim: {fileID: 0}
   blazeActor: {fileID: 0}
+  textSounds:
+  - {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+  - {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+  - {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
 --- !u!136 &1793458393
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -77305,6 +77490,14 @@ PrefabInstance:
       propertyPath: characterArt
       value: 
       objectReference: {fileID: 21300000, guid: e4b6dafe72fea06469f43879d5702da7, type: 3}
+    - target: {fileID: 274128972319824094, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 274128972319824094, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
     - target: {fileID: 5494421013214732794, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0001829995
@@ -77386,6 +77579,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
       propertyPath: Dialogues.Array.data[10]
       value: 
       objectReference: {fileID: 11400000, guid: d11e729f3fac2d34fb00eb7dea005df9, type: 2}
@@ -77393,6 +77590,18 @@ PrefabInstance:
       propertyPath: Dialogues.Array.data[11]
       value: 
       objectReference: {fileID: 11400000, guid: 971c582e1d9f6454dad129f6b0f7ff34, type: 2}
+    - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f598826646c7db140a729753131263ac, type: 3}
+    - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: cdc6b6474f5819d449bddd8d56408396, type: 3}
+    - target: {fileID: 8650522982880587019, guid: 9090baee82ead78438afde05da7b9fd5, type: 3}
+      propertyPath: textSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 718b046f2586c2641b9120e6c9e0a388, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -77431,6 +77640,7 @@ SceneRoots:
   - {fileID: 996182539}
   - {fileID: 1980688254}
   - {fileID: 298557000}
+  - {fileID: 121942854}
   - {fileID: 45793075}
   - {fileID: 421238176}
   - {fileID: 787491616}
@@ -77439,6 +77649,7 @@ SceneRoots:
   - {fileID: 322615648}
   - {fileID: 523066465}
   - {fileID: 1793458389}
+  - {fileID: 5214598123676595720}
   - {fileID: 411244376}
   - {fileID: 577986474}
   - {fileID: 1808590418}
@@ -77449,5 +77660,4 @@ SceneRoots:
   - {fileID: 751547740}
   - {fileID: 1810913682}
   - {fileID: 1517398678}
-  - {fileID: 5214598123676595720}
   - {fileID: 281141017}

@@ -22,6 +22,8 @@ public class NPCInteraction : MonoBehaviour
     private bool inRange = false;
     public int currentDialogueIndex = 0; // Index to track the current dialogue
 
+    public AudioClip[] textSounds = new AudioClip[0];
+
     void Start()
     {
         town1Quests = FindObjectOfType<Town1Quests>();

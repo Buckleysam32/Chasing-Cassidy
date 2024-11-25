@@ -28,6 +28,10 @@ public class DisplayText : MonoBehaviour
     private bool dialogueInProgress = false;
     private Dictionary<int, ChoiceData> choices;
 
+    public AudioClip[] textSounds = new AudioClip[0];
+    public AudioSource AS;
+
+
     void Start()
     {
         textComponent.text = string.Empty;
@@ -108,6 +112,7 @@ public class DisplayText : MonoBehaviour
         if (!dialogueInProgress)
         {
             npcInteraction.dialogueInProgress = true;
+            textSounds = npcInteraction.textSounds;
             dialogueInProgress = true;
 
             if (textAsset != null)
@@ -142,8 +147,21 @@ public class DisplayText : MonoBehaviour
 
         string lineToDisplay = lines[index].TrimEnd();
 
+        int characterCount = 0;
+
         foreach (char c in lineToDisplay.ToCharArray())
         {
+            if (characterCount % 2 == 0) // Play the audio on every second character
+            {
+                int randomI = Random.Range(0, textSounds.Length - 1);
+                AudioClip randomClip = textSounds[randomI];
+
+                if (randomClip != null && AS != null)
+                {
+                    AS.PlayOneShot(randomClip);
+                }
+            }
+
             textComponent.text += c;
             textComponent.rectTransform.localPosition = originalPosition + GetShakeOffset();
             yield return new WaitForSeconds(textSpeed);

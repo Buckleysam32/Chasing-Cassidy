@@ -26,6 +26,9 @@ public class DialogueManager : MonoBehaviour
 
     public Sprite davidArt;
 
+    public AudioClip[] textSounds = new AudioClip[0];
+    public AudioSource AS;
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of DialogueManager
@@ -50,6 +53,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(string title, DialogueNode node, Actor actor)
     {
         quests.SpeakToNPC(title, actor);
+        textSounds = actor.textSounds;
         Debug.Log(title);
         // Display the dialogue UI
         ShowDialogue();
@@ -122,6 +126,16 @@ public class DialogueManager : MonoBehaviour
         for (int charIndex = 0; charIndex < text.Length; charIndex++)
         {
             DialogBodyText.text += text[charIndex]; // Add each character
+
+            int randomI = Random.Range(0, textSounds.Length - 1);
+
+            AudioClip randomClip = textSounds[randomI];
+
+            if (randomClip != null && AS != null)
+            {
+                AS.PlayOneShot(randomClip);
+                Debug.Log("Played: " + randomClip + "from: " + AS);
+            }
 
             // Allow skipping typing if any key is pressed (e.g., space to skip)
             if (Input.GetKeyDown(KeyCode.Space))
