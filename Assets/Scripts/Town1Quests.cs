@@ -262,6 +262,7 @@ public class Town1Quests : MonoBehaviour
                     RemoveObjective("- Speak with the Hanged Man");
                     AddObjective("- Search the Digsite");
                     hangPoint.SetActive(false);
+                    digSitePoint.SetActive(true);
 
                     break;
                 default:

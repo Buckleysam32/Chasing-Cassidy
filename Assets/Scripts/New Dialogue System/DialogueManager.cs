@@ -29,6 +29,8 @@ public class DialogueManager : MonoBehaviour
     public AudioClip[] textSounds = new AudioClip[0];
     public AudioSource AS;
 
+    public Animator barrelAnim;
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of DialogueManager
@@ -160,6 +162,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+
     // Method to display response buttons after dialogue has been typed out
     private void ShowResponseButtons(DialogueNode node, Actor actor)
     {
@@ -190,6 +193,19 @@ public class DialogueManager : MonoBehaviour
     // Handles response selection and triggers next dialogue node
     public void SelectResponse(DialogueResponse response, string title, Actor actor)
     {
+        if(actor.Name == "Hanging Man")
+        {
+            if (response.isGoodResponse)
+            {
+                GameManager.Instance.IncreaseMoralScore();
+                
+            }
+            if (response.isBadResponse)
+            {
+                GameManager.Instance.DecreaseMoralScore();
+                barrelAnim.SetTrigger("Move");
+            }
+        }
 
         // Update the moral score based on the response
         if (response.isGoodResponse)
