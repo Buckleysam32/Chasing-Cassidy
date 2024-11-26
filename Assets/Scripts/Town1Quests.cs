@@ -45,6 +45,8 @@ public class Town1Quests : MonoBehaviour
     public GameObject redPoint;
     public GameObject hangPoint;
     public GameObject digSitePoint;
+    public GameObject sitPoint;
+    public GameObject cassidyPoint;
     private MissionWaypoint waypointManager;
     public Actor carsonActor;
     public Actor blazeActor;
@@ -56,6 +58,9 @@ public class Town1Quests : MonoBehaviour
     private GameManager gm;
 
     public Interactable jailDoor;
+
+    public GameObject trailObjects;
+    public GameObject trailWall;
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +79,8 @@ public class Town1Quests : MonoBehaviour
         {
             hangPoint = waypointManager.waypoint1.img.gameObject;
             digSitePoint = waypointManager.waypoint2.img.gameObject;
+            sitPoint = waypointManager.waypoint3.img.gameObject;
+            cassidyPoint = waypointManager.waypoint4.img.gameObject;
         }
         carsonActor = GameObject.FindWithTag("Carson").GetComponent<Actor>();
         AddObjective("- Find Info at the saloon");
@@ -263,7 +270,18 @@ public class Town1Quests : MonoBehaviour
                     AddObjective("- Search the Digsite");
                     hangPoint.SetActive(false);
                     digSitePoint.SetActive(true);
-
+                    break;
+                case "Bandit 1":
+                    RemoveObjective(" - Search the Digsite");
+                    AddObjective("- Take a Seat");
+                    digSitePoint.SetActive(false);
+                    sitPoint.SetActive(true);
+                    break;
+                case "Bandit 2":
+                    RemoveObjective("- Take a Seat");
+                    AddObjective("- Follow the trail");
+                    sitPoint.SetActive(false);
+                    cassidyPoint.SetActive(true);
                     break;
                 default:
                     Debug.LogWarning("Unknown NPC name: " + npcName);

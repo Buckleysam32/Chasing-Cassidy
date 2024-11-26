@@ -54,7 +54,7 @@ public class Actor : MonoBehaviour
             playerBody.constraints = RigidbodyConstraints.FreezeAll;
             movement.canWalk = false;
             uIManager.playerHud.SetActive(false);
-            if(actor.Name == "Sherrif")
+            if(actor.Name == "Sherrif" || actor.Name == "Hanging Man")
             {
                 actor.enabled = false;
             }

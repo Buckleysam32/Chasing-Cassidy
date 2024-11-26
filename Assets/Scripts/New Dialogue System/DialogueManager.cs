@@ -25,6 +25,8 @@ public class DialogueManager : MonoBehaviour
     public static event DialogueEndHandler OnDialogueEnd;
 
     public Sprite davidArt;
+    public Sprite banditArt;
+    public Sprite joleneArt;
 
     public AudioClip[] textSounds = new AudioClip[0];
     public AudioSource AS;
@@ -86,17 +88,27 @@ public class DialogueManager : MonoBehaviour
             DialogueNode.DialogueLine line = node.dialogueLines[i];
             DialogBodyText.text = ""; // Clear current text
             DialogTitleText.text = line.speaker; // Set the speaker's name
-
-            if (line.speaker != "David")
-            {
-                actor.characterAnim.SetTrigger("talk");
-                characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
-            }
             if (line.speaker == "David")
             {
                 actor.characterAnim.SetTrigger("stop");
                 characterImage.sprite = davidArt;
             }
+            else if (line.speaker == "Bandits")
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = banditArt;
+            }
+            else if (line.speaker == "Jolene")
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = joleneArt;
+            }
+            else
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
+            }
+
 
             // Typing effect for the current line
             yield return StartCoroutine(TypeLineText(line.text));
