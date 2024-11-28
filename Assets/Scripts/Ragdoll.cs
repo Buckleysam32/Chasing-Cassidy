@@ -29,8 +29,7 @@ public class Ragdoll : MonoBehaviour
             }
             transform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
 
-            //transform.GetComponent<Rigidbody>().AddForce((transform.root.transform.position - other.transform.position) * 500, ForceMode.Impulse);
-            transform.GetComponent<Rigidbody>().AddExplosionForce(500, transform.position, 25, 50, ForceMode.Impulse);
+            transform.GetComponent<Rigidbody>().AddExplosionForce(350, transform.position, 25, 50, ForceMode.Impulse);
 
             hit = true;
         }
