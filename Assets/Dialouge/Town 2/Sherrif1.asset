@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Sherrif1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Morning Princess
+      speaker: Unknown
+    - text: What is this? Who are you? Where am I!?
+      speaker: David
+    - text: "Lotta questions for someone on that side of the table, I\u2019m used
+        to hearing slurs and empty threats from people like you"
+      speaker: Unknown
+    - text: People like me?
+      speaker: David
+    - text: "Oh yes my bad I guess I shouldn\u2019t say that yet considering I don\u2019t
+        know your relation yet but considering what I\u2019ve been through in the
+        last couple hours, well you\u2019d understand"
+      speaker: Unknown
+    - text: "Right, I\u2019m getting side tracked. Your under arrest for your involvement
+        in the case of Blaze's death. However depending on how you answer my questions
+        will depend if that stays the case."
+      speaker: Unknown
+    - text: "Arghh what is with the people around here? So quick to distrust and
+        resort to violence. Where\u2019s your Justice! Your respect! Your Humanity!"
+      speaker: David
+    - text: You want some humanity? Where was the humanity when our Sheriff was shot
+        in cold blood? A man who was like a brother to me bleeds out in my arms trying
+        to save the innocent
+      speaker: Unknown
+    - text: You want Justice? How about you start giving answers instead of demanding
+        them!
+      speaker: Unknown
+    - text: Fine! Guess it's time for round three huh Blaze
+      speaker: David
+    - text: Hell you mumbling about
+      speaker: Unknown
+    - text: Just ask your damn questions already
+      speaker: David
+    - text: Ok good. What were you planning to do after blaze killed himself. Why
+        did you want to come to this shithole?
+      speaker: Unknown
+    - text: "I was told by someone that the person I\u2019m looking for was last
+        seen in this town. This is Robertsville right?"
+      speaker: David
+    - text: "Yeah come on, drop the act. We both know you didn\u2019t just happen
+        to be heading to town on this particular day"
+      speaker: Unknown
+    - text: "This is what I\u2019m talking about, Why can\u2019t you just believe
+        me? I was heading in to find someone!"
+      speaker: David
+    - text: "Alright I\u2019ll play along, who were you looking for then?"
+      speaker: Unknown
+    - text: Cassidy Miller
+      speaker: David
+    - text: "Cassidy Miller ha now I know you\u2019re fucking with me. Cassidy Miller
+        has been dead for years"
+      speaker: Unknown
+    - text: "If you don\u2019t want to admit your actual reason for being here, that's
+        fine. Let\u2019s get one thing straight then, Who are you?"
+      speaker: Unknown
+    - text: "My name is David Willams, I\u2019m a writer. Who is or was writing a
+        book about Cold Cassid"
+      speaker: David
+    - text: A writer eh, What are you in it for? Fortune and Glory or Honour and
+        Valor?
+      speaker: Unknown
+    responses:
+    - responseText: Fortune and Glory
+      nextNode:
+        dialogueLines:
+        - text: "While I have a great love for what I heard about the west, I would
+            be lying if it wasn\u2019t for the hope of some fortune and glory"
+          speaker: David
+        - text: The writer who survived the west and found Cold Cassidy! Oh I can
+            understand that, yeah greed is common thing around here too
+          speaker: Unknown
+        - text: "I mean greed isn\u2019t the main reason, aren\u2019t you at least
+            a little bit intrigued to find him, a missing outlaw, a ghost"
+          speaker: David
+        - text: Not really when I can go outside and take a piss on him anytime I
+            want
+          speaker: Unknown
+        - text: "Ok I\u2019ve seen enough clearly you ain\u2019t got the balls to
+            be one of them, let alone none of them would caught dead in an outfit
+            like that"
+          speaker: Unknown
+        - text: I apologise for this, Name is Deputy, well Sheriff Knox and this
+            is our office for the time being. Once again I apologise but we thought
+            you might have been an outlaw
+          speaker: Sheriff Knox
+        - text: "Ok thanks I guess. If you don\u2019t mind me asking, what's got
+            you so on edge?"
+          speaker: David
+        - text: "Earlier today, a group of outlaws came into town and just started
+            shooting people. We did what we could but it was three of us against
+            five of them and we ain\u2019t exactly sharp shooters"
+          speaker: Sheriff Knox
+        - text: My condolences to the sheriff then, I sure he would be proud
+          speaker: David
+        - text: "Save it, it\u2019s not worth it when this town goes from 20 to two
+            in one day. I\u2019ll have time for mourning later"
+          speaker: Sheriff Knox
+        - text: "Speaking of which, I need a favour. As you know, I\u2019m looking
+            for Cassidy and do you know anywhere or anyone who may know his whereabouts?"
+          speaker: David
+        - text: "Didn\u2019t you hear me? He\u2019s dead, graves in our very own
+            cemetery."
+          speaker: Sheriff Knox
+        - text: "I\u2019ll be honest, I don\u2019t think that's him. I spoke to his
+            former partner and he didn\u2019t mention any death."
+          speaker: David
+        - text: There might be some evidence to that, the previous sheriff did mention
+            that the grave just popped up one day with no involvement from anyone
+            in town
+          speaker: Sheriff Knox
+        - text: "So if it really means that much to you, we did manage to captured
+            one of the fuckers that torched this town, we\u2019ve set him up to hang
+            as bait but something tells me, his crew ain\u2019t coming back"
+          speaker: Sheriff Knox
+        - text: What exactly does that have to do with anything?
+          speaker: David
+        - text: "His crew, tried to capture some of the women that lived here and
+            mentioned that they\u2019ll go well with \u2018Cassidy\u2019s whore\u2019,
+            might not be the same Cassidy but it's worth a look"
+          speaker: Sheriff Knox
+        - text: "So what do you want me to do with him once I\u2019m done?"
+          speaker: David
+        - text: "We done all the setup, all you need to do is pull the lever and
+            hang 'em or leave' em, it\u2019s up to you. Just don\u2019t set that
+            bastard free, if you don\u2019t hang him I will"
+          speaker: 'Sheriff Knox '
+        - text: Thanks, I'll deal with him...
+          speaker: David
+        - text: "Good, now run along already, by the way your horse should be out
+            front when you\u2019re ready to go"
+          speaker: 'Sheriff Knox '
+        responses:
+        - responseText: Leave
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 1
+    - responseText: Honour and Valor
+      nextNode:
+        dialogueLines:
+        - text: "Honour and Valor, I guess. I\u2019m out here to find a legend, someone
+            who I respect the skill of"
+          speaker: David
+        - text: "So like a little kid looking for his hero, You\u2019ve come all
+            the way out here from whatever golden palace in the sky shit you out
+            to what risk the safety of your old life just to dig up some old fossil"
+          speaker: Unknown
+        - text: "Well I didn\u2019t know he was in the ground, unfortunately you
+            guys aren\u2019t great at publishing that info it seems"
+          speaker: David
+        - text: Yeah least you can understand that Mr Educated
+          speaker: Unknown
+        - text: "Ok I\u2019ve seen enough clearly you ain\u2019t got the balls to
+            be one of them, let alone none of them would caught dead in an outfit
+            like that"
+          speaker: Unknown
+        - text: I apologise for this, Name is Deputy, well Sheriff Knox and this
+            is our office for the time being. Once again I apologise but we thought
+            you might have been an outlaw
+          speaker: Sheriff Knox
+        - text: "Ok thanks I guess. If you don\u2019t mind me asking, what's got
+            you so on edge?"
+          speaker: David
+        - text: "Earlier today, a group of outlaws came into town and just started
+            shooting people. We did what we could but it was three of us against
+            five of them and we ain\u2019t exactly sharp shooters"
+          speaker: Sheriff Knox
+        - text: My condolences to the sheriff then, I sure he would be proud
+          speaker: David
+        - text: "Save it, it\u2019s not worth it when this town goes from 20 to two
+            in one day. I\u2019ll have time for mourning later"
+          speaker: Sheriff Knox
+        - text: "Speaking of which, I need a favour. As you know, I\u2019m looking
+            for Cassidy and do you know anywhere or anyone who may know his whereabouts?"
+          speaker: David
+        - text: "Didn\u2019t you hear me? He\u2019s dead, graves in our very own
+            cemetery."
+          speaker: Sheriff Knox
+        - text: "I\u2019ll be honest, I don\u2019t think that's him. I spoke to his
+            former partner and he didn\u2019t mention any death."
+          speaker: David
+        - text: There might be some evidence to that, the previous sheriff did mention
+            that the grave just popped up one day with no involvement from anyone
+            in town
+          speaker: Sheriff Knox
+        - text: "So if it really means that much to you, we did manage to captured
+            one of the fuckers that torched this town, we\u2019ve set him up to hang
+            as bait but something tells me, his crew ain\u2019t coming back"
+          speaker: Sheriff Knox
+        - text: What exactly does that have to do with anything?
+          speaker: David
+        - text: "His crew, tried to capture some of the women that lived here and
+            mentioned that they\u2019ll go well with \u2018Cassidy\u2019s whore\u2019,
+            might not be the same Cassidy but it's worth a look"
+          speaker: Sheriff Knox
+        - text: "So what do you want me to do with him once I\u2019m done?"
+          speaker: David
+        - text: "We done all the setup, all you need to do is pull the lever and
+            hang 'em or leave' em, it\u2019s up to you. Just don\u2019t set that
+            bastard free, if you don\u2019t hang him I will"
+          speaker: 'Sheriff Knox '
+        - text: Thanks, I'll deal with him...
+          speaker: David
+        - text: "Good, now run along already, by the way your horse should be out
+            front when you\u2019re ready to go"
+          speaker: 'Sheriff Knox '
+        responses:
+        - responseText: Leave
+          nextNode:
+            dialogueLines: []
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 1
+      isBadResponse: 0

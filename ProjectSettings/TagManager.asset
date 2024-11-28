@@ -19,12 +19,12 @@ TagManager:
   - ButcherStateTrigger
   - GunsmithStateTrigger
   - Guard
-  - CanPickUp
+  - HorseWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HorseWall
   - Water
   - UI
   - Interactable
@@ -52,11 +52,8 @@ TagManager:
   - 
   - 
   - Item
-  - HoldLayer
+  - Roof
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: PickUpSortingLayer
-    uniqueID: 136061937
     locked: 0

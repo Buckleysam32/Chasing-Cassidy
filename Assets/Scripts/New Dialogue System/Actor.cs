@@ -13,6 +13,7 @@ public class Actor : MonoBehaviour
     private UIManager uIManager;
     public Animator characterAnim;
     public Actor blazeActor;
+    public AudioClip[] textSounds = new AudioClip[0];
 
     private void Awake()
     {
@@ -53,7 +54,10 @@ public class Actor : MonoBehaviour
             playerBody.constraints = RigidbodyConstraints.FreezeAll;
             movement.canWalk = false;
             uIManager.playerHud.SetActive(false);
-
+            if(actor.Name == "Sherrif" || actor.Name == "Hanging Man")
+            {
+                actor.enabled = false;
+            }
         }
     }
 

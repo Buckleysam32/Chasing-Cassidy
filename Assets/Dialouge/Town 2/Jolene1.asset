@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Jolene1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: So what exactly is it that you wanted to know about Cassidy?
+      speaker: Bandits
+    - text: Well first off, what do you four know about him?
+      speaker: David
+    - text: "Same story everyone else heard, he, alongside the sundancers gang, went
+        across America taking as much money and other valuable things from the west,
+        east and south. Would\u2019ve gone north if the gang didn\u2019t run into
+        some issues"
+      speaker: Bandits
+    - text: After that he ran with Blaze Adams for a short time before disappearing.
+        Leaving only a gravestone in Robertsville.
+      speaker: Bandits
+    - text: I was led to believe that you may have had some new information for me
+      speaker: David
+    - text: "We don\u2019t but she might, claimed to be Cassidy\u2019s Ex. Probably
+        just said it to try and scare us off but there\u2019s always a chance."
+      speaker: Bandits
+    - text: Ok well can chat with her?
+      speaker: David
+    - text: Well duh, shes right here jackass
+      speaker: Bandits
+    - text: ...
+      speaker: David
+    - text: You might be want to ask those questions quickly, cause the bitch is
+        really startin' to get on our nerves
+      speaker: Bandits
+    - text: "Ok, I\u2019m sorry about your current predicament, could you tell me
+        your name?"
+      speaker: David
+    - text: "Jolene Wilson and it\u2019s nice to meet someone whos actually got some
+        intelligence for once"
+      speaker: Jolene
+    - text: "Uh thanks I guess, so were you actually Cassidy\u2019s wife or lover?"
+      speaker: David
+    - text: Wife and yeah it feels like a lifetime ago now but I was for a time
+      speaker: Jolene
+    - text: What was he like?
+      speaker: David
+    - text: "\u201CHe \u2026 he was amazing, spent every moment caring for others.
+        There was something about him, something beautiful and kind but also hurt"
+      speaker: Jolene
+    - text: "For a time, he was so good to me that I became blinded to the moments
+        that weren\u2019t as good. When the sparkle in his eye would dissolve and
+        the life he didn\u2019t tell me about was exposed. The outlaw would be exposed."
+      speaker: Jolene
+    - text: And here I was beginning to dread that he was going to be exactly like
+        Blaze
+      speaker: David
+    - text: "No no, while I don\u2019t know much about their escapades I do know
+        that he wouldn\u2019t commit violence without a reason whether that was a
+        logical or emotional reason would depend but he would always try to help
+        someone."
+      speaker: Jolene
+    - text: "But it wasn\u2019t always the right person was it?"
+      speaker: David
+    - text: "No, I just wish he was honest earlier. I found out about his early life
+        at a period of pain for both of us and well I guess, we both just couldn\u2019t
+        handle it anymore"
+      speaker: Jolene
+    - text: "Why was it already painful at that time? If you don\u2019t mind me asking"
+      speaker: David
+    - text: "We uh \u2026 had just lost our daughter and had begun fighting each
+        other in the heat of mourning instead of uniting to push through it."
+      speaker: Jolene
+    - text: "I\u2019m sorry, my condolences."
+      speaker: David
+    - text: "That doesn\u2019t matter now, I don\u2019t see me making it out of here.
+        At least not without a few extra scars"
+      speaker: Jolene
+    - text: "I\u2019ll see what we can do."
+      speaker: David
+    - text: "I appreciate what you have done for me here gentlemen but \u2026"
+      speaker: David
+    - text: "If you think she\u2019s leaving with you, you're not as educated as
+        we thought."
+      speaker: Bandits
+    - text: While you two were having your little sappy chat, we were thinking over
+        what you was saying earlier about what you heard about us. And we were wondering
+        how exactly you knew about where we were and what we was doing here?
+      speaker: Bandits
+    - text: "I uh \u2026 heard it from some locals "
+      speaker: David
+    - text: You might want to spill the truth before we make you spill your guts.
+      speaker: Bandits
+    - text: Fine! I heard it from the other member of your gang.
+      speaker: David
+    - text: Oh you little fucker, let me guess you came from Robertsville. You might
+        have led them right to us!
+      speaker: Bandits
+    - text: "No, I swear I didn\u2019t tell the deputies anything! Please, you gotta
+        believe me!"
+      speaker: David
+    - text: "It doesn\u2019t matter if you told em or not. They could have followed
+        you, you fool"
+      speaker: Bandits
+    - text: "Wouldn\u2019t they have come through here already?"
+      speaker: David
+    - text: "Could be waiting for nightfall \u2026 Anyhow, I think we need to punish
+        you for risking our little livelihood here"
+      speaker: Bandits
+    - text: No come on please!
+      speaker: David
+    - text: Yeah, you know I think I know the exact lesson we should teach you
+      speaker: David
+    responses:
+    - responseText: 
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

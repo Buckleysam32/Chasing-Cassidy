@@ -10,6 +10,7 @@ public class PlayerInteractor : MonoBehaviour
     public GameObject crosshair;
     public GameObject interactUI;
     public NPCInteraction blazeInteract;
+    public NPCInteraction jolInteract;
     public Town1Quests questManager;
 
     void Update()
@@ -41,6 +42,11 @@ public class PlayerInteractor : MonoBehaviour
                 {
                     interactable.SitPlayer();
                     blazeInteract.StartDialogue();
+                }
+                if(hit.collider.name == "CampChair" && Input.GetKeyDown(KeyCode.E))
+                {
+                    interactable.CampfireSit();
+                    jolInteract.StartDialogue();
                 }
             }
         }

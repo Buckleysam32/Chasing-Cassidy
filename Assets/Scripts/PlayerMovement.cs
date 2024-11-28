@@ -130,8 +130,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayFootstep(int terrain)
     {
-        terrainSwitch[terrain].SetValue(this.gameObject);
-        AM.PlayAudioClip(footstepsEvent, this.gameObject);
+        if(terrainSwitch[terrain] != null)
+        {
+            terrainSwitch[terrain].SetValue(this.gameObject);
+            AM.PlayAudioClip(footstepsEvent, this.gameObject);
+        }
+
     }
 
 

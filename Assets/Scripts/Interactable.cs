@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
     private AudioManager AM;
     public GameObject player;
     public Transform chairPos;
+    public Transform campPos;
 
     private void Start()
     {
@@ -46,6 +47,15 @@ public class Interactable : MonoBehaviour
         FindObjectOfType<MouseLook>().lookAtBlaze = true;
         player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         //Start Dialogue
+    }
+
+    public void CampfireSit()
+    {
+        Debug.Log("Sit Player");
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.transform.position = campPos.position;
+        FindObjectOfType<MouseLook>().lookAtJol = true;
+        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
 
     //Assigning Wwise Events

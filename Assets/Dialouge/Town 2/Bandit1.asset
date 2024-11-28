@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Bandit1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Not another step, less you wanna lose that pretty little head of yours
+      speaker: Bandit
+    - text: "Woah, I didn\u2019t mean to intrude, I uh I\u2019m David Williams, I\u2019m
+        a writer and I\u2019m looking for a gang or whatever your group's desirable
+        term may be? You may know some information about an old outlaw known as Cold
+        Cassidy to some."
+      speaker: David
+    - text: "Desirable term jesus, you definitely ain\u2019t from around here. You
+        got a weapon on you boy?"
+      speaker: Bandit
+    - text: "No, even if I did it wouldn\u2019t make much difference considering
+        I\u2019ve never used one"
+      speaker: David
+    - text: "What a sad fucking piece of knowledge, you\u2019s one of them educated
+        folk from the big city?"
+      speaker: Bandit
+    - text: "While I am educated, I\u2019m afraid I\u2019m actually from England"
+      speaker: David
+    - text: "The more I hear, the more boring you are. Alright you can enter but
+        any bullshit or we\u2019ll gut you like we did those people in town"
+      speaker: Bandit
+    responses:
+    - responseText: Thanks
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

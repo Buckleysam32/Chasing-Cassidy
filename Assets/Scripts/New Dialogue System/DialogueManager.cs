@@ -25,6 +25,13 @@ public class DialogueManager : MonoBehaviour
     public static event DialogueEndHandler OnDialogueEnd;
 
     public Sprite davidArt;
+    public Sprite banditArt;
+    public Sprite joleneArt;
+
+    public AudioClip[] textSounds = new AudioClip[0];
+    public AudioSource AS;
+
+    public Animator barrelAnim;
 
     private void Awake()
     {
@@ -50,8 +57,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(string title, DialogueNode node, Actor actor)
     {
         quests.SpeakToNPC(title, actor);
+        textSounds = actor.textSounds;
         Debug.Log(title);
-
         // Display the dialogue UI
         ShowDialogue();
 
@@ -81,17 +88,27 @@ public class DialogueManager : MonoBehaviour
             DialogueNode.DialogueLine line = node.dialogueLines[i];
             DialogBodyText.text = ""; // Clear current text
             DialogTitleText.text = line.speaker; // Set the speaker's name
-
-            if (line.speaker != "David")
-            {
-                actor.characterAnim.SetTrigger("talk");
-                characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
-            }
             if (line.speaker == "David")
             {
                 actor.characterAnim.SetTrigger("stop");
                 characterImage.sprite = davidArt;
             }
+            else if (line.speaker == "Bandits")
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = banditArt;
+            }
+            else if (line.speaker == "Jolene")
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = joleneArt;
+            }
+            else
+            {
+                actor.characterAnim.SetTrigger("talk");
+                characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
+            }
+
 
             // Typing effect for the current line
             yield return StartCoroutine(TypeLineText(line.text));
@@ -124,6 +141,16 @@ public class DialogueManager : MonoBehaviour
         {
             DialogBodyText.text += text[charIndex]; // Add each character
 
+            int randomI = Random.Range(0, textSounds.Length - 1);
+
+            AudioClip randomClip = textSounds[randomI];
+
+            if (randomClip != null && AS != null)
+            {
+                AS.PlayOneShot(randomClip);
+                Debug.Log("Played: " + randomClip + "from: " + AS);
+            }
+
             // Allow skipping typing if any key is pressed (e.g., space to skip)
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -146,6 +173,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
 
     // Method to display response buttons after dialogue has been typed out
     private void ShowResponseButtons(DialogueNode node, Actor actor)
@@ -177,6 +205,19 @@ public class DialogueManager : MonoBehaviour
     // Handles response selection and triggers next dialogue node
     public void SelectResponse(DialogueResponse response, string title, Actor actor)
     {
+        if(actor.Name == "Hanging Man")
+        {
+            if (response.isGoodResponse)
+            {
+                GameManager.Instance.IncreaseMoralScore();
+                
+            }
+            if (response.isBadResponse)
+            {
+                GameManager.Instance.DecreaseMoralScore();
+                barrelAnim.SetTrigger("Move");
+            }
+        }
 
         // Update the moral score based on the response
         if (response.isGoodResponse)
@@ -265,6 +306,7 @@ public class DialogueManager : MonoBehaviour
     // Show the dialogue UI
     private void ShowDialogue()
     {
+        Debug.Log("Show Dialogue");
         DialogueParent.SetActive(true);
         characterImage.gameObject.SetActive(true);
     }

@@ -14,7 +14,9 @@ public class MouseLook : MonoBehaviour
     public bool canMove = true;
 
     public Transform blazePoint;
+    public Transform jolPoint;
     public bool lookAtBlaze;
+    public bool lookAtJol;
 
     void Start()
     {
@@ -24,7 +26,7 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        if (!lookAtBlaze)
+        if (!lookAtBlaze || !lookAtJol)
         {
             if (canMove)
             {
@@ -33,15 +35,20 @@ public class MouseLook : MonoBehaviour
                 MovePlayer();
             }
         }
-        else
+        if(lookAtBlaze)
         {
-            LookAtBlazeTarget();
+            LookAtTarget(blazePoint);
+        }
+        if (lookAtJol)
+        {
+            LookAtTarget(jolPoint);   
         }
     }
-    private void LookAtBlazeTarget()
+    private void LookAtTarget(Transform position)
     {
+        Debug.Log("Look at " + position);
         // Get direction from the camera to the blazePoint
-        Vector3 directionToBlaze = blazePoint.position - Camera.main.transform.position;
+        Vector3 directionToBlaze = position.position - Camera.main.transform.position;
 
         // Calculate the rotation needed to look at the blazePoint
         Quaternion targetRotation = Quaternion.LookRotation(directionToBlaze);

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Cassidy1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "I\u2019m guessing you were responsible for what happened back there?"
+      speaker: David
+    - text: Wondered when you would show
+      speaker: Cassidy
+    - text: "What happened to Jolene\u2019s body?"
+      speaker: David
+    - text: Buried her over there, reunited with our little girl
+      speaker: Cassidy
+    - text: I'm so sorry
+      speaker: David
+    - text: ...
+      speaker: Cassidy
+    - text: "How\u2019d it happen?"
+      speaker: Cassidy
+    - text: They let me ask her some questions and then thought I had told the local
+        deputies about them so they punished me through her
+      speaker: David
+    - text: "I see\u2026 you ask her about me"
+      speaker: Cassidy
+    - text: I did
+      speaker: David
+    - text: "What\u2019d she say?"
+      speaker: Cassidy
+    - text: She said you were amazing and that she blamed both her and you for what
+        happened.
+      speaker: David
+    - text: Heh... Course she did
+      speaker: Cassidy
+    - text: "I\u2019m sorry"
+      speaker: David
+    - text: "What good does that do her kid? If I had stayed, I might have been able
+        to stop em. Instead, I\u2019m here living a lie."
+      speaker: Cassidy
+    - text: "Why didn\u2019t you go back to the life or rejoin her?"
+      speaker: David
+    - text: "No reason to return to the life, without a person to take the money
+        for or share it with. Couldn\u2019t return to her, didn\u2019t want to hurt
+        her again"
+      speaker: Cassidy
+    - text: Do you regret the things you did back then?
+      speaker: David
+    - text: Not really, at least not most of it. This for the book?
+      speaker: Cassidy
+    - text: Yes and no. I think at this point after everything, I wanna try as much
+        as possible to make all of this worth it
+      speaker: David
+    - text: "Let me save your conscience, kid. Those people would\u2019ve ended up
+        dead anyway so don\u2019t bother worrying about that. Now whether this is
+        worth the effort is going to depend on you and what you choose to do after
+        all this"
+      speaker: Cassidy
+    - text: "Let me save your conscience, kid. Those people would\u2019ve ended up
+        dead anyway so don\u2019t bother worrying about that. Now whether this is
+        worth the effort is going to depend on you and what you choose to do after
+        all this"
+      speaker: Cassidy
+    responses:
+    - responseText: I see
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

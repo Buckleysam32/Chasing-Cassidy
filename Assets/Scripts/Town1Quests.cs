@@ -43,6 +43,10 @@ public class Town1Quests : MonoBehaviour
     public GameObject jedPoint;
     public GameObject morrisPoint;
     public GameObject redPoint;
+    public GameObject hangPoint;
+    public GameObject digSitePoint;
+    public GameObject sitPoint;
+    public GameObject cassidyPoint;
     private MissionWaypoint waypointManager;
     public Actor carsonActor;
     public Actor blazeActor;
@@ -50,18 +54,34 @@ public class Town1Quests : MonoBehaviour
     public Transform horsePoint;
 
     public GameObject backDoor;
-    
 
+    private GameManager gm;
+
+    public Interactable jailDoor;
+
+    public GameObject trailObjects;
+    public GameObject trailWall;
 
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         waypointManager = FindObjectOfType<MissionWaypoint>();
-        carsonPoint = waypointManager.waypoint1.img.gameObject;
-        anniePoint = waypointManager.waypoint2.img.gameObject;
-        jedPoint = waypointManager.waypoint3.img.gameObject;
-        morrisPoint = waypointManager.waypoint4.img.gameObject;
-        redPoint = waypointManager.waypoint5.img.gameObject;
+        if (gm.isTown1)
+        {
+            carsonPoint = waypointManager.waypoint1.img.gameObject;
+            anniePoint = waypointManager.waypoint2.img.gameObject;
+            jedPoint = waypointManager.waypoint3.img.gameObject;
+            morrisPoint = waypointManager.waypoint4.img.gameObject;
+            redPoint = waypointManager.waypoint5.img.gameObject;
+        }
+        if (!gm.isTown1)
+        {
+            hangPoint = waypointManager.waypoint1.img.gameObject;
+            digSitePoint = waypointManager.waypoint2.img.gameObject;
+            sitPoint = waypointManager.waypoint3.img.gameObject;
+            cassidyPoint = waypointManager.waypoint4.img.gameObject;
+        }
         carsonActor = GameObject.FindWithTag("Carson").GetComponent<Actor>();
         AddObjective("- Find Info at the saloon");
         AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
@@ -71,168 +91,203 @@ public class Town1Quests : MonoBehaviour
     public void SpeakToNPC(string npcName, Actor actor)
     {
         Debug.Log("testing");
-        switch (npcName)
+        if (gm.isTown1)
         {
-            case "Carson Smith":
-                if (!hasSpokeToCarson)
-                {
-                    hasSpokeToCarson = true;
-                    RemoveObjective("- Find Info at the saloon");
-                    AddObjective("- Speak to Annie");
-                    AddObjective("- Speak to Jed");
-                    AddObjective("- Speak to Morris");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    carsonPoint.SetActive(false);
-                    anniePoint.SetActive(true);
-                    jedPoint.SetActive(true);
-                    morrisPoint.SetActive(true);
-                    actor.NextDialogue();
-                }
-                if (isDoneQuest1 && !quest1TurnedIn)
-                {
-                    RemoveObjective("- Return to Carson");
-                    AddObjective("- Ride Horse to Red's Property");
-                    AddObjective("- Speak to Red");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    carsonPoint.SetActive(false);
-                    carsonActor.NextDialogue();
-                    redPoint.SetActive(true);
-                    quest1TurnedIn = true;
-                }
-                if(hasSpokeToRed)
-                {
-                    returnedToCarson2 = true;
-                    RemoveObjective("- Return to Carson");
-                    AkSoundEngine.PostEvent("QuestComplete", gameObject);
-                    AddObjective("- Meet Blaze Adams");
-                    carsonPoint.SetActive(false);
-                    actor.NextDialogue();
-                    backDoor.GetComponent<Interactable>().enabled = true;
-                }
-                break;
-            case "Annie Brown":
-                if (!hasSpokeToAnnie)
-                {
-                    hasSpokeToAnnie = true;
-                    RemoveObjective("- Speak to Annie");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    anniePoint.SetActive(false);
-                    actor.NextDialogue();
-                }
-                if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
-                {
-                    FinishQuestOne();
-                }
-                break;
-            case "Jed Harris":
-                if (!hasSpokeToJed)
-                {
-                    hasSpokeToJed = true;
-                    RemoveObjective("- Speak to Jed");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    jedPoint.SetActive(false);
-                    actor.NextDialogue();
-                }
-                if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
-                {
-                    FinishQuestOne();
-                }
-                break;
-            case "Morris Hill":
-                if (!hasSpokeToMorris)
-                {
-                    hasSpokeToMorris = true;
-                    RemoveObjective("- Speak to Morris");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    morrisPoint.SetActive(false);
-                    actor.NextDialogue();
-                }
-                if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
-                {
-                    FinishQuestOne();
-                }
-                break;
-            case "Red":
-                if (!hasSpokeToRed)
-                {
-                    hasSpokeToRed = true;
-                    RemoveObjective("- Ride Horse to Red's Property");
-                    RemoveObjective("- Speak to Red");
-                    AddObjective("- Return to Carson");
-                    AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
-                    redPoint.SetActive(false);
-                    carsonPoint.SetActive(true);
-                    actor.NextDialogue();
-                    carsonActor.NextDialogue();
-                }
-                break;
-            case "Blaze":
-                if (!hasBlaze1)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze1 = true;
-                }
-                else if (!hasBlaze2 && hasBlaze1)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze2 = true;
-                }
-                else if (!hasBlaze3 && hasBlaze2)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze3 = true;
-                }
-                else if (!hasBlaze4 && hasBlaze3)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze4 = true;
-                }
-                else if (!hasBlaze5 && hasBlaze4)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze5 = true;
-                }
-                else if (!hasBlaze6 && hasBlaze5)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze6 = true;
-                }
-                else if (!hasBlaze7 && hasBlaze6)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze7 = true;
-                }
-                else if (!hasBlaze8 && hasBlaze7)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze8 = true;
-                }
-                else if (!hasBlaze9 && hasBlaze8)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze9 = true;
-                }
-                else if (!hasBlaze10 && hasBlaze9)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze10 = true;
-                }
-                else if (!hasBlaze11 && hasBlaze10)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze11 = true;
-                }
-                else if (!hasBlaze12 && hasBlaze11)
-                {
-                    blazeActor.NextDialogue();
-                    hasBlaze12 = true;
-                }
-                break;
-            default:
-                Debug.LogWarning("Unknown NPC name: " + npcName);
-                break;
+            switch (npcName)
+            {
+                case "Carson Smith":
+                    if (!hasSpokeToCarson)
+                    {
+                        hasSpokeToCarson = true;
+                        RemoveObjective("- Find Info at the saloon");
+                        AddObjective("- Speak to Annie");
+                        AddObjective("- Speak to Jed");
+                        AddObjective("- Speak to Morris");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        carsonPoint.SetActive(false);
+                        anniePoint.SetActive(true);
+                        jedPoint.SetActive(true);
+                        morrisPoint.SetActive(true);
+                        actor.NextDialogue();
+                    }
+                    if (isDoneQuest1 && !quest1TurnedIn)
+                    {
+                        RemoveObjective("- Return to Carson");
+                        AddObjective("- Ride Horse to Red's Property");
+                        AddObjective("- Speak to Red");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        carsonPoint.SetActive(false);
+                        carsonActor.NextDialogue();
+                        redPoint.SetActive(true);
+                        quest1TurnedIn = true;
+                    }
+                    if (hasSpokeToRed)
+                    {
+                        returnedToCarson2 = true;
+                        RemoveObjective("- Return to Carson");
+                        AkSoundEngine.PostEvent("QuestComplete", gameObject);
+                        AddObjective("- Meet Blaze Adams");
+                        carsonPoint.SetActive(false);
+                        actor.NextDialogue();
+                        backDoor.GetComponent<Interactable>().enabled = true;
+                    }
+                    break;
+                case "Annie Brown":
+                    if (!hasSpokeToAnnie)
+                    {
+                        hasSpokeToAnnie = true;
+                        RemoveObjective("- Speak to Annie");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        anniePoint.SetActive(false);
+                        actor.NextDialogue();
+                    }
+                    if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
+                    {
+                        FinishQuestOne();
+                    }
+                    break;
+                case "Jed Harris":
+                    if (!hasSpokeToJed)
+                    {
+                        hasSpokeToJed = true;
+                        RemoveObjective("- Speak to Jed");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        jedPoint.SetActive(false);
+                        actor.NextDialogue();
+                    }
+                    if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
+                    {
+                        FinishQuestOne();
+                    }
+                    break;
+                case "Morris Hill":
+                    if (!hasSpokeToMorris)
+                    {
+                        hasSpokeToMorris = true;
+                        RemoveObjective("- Speak to Morris");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        morrisPoint.SetActive(false);
+                        actor.NextDialogue();
+                    }
+                    if (hasSpokeToAnnie && hasSpokeToJed && hasSpokeToMorris && !isDoneQuest1)
+                    {
+                        FinishQuestOne();
+                    }
+                    break;
+                case "Red":
+                    if (!hasSpokeToRed)
+                    {
+                        hasSpokeToRed = true;
+                        RemoveObjective("- Ride Horse to Red's Property");
+                        RemoveObjective("- Speak to Red");
+                        AddObjective("- Return to Carson");
+                        AkSoundEngine.PostEvent("ObjectiveUpdate", gameObject);
+                        redPoint.SetActive(false);
+                        carsonPoint.SetActive(true);
+                        actor.NextDialogue();
+                        carsonActor.NextDialogue();
+                    }
+                    break;
+                case "Blaze":
+                    if (!hasBlaze1)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze1 = true;
+                    }
+                    else if (!hasBlaze2 && hasBlaze1)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze2 = true;
+                    }
+                    else if (!hasBlaze3 && hasBlaze2)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze3 = true;
+                    }
+                    else if (!hasBlaze4 && hasBlaze3)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze4 = true;
+                    }
+                    else if (!hasBlaze5 && hasBlaze4)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze5 = true;
+                    }
+                    else if (!hasBlaze6 && hasBlaze5)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze6 = true;
+                    }
+                    else if (!hasBlaze7 && hasBlaze6)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze7 = true;
+                    }
+                    else if (!hasBlaze8 && hasBlaze7)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze8 = true;
+                    }
+                    else if (!hasBlaze9 && hasBlaze8)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze9 = true;
+                    }
+                    else if (!hasBlaze10 && hasBlaze9)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze10 = true;
+                    }
+                    else if (!hasBlaze11 && hasBlaze10)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze11 = true;
+                    }
+                    else if (!hasBlaze12 && hasBlaze11)
+                    {
+                        blazeActor.NextDialogue();
+                        hasBlaze12 = true;
+                    }
+                    break;
+                default:
+                    Debug.LogWarning("Unknown NPC name: " + npcName);
+                    break;
+            }
         }
-
+        if (!gm.isTown1)
+        {
+            switch (npcName)
+            {
+                case "Sherrif":
+                    Debug.Log("pennor");
+                    jailDoor.enabled = true;
+                    AddObjective("- Speak with the Hanged Man");
+                    hangPoint.SetActive(true);
+                    break;
+                case "Hanging Man":
+                    RemoveObjective("- Speak with the Hanged Man");
+                    AddObjective("- Search the Digsite");
+                    hangPoint.SetActive(false);
+                    digSitePoint.SetActive(true);
+                    break;
+                case "Bandit 1":
+                    RemoveObjective(" - Search the Digsite");
+                    AddObjective("- Take a Seat");
+                    digSitePoint.SetActive(false);
+                    sitPoint.SetActive(true);
+                    break;
+                case "Bandit 2":
+                    RemoveObjective("- Take a Seat");
+                    AddObjective("- Follow the trail");
+                    sitPoint.SetActive(false);
+                    cassidyPoint.SetActive(true);
+                    break;
+                default:
+                    Debug.LogWarning("Unknown NPC name: " + npcName);
+                    break;
+            }
+        }
         UpdateObjectiveText();
     }
 
