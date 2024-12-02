@@ -19,8 +19,9 @@ public class UIManager : MonoBehaviour
 
     public GameObject transition;
 
-    private bool isPaused = false;
+    public GameObject t2Transition;
 
+    private bool isPaused = false;
 
     private void Update()
     {

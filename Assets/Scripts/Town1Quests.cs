@@ -37,6 +37,11 @@ public class Town1Quests : MonoBehaviour
     public bool hasBlaze11 = false;
     public bool hasBlaze12 = false;
 
+    public bool hasJol1 = false;
+    public bool hasJol2 = false;
+    public bool hasJol3 = false;
+    public bool hasJol4 = false;
+
     public NPCInteraction carsonScript;
     public GameObject carsonPoint;
     public GameObject anniePoint;
@@ -50,6 +55,7 @@ public class Town1Quests : MonoBehaviour
     private MissionWaypoint waypointManager;
     public Actor carsonActor;
     public Actor blazeActor;
+    public Actor joleneActor;
     public GameObject horse;
     public Transform horsePoint;
 
@@ -282,6 +288,21 @@ public class Town1Quests : MonoBehaviour
                     AddObjective("- Follow the trail");
                     sitPoint.SetActive(false);
                     cassidyPoint.SetActive(true);
+                    break;
+                case "Jolene":
+                    if (!hasJol1)
+                    {
+                        joleneActor.NextDialogue();
+                        hasJol1 = true;
+                    }
+                    else if (!hasJol2 && hasJol1)
+                    {
+                        hasJol2 = true;
+                    }
+                    else if(!hasJol3 && hasJol2)
+                    {
+                        hasJol3 = true;
+                    }
                     break;
                 default:
                     Debug.LogWarning("Unknown NPC name: " + npcName);

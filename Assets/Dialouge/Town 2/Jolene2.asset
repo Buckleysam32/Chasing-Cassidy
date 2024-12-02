@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Jolene2
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: "Said you don\u2019t know to properly use one of these, time you learned
+        and what better way than to practise on a live target"
+      speaker: Bandits
+    - text: "No you can\u2019t make me!"
+      speaker: David
+    - text: Come on, grow some balls. You wanted to learn about the west, about outlaws,
+        here's your chance for some hands-on experience.
+      speaker: Bandits
+    responses:
+    - responseText: Shoot
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 1
+    - responseText: Struggle
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 1
+      isBadResponse: 0

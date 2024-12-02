@@ -14,9 +14,14 @@ public class Transition : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void NextScene()
+    public void LoadTown2()
     {
-        SceneManager.LoadScene("Town2");
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadEnding()
+    {
+        SceneManager.LoadScene(3);
     }
 
     public void StartTrans()

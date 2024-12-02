@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using System;
 using System.IO;
 
-[Serializable]
+
 public class GameData
 {
     public int d_town;
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private string saveFilePath;
 
-    [SerializeField] public int town;
+    public int town;
 
 
     private void Awake()
