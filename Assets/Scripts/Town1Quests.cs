@@ -81,12 +81,16 @@ public class Town1Quests : MonoBehaviour
             morrisPoint = waypointManager.waypoint4.img.gameObject;
             redPoint = waypointManager.waypoint5.img.gameObject;
         }
-        if (!gm.isTown1)
+        if (!gm.isTown1 && gm.town != 3)
         {
             hangPoint = waypointManager.waypoint1.img.gameObject;
             digSitePoint = waypointManager.waypoint2.img.gameObject;
             sitPoint = waypointManager.waypoint3.img.gameObject;
             cassidyPoint = waypointManager.waypoint4.img.gameObject;
+        }
+        if(gm.town == 3)
+        {
+            cassidyPoint = waypointManager.waypoint1.img.gameObject;
         }
         carsonActor = GameObject.FindWithTag("Carson").GetComponent<Actor>();
         AddObjective("- Find Info at the saloon");
