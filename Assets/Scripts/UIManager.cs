@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
             Cursor.visible = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab) && !isPaused)
+/*        if (Input.GetKeyDown(KeyCode.Tab) && !isPaused)
         {
             isPaused = true;
             MouseLook mouseLook = FindObjectOfType<MouseLook>();
@@ -45,10 +45,10 @@ public class UIManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             codex.SetActive(true);
-        }
+        }*/
     }
 
-    public void CloseCodex()
+/*    public void CloseCodex()
     {
         isPaused = false;
         Debug.Log("Balls");
@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
-    }
+    }*/
 
     public void CloseMenu()
     {

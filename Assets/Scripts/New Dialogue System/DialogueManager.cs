@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     public Animator banditAnim;
     public Animator bandit2Anim;
 
+
     public bool joleneBad = false;
     public bool joleneGood = false;
 
@@ -268,6 +269,31 @@ public class DialogueManager : MonoBehaviour
                 FindAnyObjectByType<UIManager>().t2Transition.SetActive(true);
             }
 
+        }
+
+        if(actor.name == "Cassidy")
+        {
+            Debug.Log("OONGA BONGA 1");
+            if (!quests.hasCas2 && quests.hasCas1 )
+            {
+                Debug.Log("OONGA BONGA 2");
+                actor.characterAnim.SetTrigger("PullGun");
+            }
+
+            if(!quests.hasCas3 && quests.hasCas2)
+            {
+                if(FindObjectOfType<GameManager>().moralScore <= 0)
+                {
+                    actor.StartTrans();
+                    Debug.Log("Start Ending Transition");
+                }
+            }
+
+            if (quests.hasCas4)
+            {
+                actor.StartTrans();
+                Debug.Log("Start Ending Transition");
+            }
         }
 
         // Update the moral score based on the response

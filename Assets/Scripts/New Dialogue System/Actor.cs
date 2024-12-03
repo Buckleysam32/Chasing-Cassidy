@@ -15,6 +15,7 @@ public class Actor : MonoBehaviour
     public Animator jolAnim;
     public Actor blazeActor;
     public Actor joleneActor;
+    public Actor casActor;
     public AudioClip[] textSounds = new AudioClip[0];
 
     private void Awake()
@@ -40,6 +41,15 @@ public class Actor : MonoBehaviour
     private void OnDisable()
     {
         DialogueManager.OnDialogueEnd -= RevertControls; // Unsubscribe from the event
+    }
+
+    private void Start()
+    {
+        if(FindObjectOfType<GameManager>().moralScore <= 0)
+        {
+            Debug.Log("Cassidy Bad :(");
+            casActor.currentDialogue = casActor.Dialogues[2];
+        }
     }
 
     // Trigger dialogue for this actor
@@ -68,6 +78,22 @@ public class Actor : MonoBehaviour
         if (currentDialogue != null)
         {
             DialogueManager.Instance.StartDialogue(Name, currentDialogue.RootNode, blazeActor);
+            this.GetComponent<NPCInteraction>().dialogueInProgress = true;
+            // Disable player controls
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
+        }
+    }
+
+    public void SpeakToCas()
+    {
+        if (currentDialogue != null)
+        {
+            DialogueManager.Instance.StartDialogue(Name, currentDialogue.RootNode, casActor);
             this.GetComponent<NPCInteraction>().dialogueInProgress = true;
             // Disable player controls
             Cursor.lockState = CursorLockMode.None;

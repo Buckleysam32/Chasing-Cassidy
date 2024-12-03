@@ -42,6 +42,11 @@ public class Town1Quests : MonoBehaviour
     public bool hasJol3 = false;
     public bool hasJol4 = false;
 
+    public bool hasCas1 = false;
+    public bool hasCas2 = false;
+    public bool hasCas3 = false;
+    public bool hasCas4 = false;
+
     public NPCInteraction carsonScript;
     public GameObject carsonPoint;
     public GameObject anniePoint;
@@ -67,6 +72,8 @@ public class Town1Quests : MonoBehaviour
 
     public GameObject trailObjects;
     public GameObject trailWall;
+
+    public Actor casActor;
 
     // Start is called before the first frame update
     void Start()
@@ -306,6 +313,33 @@ public class Town1Quests : MonoBehaviour
                     else if(!hasJol3 && hasJol2)
                     {
                         hasJol3 = true;
+                    }
+                    break;
+                case "Cassidy":
+                    if (!hasCas1)
+                    {
+                        Debug.Log("GGAAAGYYA");
+                        if(gm.moralScore <= 0)
+                        {
+                            casActor.currentDialogue = casActor.Dialogues[3];
+                        }
+                        else
+                        {
+                            casActor.currentDialogue = casActor.Dialogues[1];
+                        }
+                        hasCas1 = true;
+                    }
+                    else if (!hasCas2 && hasCas1)
+                    {
+                        hasCas2 = true;
+                    }
+                    else if (!hasCas3 && hasCas2)
+                    {
+                        hasCas3 = true;
+                    }
+                    if (hasCas3)
+                    {
+                        hasCas4 = true;
                     }
                     break;
                 default:

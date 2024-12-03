@@ -24,6 +24,13 @@ public class Transition : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     public void StartTrans()
     {
         trans.SetActive(true);
