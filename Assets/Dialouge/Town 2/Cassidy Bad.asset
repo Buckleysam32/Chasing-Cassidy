@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Cassidy Bad
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Bout time you showed up, wondered if you ran off scared shitless
+      speaker: Cassidy
+    - text: "All I want is some answers then I\u2019ll leave, you don\u2019t need
+        to do this."
+      speaker: David
+    - text: Neither did you but now my wife is buried with my daughter and my former
+        partner is where he belongs
+      speaker: Cassidy
+    - text: The way I see it, that just leaves you...
+      speaker: Cassidy
+    - text: I could give a cut!
+      speaker: David
+    - text: A cut?
+      speaker: Cassidy
+    - text: Percentage of the earnings from the book, if you let me live. I can publish
+        it, would probably make a pretty penny
+      speaker: David
+    - text: "Heh Now you're getting it kid, adapting like us. Shame for you I don\u2019t
+        need you\u2019re fucking money"
+      speaker: Cassidy
+    responses:
+    - responseText: I tried you know, I really did try to save
+      nextNode:
+        dialogueLines: []
+        responses: []
+      isGoodResponse: 0
+      isBadResponse: 0

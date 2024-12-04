@@ -119,7 +119,7 @@ MonoBehaviour:
     - text: Yeah, you know I think I know the exact lesson we should teach you
       speaker: David
     responses:
-    - responseText: 
+    - responseText: Oh no...
       nextNode:
         dialogueLines: []
         responses: []

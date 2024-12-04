@@ -32,6 +32,16 @@ public class DialogueManager : MonoBehaviour
     public AudioSource AS;
 
     public Animator barrelAnim;
+    public Animator gateAnim;
+
+    public Animator banditAnim;
+    public Animator bandit2Anim;
+
+
+    public bool joleneBad = false;
+    public bool joleneGood = false;
+
+    public Actor jolActor;
 
     private void Awake()
     {
@@ -90,22 +100,26 @@ public class DialogueManager : MonoBehaviour
             DialogTitleText.text = line.speaker; // Set the speaker's name
             if (line.speaker == "David")
             {
-                actor.characterAnim.SetTrigger("stop");
+                actor.characterAnim.SetBool("idle", true);
+                actor.characterAnim.SetBool("talking", false);
                 characterImage.sprite = davidArt;
             }
             else if (line.speaker == "Bandits")
             {
-                actor.characterAnim.SetTrigger("talk");
+                actor.characterAnim.SetBool("idle", false);
+                actor.characterAnim.SetBool("talking", true);
                 characterImage.sprite = banditArt;
             }
             else if (line.speaker == "Jolene")
             {
-                actor.characterAnim.SetTrigger("talk");
+                actor.characterAnim.SetBool("idle", false);
+                actor.characterAnim.SetBool("talking", true);
                 characterImage.sprite = joleneArt;
             }
-            else
+            else if (line.speaker != "David" && line.speaker != "Jolene" && line.speaker != "Bandits")
             {
-                actor.characterAnim.SetTrigger("talk");
+                actor.characterAnim.SetBool("idle", false);
+                actor.characterAnim.SetBool("talking", true);
                 characterImage.sprite = actor.gameObject.GetComponent<NPCInteraction>().characterArt;
             }
 
@@ -120,10 +134,14 @@ public class DialogueManager : MonoBehaviour
                 if (node.responses != null && node.responses.Count > 0)
                 {
                     ShowResponseButtons(node, actor);
+                    actor.characterAnim.SetBool("idle", true);
+                    actor.characterAnim.SetBool("talking", false);
                 }
                 else
                 {
                     HideDialogue(actor); // Hide dialogue if there are no responses
+                    actor.characterAnim.SetBool("idle", true);
+                    actor.characterAnim.SetBool("talking", false);
                 }
             }
             else
@@ -148,7 +166,7 @@ public class DialogueManager : MonoBehaviour
             if (randomClip != null && AS != null)
             {
                 AS.PlayOneShot(randomClip);
-                Debug.Log("Played: " + randomClip + "from: " + AS);
+//Debug.Log("Played: " + randomClip + "from: " + AS);
             }
 
             // Allow skipping typing if any key is pressed (e.g., space to skip)
@@ -219,12 +237,71 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        if(actor.Name == "Bandit 1")
+        {
+            gateAnim.SetTrigger("Open");
+        }
+
+        if (actor.name == "Jolene")
+        {
+            if(!quests.hasJol2 && quests.hasJol1)
+            {
+                banditAnim.SetTrigger("Walk");
+            }
+            else if (!quests.hasJol3 && quests.hasJol2 && response.isGoodResponse)
+            {
+                joleneGood = true;
+                jolActor.currentDialogue = jolActor.Dialogues[3];
+                banditAnim.SetTrigger("Miss");
+            }
+            else if(!quests.hasJol4 && quests.hasJol3 && joleneGood)
+            {
+                bandit2Anim.SetTrigger("ShootJol");
+            }
+            else if (!quests.hasJol3 && quests.hasJol2 && response.isBadResponse)
+            {
+                joleneBad = true;
+                jolActor.currentDialogue = jolActor.Dialogues[2];
+                banditAnim.SetTrigger("PlayerShoot");
+            }
+            else if (!quests.hasJol4 && quests.hasJol3 && joleneBad)
+            {
+                FindAnyObjectByType<UIManager>().t2Transition.SetActive(true);
+            }
+
+        }
+
+        if(actor.name == "Cassidy")
+        {
+            Debug.Log("OONGA BONGA 1");
+            if (!quests.hasCas2 && quests.hasCas1 )
+            {
+                Debug.Log("OONGA BONGA 2");
+                actor.characterAnim.SetTrigger("PullGun");
+            }
+
+            if(!quests.hasCas3 && quests.hasCas2)
+            {
+                if(FindObjectOfType<GameManager>().moralScore <= 0)
+                {
+                    actor.StartTrans();
+                    Debug.Log("Start Ending Transition");
+                }
+            }
+
+            if (quests.hasCas4)
+            {
+                actor.StartTrans();
+                Debug.Log("Start Ending Transition");
+            }
+        }
+
         // Update the moral score based on the response
-        if (response.isGoodResponse)
+        if (response.isGoodResponse && actor.name != "Jolene")
         {
             GameManager.Instance.IncreaseMoralScore();
         }
-        if (response.isBadResponse)
+        if (response.isBadResponse && actor.name != "Jolene")
         {
             GameManager.Instance.DecreaseMoralScore();
         }
@@ -300,6 +377,7 @@ public class DialogueManager : MonoBehaviour
                 actor.characterAnim.SetTrigger("B12");
             }
         }
+
         OnDialogueEnd?.Invoke();
     }
 

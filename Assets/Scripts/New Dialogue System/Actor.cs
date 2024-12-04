@@ -12,7 +12,10 @@ public class Actor : MonoBehaviour
     public Rigidbody playerBody;
     private UIManager uIManager;
     public Animator characterAnim;
+    public Animator jolAnim;
     public Actor blazeActor;
+    public Actor joleneActor;
+    public Actor casActor;
     public AudioClip[] textSounds = new AudioClip[0];
 
     private void Awake()
@@ -38,6 +41,15 @@ public class Actor : MonoBehaviour
     private void OnDisable()
     {
         DialogueManager.OnDialogueEnd -= RevertControls; // Unsubscribe from the event
+    }
+
+    private void Start()
+    {
+        if(FindObjectOfType<GameManager>().moralScore <= 0)
+        {
+            Debug.Log("Cassidy Bad :(");
+            casActor.currentDialogue = casActor.Dialogues[2];
+        }
     }
 
     // Trigger dialogue for this actor
@@ -77,6 +89,67 @@ public class Actor : MonoBehaviour
         }
     }
 
+    public void SpeakToCas()
+    {
+        if (currentDialogue != null)
+        {
+            DialogueManager.Instance.StartDialogue(Name, currentDialogue.RootNode, casActor);
+            this.GetComponent<NPCInteraction>().dialogueInProgress = true;
+            // Disable player controls
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
+        }
+    }
+
+    public void SpeakToJolene()
+    {
+        if (FindObjectOfType<DialogueManager>().joleneBad)
+        {
+            if (Dialogues != null && Dialogues.Count > 0)
+            {
+                currentDialogue = Dialogues[2];
+            }
+            Debug.Log("Speak to Jolene Bad");
+            joleneActor.gameObject.GetComponent<NPCInteraction>().StartDialogue();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
+        }
+        else if (FindObjectOfType<DialogueManager>().joleneGood)
+        {
+            if (Dialogues != null && Dialogues.Count > 0)
+            {
+                currentDialogue = Dialogues[3];
+            }
+            Debug.Log("Speak to Jolene Good");
+            joleneActor.gameObject.GetComponent<NPCInteraction>().StartDialogue();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Speak to Jolene");
+            joleneActor.gameObject.GetComponent<NPCInteraction>().StartDialogue();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            camScript.canMove = false;
+            playerBody.constraints = RigidbodyConstraints.FreezeAll;
+            movement.canWalk = false;
+            uIManager.playerHud.SetActive(false);
+        }
+    }
+
     // Function to increment and set the next dialogue
     public void NextDialogue()
     {
@@ -104,7 +177,7 @@ public class Actor : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; // Lock the cursor
         Cursor.visible = false; // Hide the cursor
         camScript.canMove = true; // Enable camera control
-        if (!FindObjectOfType<Town1Quests>().hasBlaze1)
+        if (!FindObjectOfType<Town1Quests>().hasBlaze1 && !FindObjectOfType<Town1Quests>().hasJol1)
         {
             playerBody.constraints = RigidbodyConstraints.None;
         }
@@ -113,5 +186,15 @@ public class Actor : MonoBehaviour
         characterAnim.SetTrigger("stop");
         this.GetComponent<NPCInteraction>().dialogueInProgress = false; // End dialogue state
 
+    }
+
+    public void JoleneDie()
+    {
+        jolAnim.SetTrigger("Die");
+    }
+
+    public void StartTrans()
+    {
+        uIManager.t2Transition.SetActive(true);
     }
 }

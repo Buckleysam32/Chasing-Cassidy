@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a62d551ef3371488b41b34ba0c9bc2, type: 3}
+  m_Name: Cassidy2
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueLines:
+    - text: Jesus, you got a lot of balls son. Most of the fools who approached me
+        before you, stood there pissing their fucking pants the moment I even put
+        my hand anywhere near my gun.
+      speaker: Cassidy
+    - text: The way you describe your goal it almost sounds honourable and for you
+        it probably seems that way but listen to me when I say this.
+      speaker: Cassidy
+    - text: "It doesn\u2019t matter what stories you heard, this is not some land
+        of the free and the fortunate\u2026 no this is a land of misfortune and death."
+      speaker: Cassidy
+    - text: "Most of the people living out here, fucking hate it, shit they would
+        probably rather be any where else in the world but they can\u2019t either
+        for personal reasons or they\u2019re just to fucking poor to make it out."
+      speaker: Cassidy
+    - text: What about you?
+      speaker: David
+    - text: "I had my chance but well she\u2019s gone as you know. Although if I\u2019m
+        honest that chance died with my little girl."
+      speaker: Cassidy
+    responses:
+    - responseText: "Why didn\u2019t you try to carry on? After her death I mean."
+      nextNode:
+        dialogueLines:
+        - text: "I tried but both of us were hurting and she couldn't love me no
+            more after she found out what I\u2019d done. Didn\u2019t help that I
+            eh felt responsible for what happened between us and I had nothin else
+            left so I thought the best thing I could do was walk away and leave my
+            money there"
+          speaker: Cassidy
+        - text: "You know part of me was hoping I wouldn\u2019t find you."
+          speaker: David
+        - text: "Even after everything there was a part of me that was hoping that
+            you had died or just disappeared because that would be easier than confronting
+            you and facing the possibility that the one man I\u2019ve been risking
+            my life to find, may just gun me down without question"
+          speaker: David
+        - text: "When I first heard of you and the mess in Stampton I wasn\u2019t
+            too concerned about you, thought you\u2019d see the light and turn back
+            or you just wouldn\u2019t make it. Even if you did, I probably would\u2019ve
+            just answered your questions. But then I heard about Jolene"
+          speaker: Cassidy
+        - text: What happened? Was it your fault?
+          speaker: Cassidy
+        - text: I was looking for answers and she was the only lead
+          speaker: David
+        - text: "Sounds about right, she was a hell of a fighter and wouldn\u2019t
+            let anyone take advantage of her. Losing our daughter broke her"
+          speaker: Cassidy
+        - text: What actually happened to her?
+          speaker: David
+        - text: "Disease took her after only 2 years, after that we were hurting
+            and when she found out about my past well lets just say she isn\u2019t
+            \u2026 wasn\u2019t fond of lies. You know, I thought I would\u2019ve
+            felt more considering how close we were but I guess after this much time
+            and so much loss I\u2019ve become almost numb to it all."
+          speaker: Cassidy
+        - text: Do you regret meeting her?
+          speaker: David
+        - text: No, she was the greatest thing to ever happen to me. I just regret
+            hurting her
+          speaker: Cassidy
+        - text: Do you feel the same way about the people you robbed or killed?
+          speaker: David
+        - text: "As bad as it may sound, kid, no not really. Most of the people I
+            hurt, deserved it or would\u2019ve ended up dead anyway. Regret isn\u2019t
+            something you can afford in this life, a conscience just gets you killed
+            and lets be honest, you\u2019ve seen it. Life out here is unforgiving
+            at best."
+          speaker: Cassidy
+        - text: "So what now? You\u2019ve got your story and some memories I\u2019m
+            sure you won\u2019t forget anytime soon."
+          speaker: Cassidy
+        - text: "I don\u2019t know. I didn't think that far ahead, I didn\u2019t
+            think I\u2019d make it."
+          speaker: David
+        - text: "Maybe it's time for something new, something different, a story
+            of your own. Although I suggest if you\u2019re gonna stay around this
+            area that you finally learn to shoot otherwise you probably won\u2019t
+            last much longer especially with your current rep."
+          speaker: Cassidy
+        responses:
+        - responseText: Stay
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+        - responseText: Leave
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 0
+    - responseText: How are you doing after all this time?
+      nextNode:
+        dialogueLines:
+        - text: "Don\u2019t act like you\u2019re here to be my friend kid, we both
+            know you\u2019re here for the story, nothing less and nothing more so
+            don\u2019t ask questions that you clearly don\u2019t care about"
+          speaker: Cassidy
+        - text: "You know part of me was hoping I wouldn\u2019t find you."
+          speaker: David
+        - text: "Even after everything there was a part of me that was hoping that
+            you had died or just disappeared because that would be easier than confronting
+            you and facing the possibility that the one man I\u2019ve been risking
+            my life to find, may just gun me down without question"
+          speaker: David
+        - text: "When I first heard of you and the mess in Stampton I wasn\u2019t
+            too concerned about you, thought you\u2019d see the light and turn back
+            or you just wouldn\u2019t make it. Even if you did, I probably would\u2019ve
+            just answered your questions. But then I heard about Jolene"
+          speaker: Cassidy
+        - text: What happened? Was it your fault?
+          speaker: Cassidy
+        - text: I was looking for answers and she was the only lead
+          speaker: David
+        - text: "Sounds about right, she was a hell of a fighter and wouldn\u2019t
+            let anyone take advantage of her. Losing our daughter broke her"
+          speaker: Cassidy
+        - text: What actually happened to her?
+          speaker: David
+        - text: "Disease took her after only 2 years, after that we were hurting
+            and when she found out about my past well lets just say she isn\u2019t
+            \u2026 wasn\u2019t fond of lies. You know, I thought I would\u2019ve
+            felt more considering how close we were but I guess after this much time
+            and so much loss I\u2019ve become almost numb to it all."
+          speaker: Cassidy
+        - text: Do you regret meeting her?
+          speaker: David
+        - text: No, she was the greatest thing to ever happen to me. I just regret
+            hurting her
+          speaker: Cassidy
+        - text: Do you feel the same way about the people you robbed or killed?
+          speaker: David
+        - text: "As bad as it may sound, kid, no not really. Most of the people I
+            hurt, deserved it or would\u2019ve ended up dead anyway. Regret isn\u2019t
+            something you can afford in this life, a conscience just gets you killed
+            and lets be honest, you\u2019ve seen it. Life out here is unforgiving
+            at best."
+          speaker: Cassidy
+        - text: "So what now? You\u2019ve got your story and some memories I\u2019m
+            sure you won\u2019t forget anytime soon."
+          speaker: Cassidy
+        - text: "I don\u2019t know. I didn't think that far ahead, I didn\u2019t
+            think I\u2019d make it."
+          speaker: David
+        - text: "Maybe it's time for something new, something different, a story
+            of your own. Although I suggest if you\u2019re gonna stay around this
+            area that you finally learn to shoot otherwise you probably won\u2019t
+            last much longer especially with your current rep."
+          speaker: Cassidy
+        responses:
+        - responseText: Stay
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+        - responseText: Leave
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses: []
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 0
+    - responseText: How did you know who I was?
+      nextNode:
+        dialogueLines:
+        - text: "When someone that was as well known around these parts as Blaze
+            was, dies especially in the presence of a person who apparently doesn\u2019t
+            even carry a weapon. Word travels pretty fast."
+          speaker: Cassidy
+        - text: Yeah, my condolences about him.
+          speaker: David
+        - text: "You think I care, that idiot had it coming waving around his money
+            and his past suspicious actions like that. It was gonna happen sooner
+            or later. I\u2019m just glad it was by his own hand,  makes it even funnier."
+          speaker: Cassidy
+        - text: "You know part of me was hoping I wouldn\u2019t find you."
+          speaker: David
+        - text: "Even after everything there was a part of me that was hoping that
+            you had died or just disappeared because that would be easier than confronting
+            you and facing the possibility that the one man I\u2019ve been risking
+            my life to find, may just gun me down without question"
+          speaker: David
+        - text: "When I first heard of you and the mess in Stampton I wasn\u2019t
+            too concerned about you, thought you\u2019d see the light and turn back
+            or you just wouldn\u2019t make it. Even if you did, I probably would\u2019ve
+            just answered your questions. But then I heard about Jolene"
+          speaker: Cassidy
+        - text: What happened? Was it your fault?
+          speaker: Cassidy
+        - text: I was looking for answers and she was the only lead
+          speaker: David
+        - text: "Sounds about right, she was a hell of a fighter and wouldn\u2019t
+            let anyone take advantage of her. Losing our daughter broke her"
+          speaker: Cassidy
+        - text: What actually happened to her?
+          speaker: David
+        - text: "Disease took her after only 2 years, after that we were hurting
+            and when she found out about my past well lets just say she isn\u2019t
+            \u2026 wasn\u2019t fond of lies. You know, I thought I would\u2019ve
+            felt more considering how close we were but I guess after this much time
+            and so much loss I\u2019ve become almost numb to it all."
+          speaker: Cassidy
+        - text: Do you regret meeting her?
+          speaker: David
+        - text: No, she was the greatest thing to ever happen to me. I just regret
+            hurting her
+          speaker: Cassidy
+        - text: Do you feel the same way about the people you robbed or killed?
+          speaker: David
+        - text: "As bad as it may sound, kid, no not really. Most of the people I
+            hurt, deserved it or would\u2019ve ended up dead anyway. Regret isn\u2019t
+            something you can afford in this life, a conscience just gets you killed
+            and lets be honest, you\u2019ve seen it. Life out here is unforgiving
+            at best."
+          speaker: Cassidy
+        - text: "So what now? You\u2019ve got your story and some memories I\u2019m
+            sure you won\u2019t forget anytime soon."
+          speaker: Cassidy
+        - text: "I don\u2019t know. I didn't think that far ahead, I didn\u2019t
+            think I\u2019d make it."
+          speaker: David
+        - text: "Maybe it's time for something new, something different, a story
+            of your own. Although I suggest if you\u2019re gonna stay around this
+            area that you finally learn to shoot otherwise you probably won\u2019t
+            last much longer especially with your current rep."
+          speaker: Cassidy
+        responses:
+        - responseText: Stay
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses:
+            - responseText: I see...
+              nextNode:
+                dialogueLines: []
+                responses: []
+              isGoodResponse: 0
+              isBadResponse: 0
+          isGoodResponse: 0
+          isBadResponse: 0
+        - responseText: Leave
+          nextNode:
+            dialogueLines:
+            - text: Interesting choice kid, unfortunately you forgot about one thing.
+              speaker: Cassidy
+            - text: Choices have consequences.
+              speaker: Cassidy
+            responses:
+            - responseText: I see...
+              nextNode:
+                dialogueLines: []
+                responses: []
+              isGoodResponse: 0
+              isBadResponse: 0
+          isGoodResponse: 0
+          isBadResponse: 0
+      isGoodResponse: 0
+      isBadResponse: 0

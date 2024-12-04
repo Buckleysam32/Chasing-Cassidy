@@ -37,7 +37,7 @@ MonoBehaviour:
     - text: Oh yeah hmmm...
       speaker: David
     responses:
-    - responseText: Pull Lever
+    - responseText: Kick Bucket
       nextNode:
         dialogueLines: []
         responses: []
@@ -53,5 +53,5 @@ MonoBehaviour:
             the rest of this piece of shit town just you wait!
           speaker: 'Hanging Man '
         responses: []
-      isGoodResponse: 0
-      isBadResponse: 1
+      isGoodResponse: 1
+      isBadResponse: 0
