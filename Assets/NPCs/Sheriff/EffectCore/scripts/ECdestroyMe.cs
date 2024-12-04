@@ -5,7 +5,7 @@ using System.Linq;
 public class ECdestroyMe : MonoBehaviour{
 
     float timer;
-    public float deathtimer = 10;
+	public float deathtimer;
 	ParticleSystem[] partSys; 
 
 	// Use this for initialization
