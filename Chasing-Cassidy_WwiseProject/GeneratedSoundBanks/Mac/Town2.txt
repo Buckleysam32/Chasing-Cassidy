@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	233970784	PrisonDoorOpen			\Default Work Unit\PrisonDoorOpen	
+	1959394020	PrisonDoorClose			\Default Work Unit\PrisonDoorClose	
+	2043403999	Rain			\Default Work Unit\Rain	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	283038132	PrisonDoorOpen	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\528934-Jail_Cell_Door-9_AB03256A.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorOpen		212906
+	780836311	Rain	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		14088096
+	899633412	PrisonDoorClose	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Mac\SFX\528934-Jail_Cell_Door-9_026F22FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorClose		160174
+

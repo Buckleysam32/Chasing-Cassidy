@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{1DBF3666-AE9C-1C1A-11CC-D7BC34A4FC6D}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{66E55F3A-3168-07E1-1CBE-9EE1BF8D6379}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -95,7 +95,7 @@
 				</File>
 				<File Id="182490615" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>86231-Chest_drawer_close_wood-BLASTWAVEFX-23442.wav</ShortName>
-					<CachePath>SFX/86231-Chest_drawer_close_wood-BLASTWAVEFX-23442_5B8AD4FA.wem</CachePath>
+					<CachePath>SFX/86231-Chest_drawer_close_wood-BLASTWAVEFX-23442_AE05B714.wem</CachePath>
 				</File>
 				<File Id="195674598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidy_Gunshot_1.wav</ShortName>
@@ -367,11 +367,11 @@
 				</File>
 				<File Id="1060172450" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>313029-EFX_INT_Revolver_Gun_Metal_Handle_01.wav</ShortName>
-					<CachePath>SFX/313029-EFX_INT_Revolver_Gun_Metal_Handle_01_56A7295A.wem</CachePath>
+					<CachePath>SFX/313029-EFX_INT_Revolver_Gun_Metal_Handle_01_9DF37ACC.wem</CachePath>
 				</File>
 				<File Id="1073115463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>431496-Smith-_-Wesson-M29-.wav</ShortName>
-					<CachePath>SFX/431496-Smith-_-Wesson-M29-_9F9933A0.wem</CachePath>
+					<CachePath>SFX/431496-Smith-_-Wesson-M29-_25F25FB4.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -606,6 +606,41 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{F3C4E05E-1A4B-117E-B65D-23BA6CE3F75C}">
+			<ShortName>Town2</ShortName>
+			<Path>Town2.bnk</Path>
+			<Media>
+				<File Id="283038132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
+					<CachePath>SFX/528934-Jail_Cell_Door-9_AB03256A.wem</CachePath>
+				</File>
+				<File Id="780836311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</ShortName>
+					<CachePath>SFX/ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="899633412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
+					<CachePath>SFX/528934-Jail_Cell_Door-9_026F22FB.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1959394020" Name="PrisonDoorClose" DurationType="OneShot" DurationMin="1.6674908" DurationMax="1.6674908">
+					<MediaRefs>
+						<MediaRef Id="899633412"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="233970784" Name="PrisonDoorOpen" DurationType="OneShot" DurationMin="2.2167819" DurationMax="2.2167819">
+					<MediaRefs>
+						<MediaRef Id="283038132"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2043403999" Name="Rain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="780836311"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8E5CFAA0-8319-E6F5-922A-2E5E8338D978}</FileHash>
+	<FileHash>{0177785C-2BA6-75B9-0CC3-CF0F783DA450}</FileHash>
 </SoundBanksInfo>
