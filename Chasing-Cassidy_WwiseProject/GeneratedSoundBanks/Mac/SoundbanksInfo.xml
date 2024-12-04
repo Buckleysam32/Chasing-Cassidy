@@ -606,21 +606,25 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{F3C4E05E-1A4B-117E-B65D-23BA6CE3F75C}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{50B7366E-D7A0-D24B-8B0A-5A30D8665373}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
 				<File Id="283038132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
-					<CachePath>SFX/528934-Jail_Cell_Door-9_AB03256A.wem</CachePath>
+					<CachePath>SFX/528934-Jail_Cell_Door-9_EB9F31E2.wem</CachePath>
 				</File>
 				<File Id="780836311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</ShortName>
 					<CachePath>SFX/ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="814306170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418_.wav</ShortName>
+					<CachePath>SFX/499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418__4A6D9E6B.wem</CachePath>
+				</File>
 				<File Id="899633412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
-					<CachePath>SFX/528934-Jail_Cell_Door-9_026F22FB.wem</CachePath>
+					<CachePath>SFX/528934-Jail_Cell_Door-9_83C7EE8A.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -639,8 +643,13 @@
 						<MediaRef Id="780836311"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1551306167" Name="UI" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
+					<MediaRefs>
+						<MediaRef Id="814306170"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0AC0E9B4-2C8E-5B0C-60CE-2D89EEC9FB0C}</FileHash>
+	<FileHash>{B1887554-6F0C-5C4B-F663-ABB17BDCA004}</FileHash>
 </SoundBanksInfo>

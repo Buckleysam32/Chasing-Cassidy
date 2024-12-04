@@ -333,6 +333,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Rain" ID="{48002EC8-7FCE-4E7C-9D03-7E78BBE5A31D}">
+					<ChildrenList>
+						<Action Name="" ID="{173A3F68-3464-46F8-9F12-DB4C5AE1A08E}" ShortID="197491813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{BCEFCD3A-C1E6-476B-859D-8AF3FF770F7A}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PrisonDoorOpen" ID="{9C9443BB-3B9E-4591-85F8-B6F4DC41C841}">
+					<ChildrenList>
+						<Action Name="" ID="{BA8809FF-E449-455D-B96E-F4E0C6F76807}" ShortID="190990286">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PrisonDoorOpen" ID="{0F730A26-1D6B-4A7C-884E-A2D4307079E1}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PrisonDoorClose" ID="{16148CA9-CCED-4962-8E96-2366D9746E8F}">
+					<ChildrenList>
+						<Action Name="" ID="{FED7E100-E260-424C-928C-70FCD47384D5}" ShortID="480159469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PrisonDoorClose" ID="{3D68B092-8E43-48C2-B36E-6CA5E5289F50}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}">
+					<ChildrenList>
+						<Action Name="" ID="{ACC88E2D-A478-4549-801E-D9B455D7D3DE}" ShortID="817818310">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI" ID="{794AAB48-C860-417A-A80C-32B09DEDC552}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

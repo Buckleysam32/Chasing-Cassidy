@@ -43,6 +43,7 @@ namespace AK
         static const AkUniqueID SALOONDOOROPEN = 3123159437U;
         static const AkUniqueID SALOONDOORSHUT = 737300443U;
         static const AkUniqueID START_GAME = 1114964412U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace EVENTS
 
     namespace STATES

@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584694543527072430
+    m_lastTime: -8584683003806895648
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -133,6 +133,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 71d53335016c204dbfdcb6d6f6c8b7fe
       Path: SoundBanks\Default Work Unit\Soundbank
+    - name: Town2
+      guid: 35c4c43988d92f4f900149300436f6c2
+      id: 1855370025
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1880043c9d02b74cbfb1df6769139255
+      - ElementName: Town2
+        ObjectType: 7
+        guid: 35c4c43988d92f4f900149300436f6c2
+      Path: SoundBanks\Default Work Unit\Town2
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -145,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584694543553590000
+    m_lastTime: -8584683003807085695
     List:
     - name: BarrellRotate
       guid: eddbfcccef33e04780b233098e99c2de
@@ -627,6 +641,40 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
+    - name: PrisonDoorClose
+      guid: a98c1416edcc62498e962366d9746e8f
+      id: 1959394020
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: PrisonDoorClose
+        ObjectType: 3
+        guid: a98c1416edcc62498e962366d9746e8f
+      Path: Events\Default Work Unit\PrisonDoorClose
+      maxAttenuation: 0
+      maxDuration: 1.6674908
+      minDuration: 1.6674908
+    - name: PrisonDoorOpen
+      guid: bb43949c9e3b914585f8b6f4dc41c841
+      id: 233970784
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: PrisonDoorOpen
+        ObjectType: 3
+        guid: bb43949c9e3b914585f8b6f4dc41c841
+      Path: Events\Default Work Unit\PrisonDoorOpen
+      maxAttenuation: 0
+      maxDuration: 2.2167819
+      minDuration: 2.2167819
     - name: QuestComplete
       guid: fac023952a7c984b8451d8c8f18205f0
       id: 2092967876
@@ -644,6 +692,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.836
       minDuration: 2.836
+    - name: Rain
+      guid: c82e0048ce7f7c4e9d037e78bbe5a31d
+      id: 2043403999
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Rain
+        ObjectType: 3
+        guid: c82e0048ce7f7c4e9d037e78bbe5a31d
+      Path: Events\Default Work Unit\Rain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SaloonDoorOpen
       guid: 1e06a3c96ab4864e9159cc77171f23bf
       id: 3123159437
@@ -718,6 +783,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: UI
+      guid: 25e3775d636adb4fa5c6ef550b0ab05f
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: UI
+        ObjectType: 3
+        guid: 25e3775d636adb4fa5c6ef550b0ab05f
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: 0.21732059
+      minDuration: 0.21732059
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -758,7 +840,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584694543527072430
+    m_lastTime: -8584682999107481685
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14
@@ -855,6 +937,22 @@ MonoBehaviour:
         - ElementName: Outside
           ObjectType: 8
           guid: 52b1de099e63c34f8e84b12409aa037a
+      - name: Rain
+        guid: 5708521ec80c4144a0a91ebbe50a8659
+        id: 2043403999
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Rain
+          ObjectType: 8
+          guid: 5708521ec80c4144a0a91ebbe50a8659
       - name: Saloon
         guid: ed96d12cba046749b70bc8e5f8cbb4e1
         id: 2403500745
@@ -969,7 +1067,7 @@ MonoBehaviour:
     m_lastTime: -8584694543649177994
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f00000010000000110000001200000013000000140000001500000016000000200000002200000023000000d4000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f00000010000000110000001200000013000000140000001500000016000000190000001a00000020000000220000002300000027000000d4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
