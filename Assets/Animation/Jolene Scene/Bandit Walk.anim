@@ -2711,6 +2711,20 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.4
+    functionName: FootstepSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 0fc242b2f02b44d4ab351d221c380dd2, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.6
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 0fc242b2f02b44d4ab351d221c380dd2, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 3.6
     functionName: SpeakToJolene
     data: 

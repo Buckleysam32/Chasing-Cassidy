@@ -36,10 +36,14 @@ namespace AK
         static const AkUniqueID OUTSIDE = 438105790U;
         static const AkUniqueID PIANO = 1324340420U;
         static const AkUniqueID POKERGAME = 3836320178U;
+        static const AkUniqueID PRISONDOORCLOSE = 1959394020U;
+        static const AkUniqueID PRISONDOOROPEN = 233970784U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
+        static const AkUniqueID RAIN = 2043403999U;
         static const AkUniqueID SALOONDOOROPEN = 3123159437U;
         static const AkUniqueID SALOONDOORSHUT = 737300443U;
         static const AkUniqueID START_GAME = 1114964412U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace EVENTS
 
     namespace STATES
@@ -86,6 +90,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID SOUNDBANK = 1661994096U;
+        static const AkUniqueID TOWN2 = 1855370025U;
     } // namespace BANKS
 
     namespace BUSSES
