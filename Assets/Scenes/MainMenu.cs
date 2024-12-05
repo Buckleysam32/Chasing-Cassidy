@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        AkSoundEngine.PostEvent("UI", this.gameObject);
         gameManager.ClearData();
         SceneManager.LoadScene(1);
     }

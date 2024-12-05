@@ -1103,10 +1103,6 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-												<CustomState Name="" ID="{BC449C39-BFC4-4B00-8BA3-21F10844BD56}" ShortID="534408481"/>
-											</CustomState>
-											<CustomState>
 												<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
 												<CustomState Name="" ID="{19BE8E8C-482D-4029-B149-F157E5162677}" ShortID="552815448">
 													<PropertyList>
@@ -1905,10 +1901,6 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-												<CustomState Name="" ID="{B0DE6BAB-9EF5-4537-96C4-8E472247B95A}" ShortID="740465373"/>
-											</CustomState>
-											<CustomState>
 												<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
 												<CustomState Name="" ID="{AC6A36CD-457D-4BF0-AC1F-532FE2A05B5A}" ShortID="986410269">
 													<PropertyList>
@@ -2177,10 +2169,6 @@
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
 												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-												<CustomState Name="" ID="{F82849B7-E896-465A-9C63-7AB4E046B6F4}" ShortID="230595583"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
@@ -2704,10 +2692,6 @@
 								</CustomState>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-								<CustomState Name="" ID="{E87D0052-8922-4616-9442-CF6029A01410}" ShortID="554447931"/>
-							</CustomState>
-							<CustomState>
 								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
 								<CustomState Name="" ID="{BD09FC4F-7980-4403-B279-FAB69A20C1F9}" ShortID="1036063258">
 									<PropertyList>
@@ -2789,10 +2773,6 @@
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-								<CustomState Name="" ID="{89CFD79F-A743-492A-BBD3-37145F96167F}" ShortID="539192326"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
@@ -2929,6 +2909,11 @@
 				<Sound Name="Rain" ID="{BCEFCD3A-C1E6-476B-859D-8AF3FF770F7A}" ShortID="887682013">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2947,59 +2932,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
-								<CustomState Name="" ID="{FB96DF80-5EDD-4DBF-8503-229825B75F80}" ShortID="855371109">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
-								<CustomState Name="" ID="{4A469479-16C6-47A1-A16C-0184D8C4DF8D}" ShortID="799748753"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
-								<CustomState Name="" ID="{6ED9B218-4B01-4379-9091-3447B494A225}" ShortID="299055258">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
-								<CustomState Name="" ID="{33EDE6AA-8D53-4C86-B0DD-DE9ED664BD05}" ShortID="332835681">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
-								<CustomState Name="" ID="{97590F44-16C8-4562-9CD7-719241F9D40B}" ShortID="369043096">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
-								<CustomState Name="" ID="{F79899F5-340A-4676-80B8-5C29526340A2}" ShortID="786624610">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1" ID="{1686A2C3-0967-4EE9-9471-5181394A40B6}" Platform="Linked"/>
 					</ActiveSourceList>

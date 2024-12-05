@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d6bf0fa3a3009349a22b3e2cbfb15c83
     GuidInternal: 
-    m_lastTime: -8584694543649167984
+    m_lastTime: -8584682505309031257
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3b61c5e2a3a31c4780bd615da48fe5b6
     GuidInternal: 
-    m_lastTime: -8584694543542755439
+    m_lastTime: -8584682505208844798
     List:
     - name: Dialogue
       guid: 23e17d4e2a8ca14e9555d93057043584
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584683003806895648
+    m_lastTime: -8584682505192028478
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584683003807085695
+    m_lastTime: -8584682505221443690
     List:
     - name: BarrellRotate
       guid: eddbfcccef33e04780b233098e99c2de
@@ -812,7 +812,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fb47dd92db96ee4c9594e109d975993d
     GuidInternal: 
-    m_lastTime: -8584694543553590000
+    m_lastTime: -8584682505221443690
     List:
     - name: Parameter
       guid: 8cf60c11068c68449fd7207b7147ee31
@@ -840,7 +840,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584682999107481685
+    m_lastTime: -8584682430463815198
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14
@@ -937,22 +937,6 @@ MonoBehaviour:
         - ElementName: Outside
           ObjectType: 8
           guid: 52b1de099e63c34f8e84b12409aa037a
-      - name: Rain
-        guid: 5708521ec80c4144a0a91ebbe50a8659
-        id: 2043403999
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: a1a85724c674664182695a5c75b0db6c
-        - ElementName: Town1
-          ObjectType: 9
-          guid: 0a07eac004b63a4b94b11aea2e84ef14
-        - ElementName: Rain
-          ObjectType: 8
-          guid: 5708521ec80c4144a0a91ebbe50a8659
       - name: Saloon
         guid: ed96d12cba046749b70bc8e5f8cbb4e1
         id: 2403500745
@@ -984,7 +968,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: ef402d7b03a90645a1cbff00f26079a4
     GuidInternal: 
-    m_lastTime: -8584694543649188003
+    m_lastTime: -8584682505309031257
     List:
     - name: FootstepsTerrain
       guid: 7eed6ed96426074a914e1ae21aa6947a
@@ -1064,7 +1048,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: eabde2a03c0c414988f1087b88ac6b0b
     GuidInternal: 
-    m_lastTime: -8584694543649177994
+    m_lastTime: -8584682505309031257
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f00000010000000110000001200000013000000140000001500000016000000190000001a00000020000000220000002300000027000000d4000000

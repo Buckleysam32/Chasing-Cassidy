@@ -11,7 +11,6 @@
 						<State Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
 						<State Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
 						<State Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
-						<State Name="Rain" ID="{1E520857-0CC8-4441-A0A9-1EBBE50A8659}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

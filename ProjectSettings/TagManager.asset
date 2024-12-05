@@ -20,6 +20,7 @@ TagManager:
   - GunsmithStateTrigger
   - Guard
   - HorseWall
+  - RainStateTrigger
   layers:
   - Default
   - TransparentFX

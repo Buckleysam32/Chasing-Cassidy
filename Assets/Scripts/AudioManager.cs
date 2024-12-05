@@ -56,10 +56,6 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("Town1", "Outside");
     }
 
-    static public void SetAreaRain()
-    {
-        AkSoundEngine.SetState("Town1", "Rain");
-    }
 
     
 }
