@@ -12,6 +12,7 @@ public class PlayerInteractor : MonoBehaviour
     public NPCInteraction blazeInteract;
     public NPCInteraction jolInteract;
     public Town1Quests questManager;
+    public bool inrange = false;
 
     void Update()
     {
@@ -50,10 +51,16 @@ public class PlayerInteractor : MonoBehaviour
                 }
             }
         }
+        else if (inrange)
+        {
+            crosshair.SetActive(false);
+            interactUI.SetActive(true);
+        }
         else
         {
             crosshair.SetActive(true);
             interactUI.SetActive(false);
         }
+
     }
 }

@@ -24,11 +24,14 @@ public class NPCInteraction : MonoBehaviour
 
     public AudioClip[] textSounds = new AudioClip[0];
 
+    private PlayerInteractor interactScript;
+
     void Start()
     {
         town1Quests = FindObjectOfType<Town1Quests>();
         talkButton.SetActive(false);
         startPosition = transform.position;
+        interactScript = FindObjectOfType<PlayerInteractor>();
 
         // Initialize dialogue if there are files
         if (dialogueFiles.Count > 0)
@@ -43,16 +46,19 @@ public class NPCInteraction : MonoBehaviour
         {
             Debug.Log("In Range");
             inRange = true;
+            interactScript.inrange = true;
             crossHair.SetActive(false);
             talkButton.SetActive(true);
         }
     }
+
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             inRange = false;
+            interactScript.inrange = false;
             crossHair.SetActive(true);
             talkButton.SetActive(false);
         }

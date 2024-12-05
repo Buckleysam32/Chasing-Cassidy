@@ -27,7 +27,41 @@ public class PickUpObjects : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) //change E to whichever key you want to press to pick up
+        RaycastHit hit;
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+        {
+            //make sure pickup tag is attached
+            if (hit.transform.gameObject.tag == "CanPickUp")
+            {
+                if(heldObj == null)
+                {
+                    FindObjectOfType<PlayerInteractor>().crosshair.SetActive(false);
+                    FindObjectOfType<PlayerInteractor>().interactUI.SetActive(true);
+                }
+                else
+                {
+                    FindObjectOfType<PlayerInteractor>().crosshair.SetActive(false);
+                    FindObjectOfType<PlayerInteractor>().interactUI.SetActive(false);
+                }
+                //pass in object hit into the PickUpObject function
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if(heldObj == null)
+                    {
+                        PickUpObject(hit.transform.gameObject);
+                    }
+                    else
+                    {
+                        if (canDrop == true)
+                        {
+                            StopClipping(); //prevents object from clipping through walls
+                            DropObject();
+                        }
+                    }
+                }
+            }
+        }
+/*        if (Input.GetKeyDown(KeyCode.E)) //change E to whichever key you want to press to pick up
         {
             if (heldObj == null) //if currently not holding anything
             {
@@ -51,7 +85,7 @@ public class PickUpObjects : MonoBehaviour
                     DropObject();
                 }
             }
-        }
+        }*/
         if (heldObj != null) //if player is holding object
         {
             MoveObject(); //keep object position at holdPos

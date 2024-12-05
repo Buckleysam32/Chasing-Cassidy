@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -43,6 +44,9 @@ public class DialogueManager : MonoBehaviour
 
     public Actor jolActor;
 
+    public float skipDelay = 3f;
+    public float delayCounter = 0;
+
     private void Awake()
     {
         // Singleton pattern to ensure only one instance of DialogueManager
@@ -63,34 +67,27 @@ public class DialogueManager : MonoBehaviour
         OnDialogueEnd?.Invoke();
     }
 
-    // Starts the dialogue with given title and dialogue node
     public void StartDialogue(string title, DialogueNode node, Actor actor)
     {
         quests.SpeakToNPC(title, actor);
         textSounds = actor.textSounds;
         Debug.Log(title);
-        // Display the dialogue UI
         ShowDialogue();
 
-        // Set dialogue title
         DialogTitleText.text = title;
 
-        // Stop any previous typing coroutine
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
         }
 
-        // Clear any previous response buttons
         ClearResponseButtons();
 
-        // Start typing the new lines from the dialogue node
         typingCoroutine = StartCoroutine(TypeLines(node, actor));
     }
 
 
 
-    // Typing effect for multiple dialogue lines and displaying responses after all lines
     IEnumerator TypeLines(DialogueNode node, Actor actor)
     {
         for (int i = 0; i < node.dialogueLines.Count; i++)
@@ -147,8 +144,11 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 // After pressing E, clear the body text for the next line
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-                DialogBodyText.text = ""; // Clear the text for the next line
+                if (DialogBodyText.text == line.text && delayCounter >= skipDelay)
+                {
+                    yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+                    DialogBodyText.text = ""; // Clear the text for the next line
+                }
             }
         }
     }
@@ -166,23 +166,17 @@ public class DialogueManager : MonoBehaviour
             if (randomClip != null && AS != null)
             {
                 AS.PlayOneShot(randomClip);
-//Debug.Log("Played: " + randomClip + "from: " + AS);
+                //Debug.Log("Played: " + randomClip + "from: " + AS);
             }
 
-            // Allow skipping typing if any key is pressed (e.g., space to skip)
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                DialogBodyText.text = text; // Immediately display the full text
-                yield break; // Exit the typing loop
-            }
 
-            // Wait for the textSpeed delay only if no key is pressed
             float delay = textSpeed;
             while (delay > 0)
             {
                 // Check for key input each frame
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetMouseButtonDown(1))
                 {
+                    // Make the typing finish instantly
                     DialogBodyText.text = text;
                     yield break;
                 }
@@ -192,8 +186,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (delayCounter <= skipDelay)
+        {
+            delayCounter += Time.deltaTime;
+        }
+    }
 
-    // Method to display response buttons after dialogue has been typed out
     private void ShowResponseButtons(DialogueNode node, Actor actor)
     {
         for (int i = 0; i < node.responses.Count; i++)
@@ -211,7 +211,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Clear existing response buttons
     private void ClearResponseButtons()
     {
         foreach (Transform child in responseButtonContainer)
@@ -220,7 +219,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Handles response selection and triggers next dialogue node
+
+
     public void SelectResponse(DialogueResponse response, string title, Actor actor)
     {
         if(actor.Name == "Hanging Man")
@@ -316,7 +316,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Hide the dialogue UI
     public void HideDialogue(Actor actor)
     {
         DialogueParent.SetActive(false);
@@ -379,7 +378,6 @@ public class DialogueManager : MonoBehaviour
         OnDialogueEnd?.Invoke();
     }
 
-    // Show the dialogue UI
     private void ShowDialogue()
     {
         Debug.Log("Show Dialogue");
@@ -387,7 +385,6 @@ public class DialogueManager : MonoBehaviour
         characterImage.gameObject.SetActive(true);
     }
 
-    // Check if dialogue is currently active
     public bool IsDialogueActive()
     {
         return DialogueParent.activeSelf;
