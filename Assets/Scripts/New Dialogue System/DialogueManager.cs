@@ -227,12 +227,12 @@ public class DialogueManager : MonoBehaviour
         {
             if (response.isGoodResponse)
             {
-                GameManager.Instance.IncreaseMoralScore();
+               FindObjectOfType<GameManager>().IncreaseMoralScore();
                 
             }
             if (response.isBadResponse)
             {
-                GameManager.Instance.DecreaseMoralScore();
+                FindObjectOfType<GameManager>().DecreaseMoralScore();
                 barrelAnim.SetTrigger("Move");
             }
         }
@@ -273,10 +273,8 @@ public class DialogueManager : MonoBehaviour
 
         if(actor.name == "Cassidy")
         {
-            Debug.Log("OONGA BONGA 1");
             if (!quests.hasCas2 && quests.hasCas1 )
             {
-                Debug.Log("OONGA BONGA 2");
                 actor.characterAnim.SetTrigger("PullGun");
             }
 
@@ -299,11 +297,11 @@ public class DialogueManager : MonoBehaviour
         // Update the moral score based on the response
         if (response.isGoodResponse && actor.name != "Jolene")
         {
-            GameManager.Instance.IncreaseMoralScore();
+            FindObjectOfType<GameManager>().IncreaseMoralScore();
         }
         if (response.isBadResponse && actor.name != "Jolene")
         {
-            GameManager.Instance.DecreaseMoralScore();
+            FindObjectOfType<GameManager>().DecreaseMoralScore();
         }
 
         // Check if there's a follow-up node

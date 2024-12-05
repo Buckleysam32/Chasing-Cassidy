@@ -14,7 +14,6 @@ public class GameData
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
 
     public int moralScore; // Player's moral score
 
@@ -32,15 +31,8 @@ public class GameManager : MonoBehaviour
         saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.json");
         LoadGame();
 
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); 
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+
+
     }
 
     public void LoadGame()
