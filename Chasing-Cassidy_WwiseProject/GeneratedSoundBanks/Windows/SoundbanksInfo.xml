@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7EA5E934-1E45-9FBE-A47F-0FB7D54672B0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{222E8DE3-1BA5-BB2F-8A19-63314B17AA00}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,7 +25,7 @@
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
-				<GameParameter Id="2213928842" Name="Parameter"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1855370026" Name="Town1">
@@ -606,13 +606,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{FFB0F882-6717-0ABA-579B-1E2B3328F9D4}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{645DA402-6744-9674-4148-D4A28A995882}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
 				<File Id="283038132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
 					<CachePath>SFX/528934-Jail_Cell_Door-9_EB9F31E2.wem</CachePath>
+				</File>
+				<File Id="722105322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hellfire and Brimstone - Aaron Everson.wav</ShortName>
+					<CachePath>SFX/Hellfire and Brimstone - Aaron Everson_2B24C756.wem</CachePath>
 				</File>
 				<File Id="780836311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</ShortName>
@@ -626,8 +630,17 @@
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
 					<CachePath>SFX/528934-Jail_Cell_Door-9_83C7EE8A.wem</CachePath>
 				</File>
+				<File Id="1046853896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12.wav</ShortName>
+					<CachePath>SFX/418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1991862712" Name="MainMenuMusic" DurationType="OneShot" DurationMin="89.62585" DurationMax="89.62585">
+					<MediaRefs>
+						<MediaRef Id="722105322"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1959394020" Name="PrisonDoorClose" DurationType="OneShot" DurationMin="1.6674908" DurationMax="1.6674908">
 					<MediaRefs>
 						<MediaRef Id="899633412"/>
@@ -638,12 +651,17 @@
 						<MediaRef Id="283038132"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="645565787" Name="Punch" DurationType="OneShot" DurationMin="1.0940417" DurationMax="1.0940417">
+					<MediaRefs>
+						<MediaRef Id="1046853896"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2043403999" Name="Rain" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="780836311"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1551306167" Name="UI" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
+				<Event Id="471286636" Name="UISound" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
 					<MediaRefs>
 						<MediaRef Id="814306170"/>
 					</MediaRefs>
@@ -651,5 +669,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1945E297-4A1B-6AEA-2B3B-92D349FFC5E5}</FileHash>
+	<FileHash>{0E543786-F867-EBCF-E0A2-08EF8AB01EEE}</FileHash>
 </SoundBanksInfo>

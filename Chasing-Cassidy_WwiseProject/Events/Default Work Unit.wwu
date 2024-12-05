@@ -366,12 +366,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="UI" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}">
+				<Event Name="UISound" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}">
 					<ChildrenList>
 						<Action Name="" ID="{ACC88E2D-A478-4549-801E-D9B455D7D3DE}" ShortID="817818310">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI" ID="{794AAB48-C860-417A-A80C-32B09DEDC552}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenuMusic" ID="{6C35178A-5178-420A-BBE3-45192B583B03}">
+					<ChildrenList>
+						<Action Name="" ID="{73FBD754-1A53-42C8-B870-39224FB24C4A}" ShortID="731222636">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{7F798E45-D0FD-42C8-983E-56FBEE85BD43}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Punch" ID="{43E203E2-4B7B-4272-BF90-AAB0A6BE5A59}">
+					<ChildrenList>
+						<Action Name="" ID="{43E703E5-654C-4F47-AA0C-46B32CAC644D}" ShortID="406822332">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Punch" ID="{A53E77EC-67B4-4A43-A167-2CCF42826CFA}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

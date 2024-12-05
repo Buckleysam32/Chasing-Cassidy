@@ -10,8 +10,8 @@ public class Settings : MonoBehaviour
     Resolution[] resolutions;
 
     public TMP_Dropdown resolutionDropdown;
-
-    public AudioMixer audioMixer;
+    public Slider thisSlider;
+    public float masterVolume;
 
     // Start is called before the first frame update
     void Start()
@@ -51,8 +51,15 @@ public class Settings : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void SetVolume(float volume)
+    public void SetSpecificVolume(string whatValue)
     {
-        
+        float sliderValue = thisSlider.value;
+
+        if (whatValue == "Volume")
+        {
+            Debug.Log("Changed Volume" + thisSlider.value);
+            masterVolume = thisSlider.value;
+            AkSoundEngine.SetRTPCValue("MasterVolume", masterVolume);
+        }
     }
 }

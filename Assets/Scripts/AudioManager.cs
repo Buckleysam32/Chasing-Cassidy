@@ -24,11 +24,6 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.PostEvent(eventID.Id, source);
     }
 
-    public void PlayUISound()
-    {
-        AkSoundEngine.PostEvent("UI", this.gameObject);
-    }
-
     //States
 
     static public void SetAreaSaloon()
