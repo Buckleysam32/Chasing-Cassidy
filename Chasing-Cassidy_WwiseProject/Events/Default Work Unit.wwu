@@ -399,6 +399,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopRain" ID="{663DDD32-3664-4768-A09E-434F5DD2901D}">
+					<ChildrenList>
+						<Action Name="" ID="{3E8234C8-6698-4D0A-966F-943A8194EA40}" ShortID="746297989">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{BCEFCD3A-C1E6-476B-859D-8AF3FF770F7A}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopWind" ID="{EF7F0CAC-EBA5-4CE3-924B-2BE95DA52EA2}">
+					<ChildrenList>
+						<Action Name="" ID="{5533BE03-E2CA-426C-9A54-BD2F3209C769}" ShortID="1006916756">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dry Wind SFX" ID="{3A0D609A-F91C-468B-AD29-2B9E58AB9572}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

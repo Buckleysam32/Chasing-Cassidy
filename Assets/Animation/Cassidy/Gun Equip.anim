@@ -923,6 +923,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.55
+    functionName: HandlingSound
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: b6e5b3ede11bca9408a6e49db6f7b9cc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.3
     functionName: SpeakToCas
     data: 

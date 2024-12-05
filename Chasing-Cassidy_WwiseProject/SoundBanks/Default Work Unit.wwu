@@ -41,7 +41,9 @@
 						<ObjectRef Name="MainMenuMusic" ID="{6C35178A-5178-420A-BBE3-45192B583B03}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Punch" ID="{43E203E2-4B7B-4272-BF90-AAB0A6BE5A59}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PrisonDoorOpen" ID="{9C9443BB-3B9E-4591-85F8-B6F4DC41C841}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopRain" ID="{663DDD32-3664-4768-A09E-434F5DD2901D}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PrisonDoorClose" ID="{16148CA9-CCED-4962-8E96-2366D9746E8F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopWind" ID="{EF7F0CAC-EBA5-4CE3-924B-2BE95DA52EA2}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Rain" ID="{48002EC8-7FCE-4E7C-9D03-7E78BBE5A31D}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UISound" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

@@ -606,7 +606,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{645DA402-6744-9674-4148-D4A28A995882}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{9FE9F230-C849-6877-41E6-F886AAEFD0EA}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
@@ -616,7 +616,7 @@
 				</File>
 				<File Id="722105322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hellfire and Brimstone - Aaron Everson.wav</ShortName>
-					<CachePath>SFX/Hellfire and Brimstone - Aaron Everson_2B24C756.wem</CachePath>
+					<CachePath>SFX/Hellfire and Brimstone - Aaron Everson_4E886979.wem</CachePath>
 				</File>
 				<File Id="780836311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</ShortName>
@@ -661,6 +661,8 @@
 						<MediaRef Id="780836311"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="889343819" Name="StopWind" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="471286636" Name="UISound" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
 					<MediaRefs>
 						<MediaRef Id="814306170"/>
@@ -669,5 +671,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0E543786-F867-EBCF-E0A2-08EF8AB01EEE}</FileHash>
+	<FileHash>{462B60F8-808B-3AC8-CF76-EB7DADC7E16A}</FileHash>
 </SoundBanksInfo>
