@@ -606,7 +606,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{50B7366E-D7A0-D24B-8B0A-5A30D8665373}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{FFB0F882-6717-0ABA-579B-1E2B3328F9D4}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
@@ -620,7 +620,7 @@
 				</File>
 				<File Id="814306170" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418_.wav</ShortName>
-					<CachePath>SFX/499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418__4A6D9E6B.wem</CachePath>
+					<CachePath>SFX/499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418__82685BC9.wem</CachePath>
 				</File>
 				<File Id="899633412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
@@ -651,5 +651,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B1887554-6F0C-5C4B-F663-ABB17BDCA004}</FileHash>
+	<FileHash>{D9A9A970-CC76-B9A3-1A14-F28CC601FED8}</FileHash>
 </SoundBanksInfo>

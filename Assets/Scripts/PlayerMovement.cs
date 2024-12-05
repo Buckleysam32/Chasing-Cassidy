@@ -195,10 +195,6 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioManager.SetAreaGunsmith();
         }
-        else if (other.gameObject.tag == "RainStateTrigger")
-        {
-            AudioManager.SetAreaRain();
-        }
         else
         {
             AudioManager.SetAreaOutside();
