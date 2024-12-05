@@ -840,7 +840,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584682505192020810
+    m_lastTime: -8584682430463815198
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14
@@ -937,22 +937,6 @@ MonoBehaviour:
         - ElementName: Outside
           ObjectType: 8
           guid: 52b1de099e63c34f8e84b12409aa037a
-      - name: Rain
-        guid: 5708521ec80c4144a0a91ebbe50a8659
-        id: 2043403999
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: a1a85724c674664182695a5c75b0db6c
-        - ElementName: Town1
-          ObjectType: 9
-          guid: 0a07eac004b63a4b94b11aea2e84ef14
-        - ElementName: Rain
-          ObjectType: 8
-          guid: 5708521ec80c4144a0a91ebbe50a8659
       - name: Saloon
         guid: ed96d12cba046749b70bc8e5f8cbb4e1
         id: 2403500745
