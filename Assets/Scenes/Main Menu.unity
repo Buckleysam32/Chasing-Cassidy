@@ -4700,6 +4700,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8a9285f122c2abf44abb5cae2bbe79e2, type: 2}
+  windSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 482362f3a445bd14da45eca81405baec, type: 2}
 --- !u!4 &1425123048
 Transform:
   m_ObjectHideFlags: 0

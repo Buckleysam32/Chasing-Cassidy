@@ -20,6 +20,8 @@ TagManager:
   - GunsmithStateTrigger
   - Guard
   - HorseWall
+  - Roof
+  - RainTrigger
   - RainStateTrigger
   layers:
   - Default

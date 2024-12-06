@@ -31,8 +31,8 @@ public class Transition : MonoBehaviour
 
     public void LoadMenu()
     {
-        AkSoundEngine.PostEvent("Gunshot", this.gameObject);
         AkSoundEngine.PostEvent("StopWind", this.gameObject);
+        AkSoundEngine.PostEvent("Gunshot", this.gameObject);
         SceneManager.LoadScene(0);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

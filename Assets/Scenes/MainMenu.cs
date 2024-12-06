@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Quaternion settingsRotation;
     [SerializeField] private GameManager gameManager;
     public AK.Wwise.Event menuMusic;
+    public AK.Wwise.Event windSound;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         menuMusic.Post(gameObject);
+        windSound.Stop(gameObject);
     }
 
     public void NewGame()

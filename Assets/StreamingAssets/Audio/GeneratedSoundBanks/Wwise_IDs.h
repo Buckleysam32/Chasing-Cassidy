@@ -63,6 +63,7 @@ namespace AK
                 static const AkUniqueID GUNSMITH = 3370924234U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID RAIN = 2043403999U;
                 static const AkUniqueID SALOON = 2403500745U;
             } // namespace STATE
         } // namespace TOWN1
@@ -88,6 +89,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID RAINOCCLUSION = 1233572302U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

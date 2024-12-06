@@ -3,6 +3,7 @@ using UnityEngine;
 using AK.Wwise;
 using System.Collections;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
             GetInput();
             MovePlayer();
             CheckTerrain();
+            CheckRoof();
         }
 
 
@@ -195,6 +197,10 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioManager.SetAreaGunsmith();
         }
+        else if (other.gameObject.tag == "RainTrigger")
+        {
+            AudioManager.SetAreaRain();
+        }
         else
         {
             AudioManager.SetAreaOutside();
@@ -218,6 +224,35 @@ public class PlayerMovement : MonoBehaviour
         else if (other.gameObject.tag == "GunsmithStateTrigger")
         {
             AudioManager.SetAreaOutside();
+        }
+        else if (other.gameObject.tag == "RainTrigger")
+        {
+            AudioManager.SetAreaOutside();
+        }
+    }
+
+    //Rain Occlusion
+
+    private void CheckRoof()
+    {
+        RaycastHit hit;
+        Vector3 origin = transform.position;
+        Vector3 direction = Vector3.up;
+        float maxDistance = 2f;
+
+        Debug.DrawRay(origin, direction * maxDistance, Color.red);
+
+        if (Physics.Raycast(transform.position, Vector3.up, out hit, Mathf.Infinity))
+        {
+            Debug.Log("roof detected");
+            if (hit.transform.gameObject.CompareTag("Roof"))
+            {
+                AkSoundEngine.SetRTPCValue("RainOcclusion", 100f);
+            }
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("RainOcclusion", 0f);
         }
     }
 }
