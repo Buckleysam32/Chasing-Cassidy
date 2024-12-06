@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
 
     public bool isTown1 = false;
 
+    public bool isPrologue = false;
+
+
     private string saveFilePath;
 
     public int town;
@@ -30,10 +33,8 @@ public class GameManager : MonoBehaviour
     {
         saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.json");
         LoadGame();
-
-
-
     }
+
 
     public void LoadGame()
     {
@@ -76,6 +77,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         uiManager = FindObjectOfType<UIManager>();
+        if (isPrologue)
+        {
+            FindObjectOfType<Actor>().SpeakTo(FindObjectOfType<Actor>());
+        }
     }
 
     // increase moral score

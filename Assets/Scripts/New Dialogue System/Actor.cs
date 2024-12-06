@@ -23,7 +23,10 @@ public class Actor : MonoBehaviour
         uIManager = FindAnyObjectByType<UIManager>();
         camScript = FindObjectOfType<MouseLook>();
         movement = FindObjectOfType<PlayerMovement>();
-        playerBody = movement.gameObject.GetComponent<Rigidbody>();
+        if(movement != null)
+        {
+            playerBody = movement.gameObject.GetComponent<Rigidbody>();
+        }
         characterAnim = GetComponent<Animator>();
 
         // Ensure the current dialogue is set to the first one in the list at start
@@ -45,7 +48,7 @@ public class Actor : MonoBehaviour
 
     private void Start()
     {
-        if(FindObjectOfType<GameManager>().moralScore <= 0)
+        if(FindObjectOfType<GameManager>().moralScore <= 0 && !FindObjectOfType<GameManager>().isPrologue)
         {
             Debug.Log("Cassidy Bad :(");
             casActor.currentDialogue = casActor.Dialogues[2];

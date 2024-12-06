@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
         AkSoundEngine.PostEvent("UISound", this.gameObject);
         gameManager.ClearData();
         menuMusic.Stop(gameObject);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     public void LoadGame()
@@ -53,6 +53,11 @@ public class MainMenu : MonoBehaviour
         AkSoundEngine.PostEvent("UISound", this.gameObject);
         settingsMenu.SetActive(false);
         StartCoroutine(MoveOverSeconds(cam, mainRotation, 1f, mainMenu));
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(4);
     }
 
     public void ExitGame()

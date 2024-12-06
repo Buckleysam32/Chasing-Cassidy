@@ -33,9 +33,14 @@ public class Transition : MonoBehaviour
     {
         AkSoundEngine.PostEvent("StopWind", this.gameObject);
         AkSoundEngine.PostEvent("Gunshot", this.gameObject);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void StartTrans()

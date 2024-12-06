@@ -69,8 +69,13 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string title, DialogueNode node, Actor actor)
     {
-        quests.SpeakToNPC(title, actor);
-        textSounds = actor.textSounds;
+        if (!FindObjectOfType<GameManager>().isPrologue)
+        {
+            quests.SpeakToNPC(title, actor);
+            textSounds = actor.textSounds;
+
+        }
+
         Debug.Log(title);
         ShowDialogue();
 
