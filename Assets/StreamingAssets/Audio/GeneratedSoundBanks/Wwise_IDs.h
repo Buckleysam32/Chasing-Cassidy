@@ -45,6 +45,7 @@ namespace AK
         static const AkUniqueID SALOONDOOROPEN = 3123159437U;
         static const AkUniqueID SALOONDOORSHUT = 737300443U;
         static const AkUniqueID START_GAME = 1114964412U;
+        static const AkUniqueID STOPMENUMUSIC = 1973898857U;
         static const AkUniqueID STOPRAIN = 856242967U;
         static const AkUniqueID STOPWIND = 889343819U;
         static const AkUniqueID UISOUND = 471286636U;

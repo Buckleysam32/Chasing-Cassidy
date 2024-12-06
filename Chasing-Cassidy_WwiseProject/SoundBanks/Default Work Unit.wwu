@@ -38,6 +38,7 @@
 				</SoundBank>
 				<SoundBank Name="Town2" ID="{39C4C435-D988-4F2F-9001-49300436F6C2}">
 					<ObjectInclusionList>
+						<ObjectRef Name="StopMenuMusic" ID="{C0C4C6E9-472D-41AC-A793-5E6AC014CE57}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MainMenuMusic" ID="{6C35178A-5178-420A-BBE3-45192B583B03}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Punch" ID="{43E203E2-4B7B-4272-BF90-AAB0A6BE5A59}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PrisonDoorOpen" ID="{9C9443BB-3B9E-4591-85F8-B6F4DC41C841}" WorkUnitID="{0848C383-4E35-4EC2-B10C-7E068CF548EE}" Origin="Manual" Filter="7"/>

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3b61c5e2a3a31c4780bd615da48fe5b6
     GuidInternal: 
-    m_lastTime: -8584681284633946693
+    m_lastTime: -8584680905979400287
     List:
     - name: Dialogue
       guid: 23e17d4e2a8ca14e9555d93057043584
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584681284632111979
+    m_lastTime: -8584680905977449856
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584681284655737508
+    m_lastTime: -8584680905995864826
     List:
     - name: BarrellRotate
       guid: eddbfcccef33e04780b233098e99c2de
@@ -636,8 +636,8 @@ MonoBehaviour:
         guid: 495baa3c89f0694bb412129e381bf9aa
       Path: Events\Default Work Unit\Town1Events\Piano
       maxAttenuation: 20
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 117.211426
+      minDuration: 92.42123
     - name: PokerGame
       guid: 98023816ebe155489f6548d410d98013
       id: 3836320178
@@ -880,7 +880,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fb47dd92db96ee4c9594e109d975993d
     GuidInternal: 
-    m_lastTime: -8584681284655737508
+    m_lastTime: -8584680905995854825
     List:
     - name: MasterVolume
       guid: 8cf60c11068c68449fd7207b7147ee31
@@ -922,7 +922,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584681284632111979
+    m_lastTime: -8584680905977439840
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14

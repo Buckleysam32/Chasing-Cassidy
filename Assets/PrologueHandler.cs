@@ -8,6 +8,8 @@ public class PrologueHandler : MonoBehaviour
     public GameObject nextButton;
     public Animator textAnim;
     public int textCount;
+    public AK.Wwise.Event menuMusic;
+    public AK.Wwise.Event uiSound;
 
     private void Awake()
     {
@@ -15,15 +17,23 @@ public class PrologueHandler : MonoBehaviour
         textAnim = this.GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        menuMusic.Post(gameObject);
+    }
+
     public void Next()
     {
         if(textCount < 4)
         {
+            uiSound.Post(gameObject);
             textCount++;
             textAnim.SetTrigger("Next");
         }
         else
         {
+            uiSound.Post(gameObject);
+            menuMusic.Stop(gameObject);
             SceneManager.LoadScene(1);
         }
     }

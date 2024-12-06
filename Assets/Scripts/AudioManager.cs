@@ -56,6 +56,15 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("Town1", "Rain");
     }
 
+    //Menu Music
 
-    
+    public void PlayMenuMusic()
+    {
+        AkSoundEngine.PostEvent("MainMenuMusic", this.gameObject);
+    }
+
+    public void StopMenuMusic()
+    {
+        AkSoundEngine.PostEvent("StopMenuMusic", this.gameObject);
+    }
 }

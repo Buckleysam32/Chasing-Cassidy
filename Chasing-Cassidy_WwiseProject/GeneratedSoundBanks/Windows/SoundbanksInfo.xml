@@ -51,7 +51,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{7BF22F3D-4037-CC4E-7AC2-980C7631D99B}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{4D15E822-C989-F28F-0617-075EA6A29F4A}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -525,7 +525,7 @@
 						<ActionSetStateEntry GroupId="1855370026" Id="438105790" Name="Outside"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1324340420" Name="Piano" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="1324340420" Name="Piano" MaxAttenuation="20" DurationType="OneShot" DurationMin="92.42123" DurationMax="117.211426">
 					<MediaRefs>
 						<MediaRef Id="409515689"/>
 						<MediaRef Id="467483246"/>
@@ -609,7 +609,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{0FBD454E-03F1-60E7-A3E8-11DF522A29CD}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{F6EAFC85-2A90-A3FA-E660-5806CB9C71F6}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
@@ -664,6 +664,7 @@
 						<MediaRef Id="780836311"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1973898857" Name="StopMenuMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="889343819" Name="StopWind" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="471286636" Name="UISound" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
@@ -677,5 +678,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E2D60001-1BDA-27B6-4525-37CE7AE9DCFE}</FileHash>
+	<FileHash>{50044B30-1984-1A32-F45B-4864B7E1E524}</FileHash>
 </SoundBanksInfo>

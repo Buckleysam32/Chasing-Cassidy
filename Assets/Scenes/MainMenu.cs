@@ -12,8 +12,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Quaternion mainRotation;
     [SerializeField] private Quaternion settingsRotation;
     [SerializeField] private GameManager gameManager;
-    public AK.Wwise.Event menuMusic;
     public AK.Wwise.Event windSound;
+    public AK.Wwise.Event menuMusic;
 
     private void Awake()
     {
@@ -28,16 +28,16 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        menuMusic.Stop(gameObject);
         AkSoundEngine.PostEvent("UISound", this.gameObject);
         gameManager.ClearData();
-        menuMusic.Stop(gameObject);
         SceneManager.LoadScene(5);
     }
 
     public void LoadGame()
     {
-        AkSoundEngine.PostEvent("UISound", this.gameObject);
         menuMusic.Stop(gameObject);
+        AkSoundEngine.PostEvent("UISound", this.gameObject);
         SceneManager.LoadScene(gameManager.town);
     }
 
@@ -57,13 +57,15 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
+        menuMusic.Stop(gameObject);
+        AkSoundEngine.PostEvent("UISound", this.gameObject);
         SceneManager.LoadScene(4);
     }
 
     public void ExitGame()
     {
-        AkSoundEngine.PostEvent("UISound", this.gameObject);
         menuMusic.Stop(gameObject);
+        AkSoundEngine.PostEvent("UISound", this.gameObject);
         Application.Quit();
     }
 

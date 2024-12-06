@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	856242967	StopRain			\Default Work Unit\StopRain	
 	889343819	StopWind			\Default Work Unit\StopWind	
 	1959394020	PrisonDoorClose			\Default Work Unit\PrisonDoorClose	
+	1973898857	StopMenuMusic			\Default Work Unit\StopMenuMusic	
 	1991862712	MainMenuMusic			\Default Work Unit\MainMenuMusic	
 	2043403999	Rain			\Default Work Unit\Rain	
 
