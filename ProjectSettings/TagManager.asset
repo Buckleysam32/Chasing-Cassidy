@@ -21,6 +21,8 @@ TagManager:
   - Guard
   - HorseWall
   - RainStateTrigger
+  - CanPickUp
+  - MountTrigger
   layers:
   - Default
   - TransparentFX
@@ -33,7 +35,7 @@ TagManager:
   - Sand
   - Wood
   - CompactSand
-  - 
+  - NPC
   - 
   - 
   - 

@@ -26,6 +26,8 @@ public class NPCInteraction : MonoBehaviour
 
     private PlayerInteractor interactScript;
 
+    public bool isLookingAtNPC = false;
+
     void Start()
     {
         town1Quests = FindObjectOfType<Town1Quests>();
@@ -46,9 +48,11 @@ public class NPCInteraction : MonoBehaviour
         {
             Debug.Log("In Range");
             inRange = true;
-            interactScript.inrange = true;
-            crossHair.SetActive(false);
-            talkButton.SetActive(true);
+            if(this.gameObject.name == "Cassidy")
+            {
+                crossHair.SetActive(false);
+                talkButton.SetActive(true);
+            }
         }
     }
 
@@ -58,15 +62,23 @@ public class NPCInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inRange = false;
-            interactScript.inrange = false;
-            crossHair.SetActive(true);
-            talkButton.SetActive(false);
+            if (this.gameObject.name == "Cassidy")
+            {
+                crossHair.SetActive(true);
+                talkButton.SetActive(false);
+            }
         }
     }
 
+
     private void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress)
+        Debug.Log(isLookingAtNPC);
+        if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress && isLookingAtNPC)
+        {
+            this.GetComponent<Actor>().SpeakTo(this.GetComponent<Actor>());
+        }
+        if(this.gameObject.name == "Cassidy" && inRange && Input.GetKeyDown(KeyCode.E) && !dialogueInProgress)
         {
             this.GetComponent<Actor>().SpeakTo(this.GetComponent<Actor>());
         }

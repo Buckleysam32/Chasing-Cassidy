@@ -7,20 +7,41 @@ public class PlayerInteractor : MonoBehaviour
     public Transform interactSource;
     public float interactRange;
     public LayerMask interactableLayer;
+    public LayerMask NPCLayer;
     public GameObject crosshair;
     public GameObject interactUI;
     public NPCInteraction blazeInteract;
     public NPCInteraction jolInteract;
     public Town1Quests questManager;
     public bool inrange = false;
+    public bool lookingAtNpc = false;
+    public NPCInteraction currentNPC;
 
     void Update()
     {
+        Debug.Log(lookingAtNpc);
         RaycastHit hit;
         Vector3 rayOrigin = interactSource.position;
         Vector3 rayDirection = interactSource.forward;
 
-        if(Physics.Raycast(rayOrigin, rayDirection, out hit, interactRange, interactableLayer))
+        if (Physics.Raycast(rayOrigin, rayDirection, out hit, interactRange, NPCLayer, QueryTriggerInteraction.Ignore))
+        {
+            currentNPC = hit.collider.gameObject.GetComponent<NPCInteraction>();
+            Debug.Log("Is looking at NPC");
+            lookingAtNpc = true;
+            currentNPC.isLookingAtNPC = true;
+            crosshair.SetActive(false);
+            interactUI.SetActive(true);
+        }
+        else
+        {
+            lookingAtNpc = false;
+            currentNPC.isLookingAtNPC = false;
+            crosshair.SetActive(true);
+            interactUI.SetActive(false);
+        }
+
+        if (Physics.Raycast(rayOrigin, rayDirection, out hit, interactRange, interactableLayer))
         {
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             crosshair.SetActive(false);
@@ -51,15 +72,13 @@ public class PlayerInteractor : MonoBehaviour
                 }
             }
         }
-        else if (inrange)
-        {
-            crosshair.SetActive(false);
-            interactUI.SetActive(true);
-        }
         else
         {
-            crosshair.SetActive(true);
-            interactUI.SetActive(false);
+            if (!lookingAtNpc)
+            {
+                crosshair.SetActive(true);
+                interactUI.SetActive(false);
+            }
         }
 
     }

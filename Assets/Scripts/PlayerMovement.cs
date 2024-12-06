@@ -82,6 +82,17 @@ public class PlayerMovement : MonoBehaviour
         myCC.Move(movementVector * Time.deltaTime);
     }
 
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rb = hit.collider.attachedRigidbody;
+        if (rb != null && !rb.isKinematic)
+        {
+            Vector3 pushDirection = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+            rb.AddForce(pushDirection * 5f, ForceMode.Impulse);
+        }
+    }
+
+
     //Footstep Audio
 
     private enum CURRENT_TERRAIN { SAND, WOOD, COMPACTSAND };
@@ -174,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+
 
     //Detecting Wwise States
 
