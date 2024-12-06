@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{025CF101-3D0D-F5E2-3869-A4BD1724149F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B98D8585-890A-7578-357A-A5DAE3A50D48}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,7 +25,8 @@
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
-				<GameParameter Id="2213928842" Name="Parameter"/>
+				<GameParameter Id="1233572302" Name="RainOcclusion"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1855370026" Name="Town1">
@@ -33,6 +34,7 @@
 						<State Id="438105790" Name="Outside"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="2034834082" Name="Butcher"/>
+						<State Id="2043403999" Name="Rain"/>
 						<State Id="2379233693" Name="Grocer"/>
 						<State Id="2403500745" Name="Saloon"/>
 						<State Id="3370924234" Name="Gunsmith"/>
@@ -49,7 +51,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{66E55F3A-3168-07E1-1CBE-9EE1BF8D6379}">
+		<SoundBank Id="1661994096" Type="User" Language="SFX" Hash="{7BF22F3D-4037-CC4E-7AC2-980C7631D99B}">
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<Media>
@@ -523,7 +525,7 @@
 						<ActionSetStateEntry GroupId="1855370026" Id="438105790" Name="Outside"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1324340420" Name="Piano" MaxAttenuation="20" DurationType="OneShot" DurationMin="92.42123" DurationMax="117.211426">
+				<Event Id="1324340420" Name="Piano" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="409515689"/>
 						<MediaRef Id="467483246"/>
@@ -590,6 +592,7 @@
 						<State Id="438105790" Name="Outside"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="2034834082" Name="Butcher"/>
+						<State Id="2043403999" Name="Rain"/>
 						<State Id="2379233693" Name="Grocer"/>
 						<State Id="2403500745" Name="Saloon"/>
 						<State Id="3370924234" Name="Gunsmith"/>
@@ -606,7 +609,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{FFB0F882-6717-0ABA-579B-1E2B3328F9D4}">
+		<SoundBank Id="1855370025" Type="User" Language="SFX" Hash="{0FBD454E-03F1-60E7-A3E8-11DF522A29CD}">
 			<ShortName>Town2</ShortName>
 			<Path>Town2.bnk</Path>
 			<Media>
@@ -614,9 +617,13 @@
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
 					<CachePath>SFX/528934-Jail_Cell_Door-9_EB9F31E2.wem</CachePath>
 				</File>
+				<File Id="722105322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hellfire and Brimstone - Aaron Everson.wav</ShortName>
+					<CachePath>SFX/Hellfire and Brimstone - Aaron Everson_4E886979.wem</CachePath>
+				</File>
 				<File Id="780836311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</ShortName>
-					<CachePath>SFX/ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FA54164E.wem</CachePath>
 				</File>
 				<File Id="814306170" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418_.wav</ShortName>
@@ -626,8 +633,17 @@
 					<ShortName>528934-Jail_Cell_Door-9.wav</ShortName>
 					<CachePath>SFX/528934-Jail_Cell_Door-9_83C7EE8A.wem</CachePath>
 				</File>
+				<File Id="1046853896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12.wav</ShortName>
+					<CachePath>SFX/418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1991862712" Name="MainMenuMusic" DurationType="OneShot" DurationMin="89.62585" DurationMax="89.62585">
+					<MediaRefs>
+						<MediaRef Id="722105322"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1959394020" Name="PrisonDoorClose" DurationType="OneShot" DurationMin="1.6674908" DurationMax="1.6674908">
 					<MediaRefs>
 						<MediaRef Id="899633412"/>
@@ -638,18 +654,28 @@
 						<MediaRef Id="283038132"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="645565787" Name="Punch" DurationType="OneShot" DurationMin="1.0940417" DurationMax="1.0940417">
+					<MediaRefs>
+						<MediaRef Id="1046853896"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2043403999" Name="Rain" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="780836311"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1551306167" Name="UI" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
+				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="889343819" Name="StopWind" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="471286636" Name="UISound" DurationType="OneShot" DurationMin="0.21732059" DurationMax="0.21732059">
 					<MediaRefs>
 						<MediaRef Id="814306170"/>
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1233572302" Name="RainOcclusion"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D9A9A970-CC76-B9A3-1A14-F28CC601FED8}</FileHash>
+	<FileHash>{A47B9690-9EDA-A9E3-B46B-EDDCEF958354}</FileHash>
 </SoundBanksInfo>

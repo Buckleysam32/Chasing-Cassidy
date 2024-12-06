@@ -366,12 +366,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="UI" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}">
+				<Event Name="UISound" ID="{5D77E325-6A63-4FDB-A5C6-EF550B0AB05F}">
 					<ChildrenList>
 						<Action Name="" ID="{ACC88E2D-A478-4549-801E-D9B455D7D3DE}" ShortID="817818310">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI" ID="{794AAB48-C860-417A-A80C-32B09DEDC552}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenuMusic" ID="{6C35178A-5178-420A-BBE3-45192B583B03}">
+					<ChildrenList>
+						<Action Name="" ID="{73FBD754-1A53-42C8-B870-39224FB24C4A}" ShortID="731222636">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{7F798E45-D0FD-42C8-983E-56FBEE85BD43}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Punch" ID="{43E203E2-4B7B-4272-BF90-AAB0A6BE5A59}">
+					<ChildrenList>
+						<Action Name="" ID="{43E703E5-654C-4F47-AA0C-46B32CAC644D}" ShortID="406822332">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Punch" ID="{A53E77EC-67B4-4A43-A167-2CCF42826CFA}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopRain" ID="{663DDD32-3664-4768-A09E-434F5DD2901D}">
+					<ChildrenList>
+						<Action Name="" ID="{3E8234C8-6698-4D0A-966F-943A8194EA40}" ShortID="746297989">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{BCEFCD3A-C1E6-476B-859D-8AF3FF770F7A}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopWind" ID="{EF7F0CAC-EBA5-4CE3-924B-2BE95DA52EA2}">
+					<ChildrenList>
+						<Action Name="" ID="{5533BE03-E2CA-426C-9A54-BD2F3209C769}" ShortID="1006916756">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dry Wind SFX" ID="{3A0D609A-F91C-468B-AD29-2B9E58AB9572}" WorkUnitID="{B8C53303-E032-4983-A8E2-3E5A33A6D2B6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

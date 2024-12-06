@@ -24,11 +24,6 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.PostEvent(eventID.Id, source);
     }
 
-    public void PlayUISound()
-    {
-        AkSoundEngine.PostEvent("UI", this.gameObject);
-    }
-
     //States
 
     static public void SetAreaSaloon()
@@ -54,6 +49,11 @@ public class AudioManager : MonoBehaviour
     static public void SetAreaOutside()
     {
         AkSoundEngine.SetState("Town1", "Outside");
+    }
+
+    static public void SetAreaRain()
+    {
+        AkSoundEngine.SetState("Town1", "Rain");
     }
 
 

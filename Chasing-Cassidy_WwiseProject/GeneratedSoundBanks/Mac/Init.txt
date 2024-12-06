@@ -5,9 +5,13 @@ State	ID	Name	State Group			Notes
 	438105790	Outside	Town1			
 	748895195	None	Town1			
 	2034834082	Butcher	Town1			
+	2043403999	Rain	Town1			
 	2379233693	Grocer	Town1			
 	2403500745	Saloon	Town1			
 	3370924234	Gunsmith	Town1			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

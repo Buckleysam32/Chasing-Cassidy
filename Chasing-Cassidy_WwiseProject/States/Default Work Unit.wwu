@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{2457A8A1-74C6-4166-8269-5A5C75B0DB6C}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{215F42F5-BE0E-422F-BBBC-25866B1E47B8}"/>
 						<State Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
@@ -11,6 +14,7 @@
 						<State Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
 						<State Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
 						<State Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+						<State Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

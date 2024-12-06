@@ -1119,6 +1119,10 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+												<CustomState Name="" ID="{4CE4DFA4-1035-4C47-AF6D-A0E7E3006D08}" ShortID="238922172"/>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
 												<CustomState Name="" ID="{2D08ADFC-F437-48B1-A7F9-8C7D95D4337E}" ShortID="569312176"/>
 											</CustomState>
@@ -1917,6 +1921,10 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+												<CustomState Name="" ID="{F14E3D67-40AE-4370-BEA5-D0F672FF388C}" ShortID="157674952"/>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
 												<CustomState Name="" ID="{FCE421E1-7BB8-435B-A94D-48E57E6B0CF8}" ShortID="1021887655"/>
 											</CustomState>
@@ -2185,6 +2193,10 @@
 														<Property Name="Volume" Type="Real64" Value="-108"/>
 													</PropertyList>
 												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+												<CustomState Name="" ID="{E62C19AD-4473-46F4-98B0-5DF8DAEC5065}" ShortID="741586483"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
@@ -2466,6 +2478,28 @@
 												<ActiveSource Name="313029-EFX_INT_Revolver_Gun_Metal_Handle_01" ID="{77A6EE18-80AB-4B40-976D-D55E5530ACDA}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Punch" ID="{A53E77EC-67B4-4A43-A167-2CCF42826CFA}" ShortID="1030247574">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12" ID="{43843F96-4C7A-436B-8EBB-15DCA3FA0BD2}">
+													<Language>SFX</Language>
+													<AudioFile>418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1046853896"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12" ID="{43843F96-4C7A-436B-8EBB-15DCA3FA0BD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -2708,6 +2742,14 @@
 								</CustomState>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+								<CustomState Name="" ID="{CB5085EB-9DCE-4D67-9E3D-6AC0A2715132}" ShortID="180824629">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
 								<CustomState Name="" ID="{66D96D8D-4D96-4E9B-BCC9-F65CA1B516F6}" ShortID="800629315">
 									<PropertyList>
@@ -2789,6 +2831,10 @@
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+								<CustomState Name="" ID="{4180DC9C-8130-4F18-9062-DCC3C503A178}" ShortID="464564705"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
@@ -2925,6 +2971,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1" ID="{1686A2C3-0967-4EE9-9471-5181394A40B6}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="LoopEnd" Type="Real64" Value="73.375"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1.wav</AudioFile>
 							<MediaIDList>
@@ -2932,6 +2983,98 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Town1" ID="{C0EA070A-B604-4B3A-94B1-1AEA2E84EF14}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Grocer" ID="{DFAC269F-1D00-4185-B1E1-AC1089130181}"/>
+								<CustomState Name="" ID="{728DBC91-7413-46A3-A042-18A94AF487C2}" ShortID="138644800">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Butcher" ID="{C561F293-2C6C-4678-BD2F-477AD3225394}"/>
+								<CustomState Name="" ID="{70A86BD0-8B4B-4AD6-B571-AC27D8A139A4}" ShortID="849437178">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Gunsmith" ID="{92F4BE31-0E2E-47A3-AAD2-9E94C20B2FDE}"/>
+								<CustomState Name="" ID="{119B4AE4-3A47-4D36-B33D-2A8B8028CE8A}" ShortID="643834138">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Rain" ID="{B6D540EE-93E1-47C9-8FC6-541680DDFA5E}"/>
+								<CustomState Name="" ID="{F4ED8C09-2926-4608-9C08-CAEBCF08D58C}" ShortID="631353239"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Saloon" ID="{2CD196ED-04BA-4967-B70B-C8E5F8CBB4E1}"/>
+								<CustomState Name="" ID="{31335F5A-E0C8-4D0C-B204-81D3369E3F2A}" ShortID="159822791">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Outside" ID="{09DEB152-639E-4FC3-8E84-B12409AA037A}"/>
+								<CustomState Name="" ID="{B7DE332F-A7D1-4470-AEEF-CF9FA4E9D8F6}" ShortID="213327302">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{838179B6-20B0-4058-AC0A-2CD224A84492}" ShortID="1033267846">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RainOcclusion" ID="{4810941D-CBC6-4547-89A7-2007ED64A55B}" WorkUnitID="{92DD47FB-96DB-4CEE-9594-E109D975993D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{876AFCA3-2DD6-4E35-8919-40BA3D7A87A6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>40</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1" ID="{1686A2C3-0967-4EE9-9471-5181394A40B6}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -3026,6 +3169,32 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418_" ID="{E6A338D5-C51A-4305-816C-D9AC28A78918}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MainMenuMusic" ID="{7F798E45-D0FD-42C8-983E-56FBEE85BD43}" ShortID="968350823">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F9765268-8C05-4AE5-849F-F1DC14BC8CB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E2C5613B-A3A3-471C-80BD-615DA48FE5B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Hellfire and Brimstone - Aaron Everson" ID="{234D4450-29F8-4F62-9786-0E8D9B6FF03A}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="5.96715295576685"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Hellfire and Brimstone - Aaron Everson.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="722105322"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Hellfire and Brimstone - Aaron Everson" ID="{234D4450-29F8-4F62-9786-0E8D9B6FF03A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

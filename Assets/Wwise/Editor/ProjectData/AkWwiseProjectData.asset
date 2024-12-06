@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3b61c5e2a3a31c4780bd615da48fe5b6
     GuidInternal: 
-    m_lastTime: -8584682505208844798
+    m_lastTime: -8584681687296222717
     List:
     - name: Dialogue
       guid: 23e17d4e2a8ca14e9555d93057043584
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584682200337180664
+    m_lastTime: -8584681655067273760
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584682200405191322
+    m_lastTime: -8584681655067353775
     List:
     - name: BarrellRotate
       guid: eddbfcccef33e04780b233098e99c2de
@@ -564,6 +564,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.99614435
       minDuration: 0.99614435
+    - name: MainMenuMusic
+      guid: 8a17356c78510a42bbe345192b583b03
+      id: 1991862712
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: MainMenuMusic
+        ObjectType: 3
+        guid: 8a17356c78510a42bbe345192b583b03
+      Path: Events\Default Work Unit\MainMenuMusic
+      maxAttenuation: 0
+      maxDuration: 89.62585
+      minDuration: 89.62585
     - name: ObjectiveUpdate
       guid: 16846a250b886a46ad61016d460b1b44
       id: 3315603873
@@ -675,6 +692,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.2167819
       minDuration: 2.2167819
+    - name: Punch
+      guid: e203e2437b4b7242bf90aab0a6be5a59
+      id: 645565787
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: Punch
+        ObjectType: 3
+        guid: e203e2437b4b7242bf90aab0a6be5a59
+      Path: Events\Default Work Unit\Punch
+      maxAttenuation: 0
+      maxDuration: 1.0940417
+      minDuration: 1.0940417
     - name: QuestComplete
       guid: fac023952a7c984b8451d8c8f18205f0
       id: 2092967876
@@ -766,6 +800,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopRain
+      guid: 32dd3d6664366847a09e434f5dd2901d
+      id: 856242967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: StopRain
+        ObjectType: 3
+        guid: 32dd3d6664366847a09e434f5dd2901d
+      Path: Events\Default Work Unit\StopRain
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopWind
+      guid: ac0c7fefa5ebe34c924b2be95da52ea2
+      id: 889343819
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: StopWind
+        ObjectType: 3
+        guid: ac0c7fefa5ebe34c924b2be95da52ea2
+      Path: Events\Default Work Unit\StopWind
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Town1Events
       guid: c5b98f8e0d83204ba17213fd6dab3d6c
       id: 4159357433
@@ -783,9 +851,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: UI
+    - name: UISound
       guid: 25e3775d636adb4fa5c6ef550b0ab05f
-      id: 1551306167
+      id: 471286636
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -793,10 +861,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 83c34808354ec24eb10c7e068cf548ee
-      - ElementName: UI
+      - ElementName: UISound
         ObjectType: 3
         guid: 25e3775d636adb4fa5c6ef550b0ab05f
-      Path: Events\Default Work Unit\UI
+      Path: Events\Default Work Unit\UISound
       maxAttenuation: 0
       maxDuration: 0.21732059
       minDuration: 0.21732059
@@ -812,11 +880,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fb47dd92db96ee4c9594e109d975993d
     GuidInternal: 
-    m_lastTime: -8584682505221443690
+    m_lastTime: -8584681596811209249
     List:
-    - name: Parameter
+    - name: MasterVolume
       guid: 8cf60c11068c68449fd7207b7147ee31
-      id: 2213928842
+      id: 2918011349
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -824,10 +892,24 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fb47dd92db96ee4c9594e109d975993d
-      - ElementName: Parameter
+      - ElementName: MasterVolume
         ObjectType: 13
         guid: 8cf60c11068c68449fd7207b7147ee31
-      Path: Game Parameters\Default Work Unit\Parameter
+      Path: Game Parameters\Default Work Unit\MasterVolume
+    - name: RainOcclusion
+      guid: 1d941048c6cb474589a72007ed64a55b
+      id: 1233572302
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fb47dd92db96ee4c9594e109d975993d
+      - ElementName: RainOcclusion
+        ObjectType: 13
+        guid: 1d941048c6cb474589a72007ed64a55b
+      Path: Game Parameters\Default Work Unit\RainOcclusion
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -840,7 +922,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a1a85724c674664182695a5c75b0db6c
     GuidInternal: 
-    m_lastTime: -8584682430463815198
+    m_lastTime: -8584681574424480239
     List:
     - name: Town1
       guid: 0a07eac004b63a4b94b11aea2e84ef14
@@ -937,6 +1019,22 @@ MonoBehaviour:
         - ElementName: Outside
           ObjectType: 8
           guid: 52b1de099e63c34f8e84b12409aa037a
+      - name: Rain
+        guid: ee40d5b6e193c9478fc6541680ddfa5e
+        id: 2043403999
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a1a85724c674664182695a5c75b0db6c
+        - ElementName: Town1
+          ObjectType: 9
+          guid: 0a07eac004b63a4b94b11aea2e84ef14
+        - ElementName: Rain
+          ObjectType: 8
+          guid: ee40d5b6e193c9478fc6541680ddfa5e
       - name: Saloon
         guid: ed96d12cba046749b70bc8e5f8cbb4e1
         id: 2403500745
@@ -1051,7 +1149,7 @@ MonoBehaviour:
     m_lastTime: -8584682505309031257
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f00000010000000110000001200000013000000140000001500000016000000190000001a00000020000000220000002300000027000000d4000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d0000000f0000001000000011000000120000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d000000200000002200000023000000270000002b000000d4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

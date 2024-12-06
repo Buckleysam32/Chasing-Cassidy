@@ -32,18 +32,22 @@ namespace AK
         static const AkUniqueID GUNSHOT = 1287408361U;
         static const AkUniqueID GUNSLIDE = 2114683588U;
         static const AkUniqueID HANDLING = 780428406U;
+        static const AkUniqueID MAINMENUMUSIC = 1991862712U;
         static const AkUniqueID OBJECTIVEUPDATE = 3315603873U;
         static const AkUniqueID OUTSIDE = 438105790U;
         static const AkUniqueID PIANO = 1324340420U;
         static const AkUniqueID POKERGAME = 3836320178U;
         static const AkUniqueID PRISONDOORCLOSE = 1959394020U;
         static const AkUniqueID PRISONDOOROPEN = 233970784U;
+        static const AkUniqueID PUNCH = 645565787U;
         static const AkUniqueID QUESTCOMPLETE = 2092967876U;
         static const AkUniqueID RAIN = 2043403999U;
         static const AkUniqueID SALOONDOOROPEN = 3123159437U;
         static const AkUniqueID SALOONDOORSHUT = 737300443U;
         static const AkUniqueID START_GAME = 1114964412U;
-        static const AkUniqueID UI = 1551306167U;
+        static const AkUniqueID STOPRAIN = 856242967U;
+        static const AkUniqueID STOPWIND = 889343819U;
+        static const AkUniqueID UISOUND = 471286636U;
     } // namespace EVENTS
 
     namespace STATES
@@ -59,6 +63,7 @@ namespace AK
                 static const AkUniqueID GUNSMITH = 3370924234U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID RAIN = 2043403999U;
                 static const AkUniqueID SALOON = 2403500745U;
             } // namespace STATE
         } // namespace TOWN1
@@ -83,7 +88,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID PARAMETER = 2213928842U;
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID RAINOCCLUSION = 1233572302U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

@@ -1,12 +1,33 @@
 Event	ID	Name			Wwise Object Path	Notes
 	233970784	PrisonDoorOpen			\Default Work Unit\PrisonDoorOpen	
-	1551306167	UI			\Default Work Unit\UI	
+	471286636	UISound			\Default Work Unit\UISound	
+	645565787	Punch			\Default Work Unit\Punch	
+	856242967	StopRain			\Default Work Unit\StopRain	
+	889343819	StopWind			\Default Work Unit\StopWind	
 	1959394020	PrisonDoorClose			\Default Work Unit\PrisonDoorClose	
+	1991862712	MainMenuMusic			\Default Work Unit\MainMenuMusic	
 	2043403999	Rain			\Default Work Unit\Rain	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1855370026	Town1			\Default Work Unit\Town1	
+
+State	ID	Name	State Group			Notes
+	438105790	Outside	Town1			
+	748895195	None	Town1			
+	2034834082	Butcher	Town1			
+	2043403999	Rain	Town1			
+	2379233693	Grocer	Town1			
+	2403500745	Saloon	Town1			
+	3370924234	Gunsmith	Town1			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1233572302	RainOcclusion			\Default Work Unit\RainOcclusion	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	283038132	PrisonDoorOpen	C:\Users\1030268\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\528934-Jail_Cell_Door-9_EB9F31E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorOpen		212906
-	780836311	Rain	C:\Users\1030268\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		14088096
-	814306170	UI	C:\Users\1030268\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418__82685BC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI		38432
-	899633412	PrisonDoorClose	C:\Users\1030268\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\528934-Jail_Cell_Door-9_83C7EE8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorClose		160174
+	283038132	PrisonDoorOpen	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\528934-Jail_Cell_Door-9_EB9F31E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorOpen		212906
+	722105322	MainMenuMusic	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\Hellfire and Brimstone - Aaron Everson_4E886979.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenuMusic		17208260
+	780836311	Rain	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\ChasingCassidySFX_340428-Rain-Tin-Roof-Soft-Marlborough-Sounds-New-Zealand-MKH8040-St_1_FA54164E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		14088096
+	814306170	UI	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\499331-Knock_at_Wooden_Door_-Soft_Wood_Hit_-01_003418__82685BC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI		38432
+	899633412	PrisonDoorClose	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\528934-Jail_Cell_Door-9_83C7EE8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\PrisonDoorClose		160174
+	1046853896	Punch	C:\Users\aaron\OneDrive\Documents\GitHub\Chasing-Cassidy\Chasing-Cassidy_WwiseProject\.cache\Windows\SFX\418644-PM-LB-DESIGNED-PUNCH-CRUNCHY-12_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Town1\Saloon\Blaze\Punch		210152
 

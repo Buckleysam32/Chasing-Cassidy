@@ -16,16 +16,23 @@ public class Transition : MonoBehaviour
 
     public void LoadTown2()
     {
+        AkSoundEngine.PostEvent("Punch", this.gameObject);
+        AkSoundEngine.PostEvent("StopWind", this.gameObject);
         SceneManager.LoadScene(2);
     }
 
     public void LoadEnding()
     {
+        AkSoundEngine.PostEvent("Punch", this.gameObject);
+        AkSoundEngine.PostEvent("StopRain", this.gameObject);
+        AkSoundEngine.PostEvent("Start_Game", this.gameObject);
         SceneManager.LoadScene(3);
     }
 
     public void LoadMenu()
     {
+        AkSoundEngine.PostEvent("StopWind", this.gameObject);
+        AkSoundEngine.PostEvent("Gunshot", this.gameObject);
         SceneManager.LoadScene(0);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
