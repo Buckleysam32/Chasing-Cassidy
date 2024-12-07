@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1880043c9d02b74cbfb1df6769139255
     GuidInternal: 
-    m_lastTime: -8584680905977449856
+    m_lastTime: -8584680662970931535
     List:
     - name: Soundbank
       guid: 71d53335016c204dbfdcb6d6f6c8b7fe
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 83c34808354ec24eb10c7e068cf548ee
     GuidInternal: 
-    m_lastTime: -8584680905995864826
+    m_lastTime: -8584680662994303264
     List:
     - name: BarrellRotate
       guid: eddbfcccef33e04780b233098e99c2de
@@ -800,6 +800,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopMenuMusic
+      guid: e9c6c4c02d47ac41a7935e6ac014ce57
+      id: 1973898857
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 83c34808354ec24eb10c7e068cf548ee
+      - ElementName: StopMenuMusic
+        ObjectType: 3
+        guid: e9c6c4c02d47ac41a7935e6ac014ce57
+      Path: Events\Default Work Unit\StopMenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StopRain
       guid: 32dd3d6664366847a09e434f5dd2901d
       id: 856242967
