@@ -21,11 +21,11 @@ public class Settings : MonoBehaviour
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
-
         int currentRes = 0;
+
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
+            string option = resolutions[i].width + "x" + resolutions[i].height + " @" + resolutions[i].refreshRate + "Hz";
             options.Add(option);
 
             if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
@@ -42,7 +42,14 @@ public class Settings : MonoBehaviour
     // Corrected method name
     public void SetResolution(int resolutionIndex)
     {
+        if (resolutionIndex < 0 || resolutionIndex >= resolutions.Length)
+        {
+            Debug.LogError($"Invalid resolution index: {resolutionIndex}");
+            return;
+        }
+
         Resolution resolution = resolutions[resolutionIndex];
+        Debug.Log($"Selected Resolution: {resolution.width} x {resolution.height} @ {resolution.refreshRate}Hz");
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 

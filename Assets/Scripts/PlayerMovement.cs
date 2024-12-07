@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb != null && !rb.isKinematic)
         {
             Vector3 pushDirection = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
-            rb.AddForce(pushDirection * 5f, ForceMode.Impulse);
+            rb.AddForce(pushDirection * 7f, ForceMode.Impulse);
         }
     }
 

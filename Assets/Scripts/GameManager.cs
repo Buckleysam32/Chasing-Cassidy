@@ -28,11 +28,20 @@ public class GameManager : MonoBehaviour
 
     public int town;
 
+    public Scene currentScene;
+    
 
     private void Awake()
     {
+
         saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.json");
         LoadGame();
+        currentScene = SceneManager.GetActiveScene();
+        if (currentScene.buildIndex == 2)
+        {
+            town = 2;
+            SaveGame();
+        }
     }
 
 
@@ -119,10 +128,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-/*        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             SaveGame();
             Debug.Log("Game Saved");
-        }*/
+        }
     }
 }
